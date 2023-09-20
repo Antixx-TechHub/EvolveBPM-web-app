@@ -1,13 +1,13 @@
 <template>
-      <div id="header-sticky" class="tptransparent__header header-green header-spaces">
-         <div class="container">
+   <div id="header-sticky" class="tptransparent__header header-green header-spaces">
+      <div class="container">
             <div class="tp-mega-menu-wrapper">
                <div class="row align-items-center">
                   <div class="col-xl-1 col-lg-6 col-sm-4 col-6">
                      <div class="tplogo__area">
-                        <router-link>
-                            <!-- <img src="../../assets/img/logo/logo-green.svg" alt="image"> -->
-                        </router-link>
+                        <a href="index.html">
+                           <img src="../assets/img/logo/logo-green.png" alt="">
+                        </a>
                      </div>
                   </div>
                   <div class="col-xl-7 col-lg-5  d-none d-xl-block">
@@ -215,30 +215,30 @@
                </div>
             </div>
          </div>
-      </div>
+   </div>
 </template>
 
 <script>
 export default {
-    name: 'Navbar',
-    data() {
-        return {
-            isSticky: false,
-            isMenu: false,
-            active: false,
-            button_active_state: false,
-        }
-    },
-    mounted() {
-        const that = this
-        window.addEventListener('scroll', () => {
-            let scrollPos = window.scrollY
-            if (scrollPos >= 100) {
-                that.isSticky = true
-            } else {
-                that.isSticky = false
-            }
-        })
-    },
+   name: 'Navbar',
+   data() {
+       return {
+           isSticky: false,
+           isMenu: false,
+           active: false,
+           button_active_state: false,
+       }
+   },
+   mounted() {
+       const that = this
+       window.addEventListener('scroll', () => {
+           let scrollPos = window.scrollY
+           if (scrollPos >= 100) {
+               that.isSticky = true
+           } else {
+               that.isSticky = false
+           }
+       })
+   },
 }
 </script>
