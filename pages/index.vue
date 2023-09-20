@@ -9,7 +9,7 @@
 
 <script>
   // import NavbarStyleTwo from '../layouts/Navbar'
-  import MainBanner from '../components/Index/MainBanner'
+  import MainBanner from '../components/index/MainBanner'
 
   // import Footer from '../layouts/Footer'
 

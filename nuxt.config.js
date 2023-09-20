@@ -18,6 +18,15 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    "~/assets/css/bootstrap.css",
+    "~/assets/css/animate.css",
+    "~/assets/css/swiper-bundle.css",
+    "~/assets/css/slick.css",
+    "~/assets/css/nouislider.css",
+    "~/assets/css/magnific-popup.css",
+    "~/assets/css/font-awesome-pro.css",
+    "~/assets/css/spacing.css",
+    "~/assets/css/main.css",
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -39,5 +48,11 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+    postcss: null,
+    loaders: {
+      vue: {
+        prettify: false
+      }
+    }
+  },
 }
