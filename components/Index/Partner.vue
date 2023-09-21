@@ -8,7 +8,7 @@
                             :autoplay = "true"
                             :loop = "true"
                             :paginationEnabled = "false"
-                            :perPageCustom = "[[0, 2], [576, 3], [768, 3], [1200, 4]]"
+                            :perPageCustom = "[[0, 2], [576, 3], [768, 3], [1200, 6]]"
                             v-if="partners !== null"
                         >
                             <slide v-for="slide in partners.partnerSlides" :key="slide.id">
