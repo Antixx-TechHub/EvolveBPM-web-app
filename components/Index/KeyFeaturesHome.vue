@@ -4,8 +4,8 @@
          <div class="row justify-content-center">
             <div class="col-lg-6">
                <div class="tpsection-wrapper text-center mb-75">
-                  <h2 class="tpsection-title-two">Introducing <br> Our SEO
-                     <span>Toolbox
+                  <h2 class="tpsection-title-two">Introducing <br> Our
+                     <span>Services
                         <svg width="226" height="22" viewBox="0 0 226 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M3.3413 13.4215C3.3413 13.4215 142.59 -4.26273 220.652 8.52508" stroke="#FFCE5A"
                               stroke-width="5" stroke-linecap="round" />
@@ -22,9 +22,10 @@
                <div class="tpseo p-relative mb-40">
                   <div class="tpseo-bg"></div>
                   <div class="tpseo-content">
-                     <h4 class="tpseo-title mb-15">Growing <br> Your Business</h4>
+                     <h4 class="tpseo-title mb-15">iRev</h4>
+                     <h4>Demand<br>GenSolutions</h4>
                      <div class="tpseo-info">
-                        <p>With SEOMY, you get everything you need for a fast website</p>
+                        <p>Intent-driven Demand Generation engine ensures a customised and comprehensive framework that has the ability to drive outcome based</p>
                         <div class="tpseo-details">
                            <a href="keyword-search.html">Learn More <i class="fa-light fa-arrow-right"></i></a>
                         </div>
@@ -39,9 +40,10 @@
                <div class="tpseo p-relative mb-40">
                   <div class="tpseo-bg tpseo-bg2"></div>
                   <div class="tpseo-content">
-                     <h4 class="tpseo-title mb-15">Speed <br> Optimization</h4>
+                     <h4 class="tpseo-title mb-15">iIntel</h4>
+                     <h4>Data<br>Solutions</h4>
                      <div class="tpseo-info">
-                        <p>With SEOMY, you get everything you need for a fast website</p>
+                        <p>Intent-driven Demand Generation engine ensures a customised and comprehensive framework that has the ability to drive outcome based.</p>
                         <div class="tpseo-details">
                            <a href="keyword-search.html">Learn More <i class="fa-light fa-arrow-right"></i></a>
                         </div>
@@ -56,9 +58,10 @@
                <div class="tpseo p-relative mb-40">
                   <div class="tpseo-bg tpseo-bg3"></div>
                   <div class="tpseo-content">
-                     <h4 class="tpseo-title mb-15">Testing <br> Capabilities</h4>
+                     <h4 class="tpseo-title mb-15">iMedia</h4>
+                     <h4>Media & Content<br>Solutions</h4>
                      <div class="tpseo-info">
-                        <p>With SEOMY, you get everything you need for a fast website</p>
+                        <p>Intent-driven Demand Generation engine ensures a customised and comprehensive framework that has the ability to drive outcome based.</p>
                         <div class="tpseo-details">
                            <a href="keyword-search.html">Learn More <i class="fa-light fa-arrow-right"></i></a>
                         </div>
