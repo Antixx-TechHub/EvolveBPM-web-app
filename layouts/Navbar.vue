@@ -1,5 +1,5 @@
 <template>
-    <div id="header-sticky" class="tptransparent__header header-green header-spaces">
+    <div :class="['navbar-area', { 'is-sticky': isSticky }]" class="tptransparent__header header-green header-spaces">
        <div class="container">
              <div class="tp-mega-menu-wrapper">
                 <div class="row align-items-center">
@@ -224,11 +224,9 @@
     data() {
         return {
             isSticky: false,
-            isMenu: false,
-            active: false,
-            button_active_state: false,
         }
     },
+
     mounted() {
         const that = this
         window.addEventListener('scroll', () => {
