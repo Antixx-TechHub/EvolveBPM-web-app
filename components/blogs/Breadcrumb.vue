@@ -1,35 +1,35 @@
 <template>
-      <div class="breadcrumb-area breadcrumb-overlay p-relative pb-115 pt-195 jarallax" :style="bannerStyle">
-         <div class="container">
-            <div class="row">
-               <div class="col-xxl-12">
-                  <div class="breadcrumb__content breadcrumb__content-2 text-center p-relative z-index-1">
-                     <h3 class="breadcrumb__title">Blog Grid</h3>
-                     <div class="breadcrumb__list">
-                        <span><a href="index.html">Home</a></span>
-                        <span class="dvdr"></span>
-                        <span>Blog Grid</span>
-                     </div>
+   <div class="breadcrumb-area breadcrumb-overlay p-relative pb-115 pt-195 jarallax" :style="bannerStyle">
+      <div class="container">
+         <div class="row">
+            <div class="col-xxl-12">
+               <div class="breadcrumb__content breadcrumb__content-2 text-center p-relative z-index-1">
+                  <h3 class="breadcrumb__title">Blogs</h3>
+                  <div class="breadcrumb__list">
+                     <span><a href="index.html">Home</a></span>
+                     <span class="dvdr"></span>
+                     <span>Blogs</span>
                   </div>
                </div>
             </div>
          </div>
-         <div class="inner-shape-dots">
-            <img src="../../assets/img/shape/inner-dots-shape.png" alt="">
-         </div>
-        </div>
+      </div>
+      <div class="inner-shape-dots">
+         <img src="../../assets/img/shape/inner-dots-shape.png" alt="">
+      </div>
+   </div>
 </template>
  
 <script>
 
 export default {
-    name: 'Breadcrumb',
-    data() {
-    return {
-      bannerStyle: {
-        backgroundImage: `url(${require('../../assets/img/breadcrumb/breadcrumb-bg-1.jpg')})`
-      }
-    };
-  }
+   name: 'Breadcrumb',
+   data() {
+      return {
+         bannerStyle: {
+            backgroundImage: `url(${require('../../assets/img/breadcrumb/breadcrumb-bg-1.jpg')})`
+         }
+      };
+   }
 }
 </script>

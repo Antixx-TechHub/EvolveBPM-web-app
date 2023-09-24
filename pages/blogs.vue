@@ -3,7 +3,7 @@
         <NavbarTwo />
         <Breadcrumb />
         <Blog />
-        <LatestBlog />
+        <Partner />
         <Footer />
     </div>
 </template>
@@ -12,7 +12,7 @@
 import NavbarTwo from '../layouts/NavbarTwo'
 import Breadcrumb from '../components/blogs/Breadcrumb'
 import Blog from '../components/blogs/Blog'
-import LatestBlog from '../components/blogs/LatestBlog'
+import Partner from '../components/Index/Partner'
 import Footer from '../layouts/Footer'
 
 export default {
@@ -20,7 +20,7 @@ export default {
         NavbarTwo,
         Breadcrumb,
         Blog,
-        LatestBlog,
+        Partner,
         Footer,
     },
 };
