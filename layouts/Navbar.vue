@@ -143,7 +143,7 @@
                               </ul>
                            </li>
                            <li>
-                              <nuxt-link to="/">Contact</nuxt-link>
+                              <nuxt-link to="/contact-us">Contact</nuxt-link>
                            </li>
                         </ul>
                      </nav>
