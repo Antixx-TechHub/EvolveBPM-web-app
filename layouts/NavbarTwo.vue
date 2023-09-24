@@ -7,7 +7,7 @@
                   <div class="tplogo__area">
                      <nuxt-link to="/">
                         <span>
-                           <img src="../assets/img/logo/logo.svg" alt="">
+                           <img src="../assets/img/logo/logo-white.svg" alt="">
                         </span>
                      </nuxt-link>
                   </div>
@@ -167,7 +167,7 @@ export default {
       headerClasses() {
          return {
             'tptransparent__header': true,
-            'header-green': true,
+            'tp-white-menu': true,
             'header-spaces': true,
             'header-sticky': this.sticky,
          };

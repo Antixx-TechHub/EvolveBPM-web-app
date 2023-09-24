@@ -23,7 +23,7 @@
             <div class="row justify-content-center">
                <div class="col-lg-6">
                   <div class="tpcta-wrapper text-center">
-                     <a class="tpcta-btn mr-5" href="tel:0123456789">+44 123 654 7890</a>
+                     <a class="tpcta-btn mr-5" href="tel:+91-020-69029999"> +91-020-69029999</a>
                      <a class="green-btn" href="contact.html">Contact Us</a>
                   </div>
                </div>
