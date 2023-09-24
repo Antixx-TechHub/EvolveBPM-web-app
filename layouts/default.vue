@@ -8,12 +8,12 @@
 
 <script>
 // import Preloader from './Preloader'
-import GoTop from './GoTop'
+// import GoTop from './GoTop'
 
 export default {
     components: {
         // Preloader,
-        GoTop,
+        // GoTop,
     },
     data() {
         return {
