@@ -10,8 +10,8 @@
 
 <script>
 import NavbarTwo from '../layouts/NavbarTwo'
-import Breadcrumb from '../components/blogs/Breadcrumb'
-import Blog from '../components/blogs/Blog'
+import Breadcrumb from '../components/Blogs/Breadcrumb'
+import Blog from '../components/Blogs/Blog'
 import Partner from '../components/Index/Partner'
 import Footer from '../layouts/Footer'
 

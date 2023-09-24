@@ -72,14 +72,4 @@ export default {
       }
     }
   },
-  // seo: {
-  //   // My custom configuration
-  //   baseUrl: 'https://domain',
-  //   name: '<name of site>',
-  //   title: '<title default>',
-  //   templateTitle: '%name% - %title%',
-  //   description: '<description default>',
-  //   canonical: 'auto',
-  //   isForcedTrailingSlash: false
-  // }
 }
