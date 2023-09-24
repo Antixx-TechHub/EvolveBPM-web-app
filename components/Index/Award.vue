@@ -1,5 +1,5 @@
 <template>
-   <div class="award-area tp-large-box award-bg pt-110 p-relative fix" data-background="assets/img/banner/award-bg-2.png">
+   <div class="award-area tp-large-box award-bg pt-110 p-relative fix" :style="bannerStyle">
       <div class="award-shape d-none d-xl-block">
          <div class="award-shape-one">
             <img src="../../assets/img/shape/services-2shape-3.png" alt="">
@@ -87,5 +87,12 @@
 
 export default {
    name: 'Award',
+   data() {
+      return {
+         bannerStyle: {
+            backgroundImage: `url(${require('../../assets/img/banner/award-bg-2.png')})`
+         }
+      };
+   }
 }
 </script>

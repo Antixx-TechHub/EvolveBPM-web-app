@@ -1,6 +1,6 @@
 <template>
    <div>
-      <div class="banner-area tpbanner-space-two" data-background="../assets/img/banner/banner-2-bg-1.png">
+      <div class="banner-area tpbanner-space-two" :style="bannerStyle">
          <div class="container">
             <div class="row justify-content-center">
                <div class="col-lg-7 col-md-7 order-2 order-md-1">
@@ -52,5 +52,12 @@
 
 export default {
    name: 'MainBanner',
+   data() {
+    return {
+      bannerStyle: {
+        backgroundImage: `url(${require('../../assets/img/banner/banner-2-bg-1.png')})`
+      }
+    };
+  }
 }
 </script>

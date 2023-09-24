@@ -41,69 +41,26 @@
             <div class="col-lg-6">
                <div class="tp-accordion tp-green-accordion">
                   <div class="accordion mb-35" id="accordionExample">
-                     <div class="accordion-item">
+                     <div class="accordion-item" v-for="item in faq_data_one" :key="item.id">
                         <h2 class="accordion-header" id="headingOne">
                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                              Why Is SEO Important?
+                              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" :id="item.id"
+                              :aria-labelledby="item.aria_labelledby" :aria-expanded="item.aria_expanded"
+                              :class="{ collapsed: item.collapsed, active: item.active }"
+                              @click="toggleAccordion(item.id)">
+                              {{ item.ques }}
                            </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                           data-bs-parent="#accordionExample">
+                           data-bs-parent="#accordionExample" v-if="!item.collapsed" :class="{ show: item.active }">
                            <div class="accordion-body">
-                              Choosing the best SEO Agency means research, research and more research. Checking
-                              through reviews, team credentials, and getting proposals and audits.
-                           </div>
-                        </div>
-                     </div>
-                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Why Is SEO Important For Small Business?
-                           </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                           data-bs-parent="#accordionExample">
-                           <div class="accordion-body">
-                              Choosing the best SEO Agency means research, research and more research. Checking
-                              through reviews, team credentials, and getting proposals and audits.
-                           </div>
-                        </div>
-                     </div>
-                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                           <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                              How do I choose the best SEO Agency?
-                           </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree"
-                           data-bs-parent="#accordionExample">
-                           <div class="accordion-body">
-                              Choosing the best SEO Agency means research, research and more research. Checking
-                              through reviews, team credentials, and getting proposals and audits.
-                           </div>
-                        </div>
-                     </div>
-                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingFour">
-                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                              How do SEO Agencies work?
-                           </button>
-                        </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                           data-bs-parent="#accordionExample">
-                           <div class="accordion-body">
-                              Choosing the best SEO Agency means research, research and more research. Checking
-                              through reviews, team credentials, and getting proposals and audits.
+                              {{ item.ans }}
                            </div>
                         </div>
                      </div>
                   </div>
                   <div class="tp-accordion-btn">
-                     <a href="faq.html">Load More Questions <i class="fa-light fa-arrow-right"></i></a>
+                     <nuxt-link to="/faqs">Load More Questions <i class="fa-light fa-arrow-right"></i></nuxt-link>
                   </div>
                </div>
             </div>
@@ -116,5 +73,65 @@
 
 export default {
    name: 'Faq',
+   data() {
+      return {
+         faq_data_one: [
+            {
+               id: "One",
+               aria_labelledby: "Three",
+               aria_expanded: "false",
+               collapsed: "collapsed",
+               active: "",
+               ques: "Why Is SEO Important?",
+               ans:
+                  "Choosing the best SEO Agency means research, research and more research. Checking through reviews, team credentials, and getting proposals and audits.",
+            },
+            {
+               id: "Two",
+               aria_labelledby: "Two",
+               aria_expanded: "false",
+               collapsed: "collapsed",
+               active: "",
+               ques: "Why Is SEO Important For Small Business?",
+               ans:
+                  "Choosing the best SEO Agency means research, research and more research. Checking through reviews, team credentials, and getting proposals and audits.",
+            },
+            {
+               id: "Three",
+               aria_labelledby: "Three",
+               aria_expanded: "true",
+               collapsed: "",
+               active: "show",
+               ques: "How do I choose the best SEO Agency?",
+               ans:
+                  "Choosing the best SEO Agency means research, research and more research. Checking through reviews, team credentials, and getting proposals and audits.",
+            },
+            {
+               id: "Four",
+               aria_labelledby: "Four",
+               aria_expanded: "false",
+               collapsed: "collapsed",
+               active: "",
+               ques: "How do SEO Agencies work?",
+               ans:
+                  "Choosing the best SEO Agency means research, research and more research. Checking through reviews, team credentials, and getting proposals and audits.",
+            },
+         ],
+      };
+   },
+   methods: {
+      toggleAccordion(id) {
+         this.faq_data_one.forEach((item) => {
+            if (item.id === id) {
+               item.collapsed = !item.collapsed;
+               item.active = item.collapsed ? "" : "show";
+            } else {
+               item.collapsed = "collapsed";
+               item.active = "";
+            }
+         });
+      },
+   },
+
 }
 </script>

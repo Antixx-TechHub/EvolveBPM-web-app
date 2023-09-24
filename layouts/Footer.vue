@@ -135,8 +135,8 @@
              <div class="row">
                 <div class="col-lg-12">
                    <div class="footer-widget-copyright footer-widget-copyright2 text-center">
-                      <span>© 2023 Copyrights by company. All Rights Reserved. Designed by <a target="_blank"
-                            href="https://themeforest.net/user/theme_pure/portfolio">Theme_Pure.</a></span>
+                      <span>© 2023 Copyrights by EvolveBPM. All Rights Reserved. Designed by <a target="_blank"
+                            href="https://weblytics.in/">Weblytics Solutions</a></span>
                 </div>
              </div>
           </div>

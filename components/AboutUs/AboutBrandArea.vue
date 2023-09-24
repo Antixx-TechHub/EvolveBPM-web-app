@@ -22,28 +22,14 @@
             <div class="col-lg-5 col-md-8">
                <div class="brand-inner-wrapper tpbrand-inner-active">
                   <div class="tpbrand-inner-item">
-                     <img src="assets/img/brand/inner-brand-1.png" alt="">
-                  </div>
-                  <div class="tpbrand-inner-item">
-                     <img src="assets/img/brand/inner-brand-2.png" alt="">
-                  </div>
-                  <div class="tpbrand-inner-item">
-                     <img src="assets/img/brand/inner-brand-3.png" alt="">
-                  </div>
-                  <div class="tpbrand-inner-item">
-                     <img src="assets/img/brand/inner-brand-4.png" alt="">
-                  </div>
-                  <div class="tpbrand-inner-item">
-                     <img src="assets/img/brand/inner-brand-5.png" alt="">
-                  </div>
-                  <div class="tpbrand-inner-item">
-                     <img src="assets/img/brand/inner-brand-6.png" alt="">
-                  </div>
-                  <div class="tpbrand-inner-item">
-                     <img src="assets/img/brand/inner-brand-1.png" alt="">
-                  </div>
-                  <div class="tpbrand-inner-item">
-                     <img src="assets/img/brand/inner-brand-2.png" alt="">
+                     <carousel :autoplay="true" :loop="true" :paginationEnabled="false"
+                        :perPageCustom="[[0, 2], [576, 3], [768, 3], [1200, 4]]" v-if="partners !== null">
+                        <slide v-for="slide in partners.partnerSlides" :key="slide.id">
+                           <div class="tpbrand-item">
+                              <img :src="slide.image.data.attributes.url" alt="image">
+                           </div>
+                        </slide>
+                     </carousel>
                   </div>
                </div>
             </div>
@@ -54,7 +40,21 @@
   
 <script>
 
+import axios from 'axios'
+
 export default {
    name: 'AboutBrandArea',
+   data: () => ({
+      settings: {
+         itemsToShow: 1,
+         snapAlign: 'center',
+      },
+      partners: null,
+   }),
+   created: async function () {
+      const response = await axios.get('https://evolvestrapi.pbwebvision.in/api/partner?populate=partnerSlides.image')
+      const { data: { attributes } } = response.data
+      this.partners = attributes
+   },
 }
 </script>

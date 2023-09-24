@@ -1,6 +1,5 @@
 <template>
-   <div class="services-area tp-large-box services-bg-two p-relative fix"
-      data-background="../assets/img/banner/services-bg.png">
+   <div class="services-area tp-large-box services-bg-two p-relative fix" :style="bannerStyle">
       <div class="services-shape d-none d-xl-block">
          <div class="services-shape-one">
             <img src="../../assets/img/shape/services-2shape-1.png" alt="">
@@ -88,5 +87,12 @@
 
 export default {
    name: 'OurServices',
+   data() {
+    return {
+      bannerStyle: {
+        backgroundImage: `url(${require('../../assets/img/banner/services-bg.png')})`
+      }
+    };
+  }
 }
 </script>

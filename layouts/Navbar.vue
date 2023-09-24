@@ -12,7 +12,7 @@
                      </nuxt-link>
                   </div>
                </div>
-               <div class="col-xl-6 col-lg-5 d-none d-xl-block">
+               <div class="col-xl-7 col-lg-5 d-none d-xl-block">
                   <div class="tpmenu__area main-mega-menu pl-35">
                      <nav class="tp-main-menu-content">
                         <ul>
@@ -27,7 +27,9 @@
                               </NuxtLink>
                            </li>
                            <li class="header-services has-dropdown has-mega-menu">
-                              <a href="services.html">Services</a>
+                              <NuxtLink to="/services">
+                                 services
+                              </NuxtLink>
                               <div class="tp-mega-menu tp-submenu submenu">
                                  <div class="row">
                                     <div class="col-xl-6">
@@ -37,31 +39,37 @@
                                              <li>
                                                 <nuxt-link to="/">
                                                    <span> <img src="../assets/img/header-icon/keyword.png" alt=""> </span>
-                                                   Keyword Research
+                                                   Service 1
                                                 </nuxt-link>
                                              </li>
                                              <li>
                                                 <nuxt-link to="/">
                                                    <span> <img src="../assets/img/header-icon/audit.png" alt=""> </span>
-                                                   SEO Audit Services
+                                                   Service 2
                                                 </nuxt-link>
                                              </li>
                                              <li>
                                                 <nuxt-link to="/">
                                                    <span> <img src="../assets/img/header-icon/building.png" alt=""> </span>
-                                                   Link Building Services
+                                                   Service 3
                                                 </nuxt-link>
                                              </li>
                                              <li>
                                                 <nuxt-link to="/">
                                                    <span> <img src="../assets/img/header-icon/media.png" alt=""> </span>
-                                                   Social Media Marketing
+                                                   Service 4
                                                 </nuxt-link>
                                              </li>
                                              <li>
                                                 <nuxt-link to="/">
                                                    <span> <img src="../assets/img/header-icon/analysis.png" alt=""> </span>
-                                                   SEO analysis.
+                                                   Service 5
+                                                </nuxt-link>
+                                             </li>
+                                             <li>
+                                                <nuxt-link to="/">
+                                                   <span> <img src="../assets/img/header-icon/analysis.png" alt=""> </span>
+                                                   Service 6
                                                 </nuxt-link>
                                              </li>
                                           </ul>
@@ -70,12 +78,12 @@
                                     <div class="col-xl-6">
                                        <div class="tp-menu-banner-wrap">
                                           <div class="tp-menu-banner-content">
-                                             <span>SEO Agency</span>
-                                             <h5 class="tp-menu-banner-title-2">The #1 SEO <br> agency for fast growing
+                                             <span>iMedia Agency</span>
+                                             <h5 class="tp-menu-banner-title-2">The #1 iMedia <br> agency for fast growing
                                                 <br> companies.
                                              </h5>
                                              <div class="tp-menu-banner-btn">
-                                                <a href="services.html">
+                                                <nuxt-link to="/">
                                                    Learn more
                                                    <span>
                                                       <svg width="9" height="10" viewBox="0 0 9 10" fill="none"
@@ -86,7 +94,7 @@
                                                             stroke-linecap="round" stroke-linejoin="round" />
                                                       </svg>
                                                    </span>
-                                                </a>
+                                                </nuxt-link>
                                              </div>
                                           </div>
                                           <div class="tp-menu-banner-thumb">
@@ -97,49 +105,30 @@
                                  </div>
                               </div>
                            </li>
-                           <li class="has-dropdown has-megamenu">
-                              <nuxt-link to="/">Pages</nuxt-link>
-                              <ul class="tp-submenu submenu mega-menu">
+                           <li class="has-dropdown">
+                              <nuxt-link to="/">Company</nuxt-link>
+                              <ul class="tp-submenu submenu">
                                  <li>
                                     <ul>
-                                       <li><nuxt-link to="/">About Us</nuxt-link></li>
-                                       <li><nuxt-link to="/">Services</nuxt-link></li>
-                                       <li><nuxt-link to="/">Team Member</nuxt-link></li>
-                                       <li><nuxt-link to="/">Team Details</nuxt-link></li>
-                                       <li><nuxt-link to="/">Sign In</nuxt-link></li>
-                                       <li><nuxt-link to="/">Sign Up</nuxt-link></li>
-                                    </ul>
-                                 </li>
-                                 <li>
-                                    <ul>
-                                       <li><nuxt-link to="/">Pricing</nuxt-link></li>
-                                       <li><nuxt-link to="/">Case Studies 2 Columns</nuxt-link></li>
-                                       <li><nuxt-link to="/">Case Studies 3 Columns</nuxt-link></li>
-                                       <li><nuxt-link to="/">Case Studies Details</nuxt-link></li>
-                                       <li><nuxt-link to="/">Blog Grid</nuxt-link></li>
-                                       <li><nuxt-link to="/">Blog Masonry</nuxt-link></li>
-                                    </ul>
-                                 </li>
-                                 <li>
-                                    <ul>
-                                       <li><nuxt-link to="/">Blog List</nuxt-link></li>
-                                       <li><nuxt-link to="/">Blog Details</nuxt-link></li>
-                                       <li><nuxt-link to="/">Blog Details Full Width</nuxt-link></li>
-                                       <li><nuxt-link to="/">FAQ</nuxt-link></li>
-                                       <li><nuxt-link to="/">Contact</nuxt-link></li>
+                                       <li><nuxt-link to="/careers">Careers</nuxt-link></li>
+                                       <li><nuxt-link to="/our-team">Our Team</nuxt-link></li>
+                                       <li><nuxt-link to="/team-details">Team Details</nuxt-link></li>
+                                       <li><nuxt-link to="/faqs">FAQ's</nuxt-link></li>
+                                       <li><nuxt-link to="/pricing">Pricing</nuxt-link></li>
+                                       <!-- <li><nuxt-link to="/">Sign In</nuxt-link></li>
+                                       <li><nuxt-link to="/">Sign Up</nuxt-link></li> -->
                                     </ul>
                                  </li>
                               </ul>
                            </li>
                            <li class="has-dropdown">
-                              <a href="blog.html">Blog</a>
+                              <nuxt-link to="/">Blogs</nuxt-link>
                               <ul class="tp-submenu submenu">
-                                 <li><nuxt-link to="/">Blog</nuxt-link></li>
-                                 <li><nuxt-link to="/">Blog Grid</nuxt-link></li>
-                                 <li><nuxt-link to="/">Blog Masonry</nuxt-link></li>
-                                 <li><nuxt-link to="/">Blog List</nuxt-link></li>
-                                 <li><nuxt-link to="/">Blog Details</nuxt-link></li>
-                                 <li><nuxt-link to="/">Blog Details Full Width</nuxt-link></li>
+                                 <li><nuxt-link to="/blogs">Blogs</nuxt-link></li>
+                                 <li><nuxt-link to="/sucess-stories">Sucess Stories</nuxt-link></li>
+                                 <li><nuxt-link to="/case-studies">Case Studies</nuxt-link></li>
+                                 <li><nuxt-link to="/portfolio">Portfolio</nuxt-link></li>
+                                 <li><nuxt-link to="/glossary">Glossary</nuxt-link></li>
                               </ul>
                            </li>
                            <li>
@@ -149,13 +138,13 @@
                      </nav>
                   </div>
                </div>
-               <div class="col-xl-4 col-lg-6 col-sm-8 col-6">
+               <div class="col-xl-3 col-lg-6 col-sm-8 col-6">
                   <div class="tpheader__right d-flex align-items-center justify-content-end">
                      <div class="d-none d-md-block">
                         <!-- Add your content here -->
                      </div>
                      <div class="tpheader-btn-two ml-25 d-none d-md-block">
-                        <nuxt-link to="/marketing-analysis">Free SEO Consultation</nuxt-link>
+                        <nuxt-link to="/contact-us">Free iMedia Consultation</nuxt-link>
                      </div>
                      <div class="offcanvas-btn d-xl-none ml-20">
                         <button class="offcanvas-open-btn" @click="openCanvas"><i class="fa-solid fa-bars"></i></button>
@@ -210,4 +199,6 @@ export default {
 };
 </script>
  
-<style scoped>/* Add your component-specific styles here */</style>
+<style scoped>
+/* Add your component-specific styles here */
+</style>
