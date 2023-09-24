@@ -13,9 +13,9 @@
             <div class="line"></div>
             <div class="line"></div>
         </div>
-        <div class="banner-shape1">
+        <!-- <div class="banner-shape1">
             <img src="../../assets/images/shape/shape9.png" alt="image">
-        </div>
+        </div> -->
     </div>
 </template>
 
