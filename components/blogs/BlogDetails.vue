@@ -1,319 +1,303 @@
 <template>
-    <div class="blog-details-area ptb-100">
+    <section class="postbox-area mt-90 pb-120">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-md-12">
-                    <div class="blog-details-desc">
-                        <div class="article-image">
-                            <!-- <router-link to="/blog-grid" class="tag">{{ details[0].attributes.tag }}</router-link> -->
-                            <img :src="details[0].attributes.image.data.attributes.url" alt="image">
+                <div class="col-lg-8">
+                    <div class="postbox-area-wrap">
+                        <div class="postbox-main">
+                            <div class="postbox-img">
+                                <img :src="details[0].attributes.image.data.attributes.url" alt="image">
+                            </div>
+                            <div class="postbox-single-text">
+                                <h4 class="blog-details-title">{{ details[0].attributes.title }}</h4>
+                                <span v-html="details[0].attributes.longDesc"></span>
+                            </div>
                         </div>
-                        <div class="article-content">
-                            <div class="entry-meta">
+
+                        <!-- <div class="row align-items-center">
+                        <div class="col-md-6">
+                           <div class="postbox-more-left mb-55">
+                              <div class="postbox-more-icon">
+                                 <a href="blog-details.html">
+                                    <span>
+                                       <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M5.5 10L1 5.5L5.5 1" stroke="#84848B" stroke-width="1.5"
+                                             stroke-linecap="round" stroke-linejoin="round" />
+                                       </svg>
+                                    </span>
+                                    Previous
+                                 </a>
+                              </div>
+                              <div class="postbox-more-content">
+                                 <span><a href="blog-details.html">10 Quick Tips About Blogging</a></span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="postbox-more-right mb-55">
+                              <div class="postbox-more-icon text-md-end">
+                                 <a href="blog-details.html">
+                                    Next
+                                    <span>
+                                       <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1 10L5.5 5.5L1 1" stroke="#84848B" stroke-width="1.5"
+                                             stroke-linecap="round" stroke-linejoin="round" />
+                                       </svg>
+                                    </span>
+                                 </a>
+                              </div>
+                              <div class="postbox-more-content d-flex align-items-center justify-content-md-end">
+                                 <span class="text-end"><a href="blog-deatails.html">Getting Ready To Google
+                                       Sitelinks</a></span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="postbox-author d-flex mb-95">
+                        <div class="postbox-author-thumb">
+                           <img src="assets/img/blog/comments/postbox-author-1.png" alt="">
+                        </div>
+                        <div class="postbox-author-content">
+                           <span>About Author</span>
+                           <h4 class="postbox-author-title">Peter Bowman</h4>
+                           <p>Eget lorem dolor sed viverra ipsum nunc aliqueted bibendum felis donec et odio
+                              pellentesque diames volutpat commodo.</p>
+                           <div class="postbox-author-social">
+                              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                           </div>
+                        </div>
+                        <span></span>
+                     </div>
+                     <div class="postbox-comment mb-100">
+                        <h3 class="postbox-comment-title mb-35">3 Comments</h3>
+                        <ul>
+                           <li>
+                              <div class="postbox-comment-box p-relative">
+                                 <div class="postbox-comment-info d-flex align-items-center mb-10">
+                                    <div class="postbox-comment-avater">
+                                       <img src="assets/img/blog/comments/comment-1.jpg" alt="">
+                                    </div>
+                                    <div class="postbox-comment-name d-flex align-items-center">
+                                       <h5>Collin Davis</h5>
+                                       <span class="post-meta"> March 26, 2020 at 6:17 pm</span>
+                                    </div>
+                                 </div>
+                                 <div class="postbox-comment-text ml-65 grey-bg-2">
+                                    <p>Hello Collin,thanks for your response. Where did you read that you can use only one <br> sitemap index for each website?</p>
+                                 </div>
+                                 <div class="postbox-comment-reply">
+                                    <a href="#"><span><svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M3.8125 6.625L1 3.8125L3.8125 1" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                             <path
+                                                d="M10 10V6.0625C10 5.46576 9.76295 4.89347 9.34099 4.47151C8.91903 4.04955 8.34674 3.8125 7.75 3.8125H1"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                          </svg>
+                                       </span> Reply</a>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="children">
+                              <div class="postbox-comment-box p-relative">
+                                 <div class="postbox-comment-info d-flex align-items-center mb-10">
+                                    <div class="postbox-comment-avater">
+                                       <img src="assets/img/blog/comments/comment-3.jpg" alt="">
+                                    </div>
+                                    <div class="postbox-comment-name d-flex align-items-center">
+                                       <h5>Ben Chiwell</h5>
+                                       <span class="post-meta"> March 26, 2020 at 6:17 pm</span>
+                                    </div>
+                                 </div>
+                                 <div class="postbox-comment-text ml-65 grey-bg-2">
+                                    <p>Filip however if you think about it, look at the sitemap generation tools <br>
+                                       used in Wordpress.</p>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="postbox-comment-box p-relative">
+                                 <div class="postbox-comment-info d-flex align-items-center mb-10">
+                                    <div class="postbox-comment-avater">
+                                       <img src="assets/img/blog/comments/comment-2.jpg" alt="">
+                                    </div>
+                                    <div class="postbox-comment-name d-flex align-items-center">
+                                       <h5>Robert Fox</h5>
+                                       <span class="post-meta"> March 26, 2020 at 6:17 pm</span>
+                                    </div>
+                                 </div>
+                                 <div class="postbox-comment-text ml-65 grey-bg-2">
+                                    <p>Thank you for this post! Looks like we’re “headed in the right direction”.</p>
+                                 </div>
+                                 <div class="postbox-comment-reply">
+                                    <a href="#"><span><svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M3.8125 6.625L1 3.8125L3.8125 1" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                             <path
+                                                d="M10 10V6.0625C10 5.46576 9.76295 4.89347 9.34099 4.47151C8.91903 4.04955 8.34674 3.8125 7.75 3.8125H1"
+                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                          </svg>
+                                       </span> Reply</a>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="postbox-comment-form">
+                        <h3 class="postbox-comment-form-title">Leave a Comment</h3>
+                        <p>Your email address will not be published. Required fields are marked *</p>
+                        <form action="#">
+                           <div class="row gx-8">
+                              <div class="col-xl-12 col-lg-12">
+                                 <div class="postbox-comment-input">
+                                    <textarea placeholder="Your Comment"></textarea>
+                                 </div>
+                              </div>
+                              <div class="col-lg-4">
+                                 <div class="postbox-comment-input">
+                                    <input type="text" placeholder="Full name">
+                                 </div>
+                              </div>
+                              <div class="col-lg-4">
+                                 <div class="postbox-comment-input">
+                                    <input type="email" placeholder="Your email">
+                                 </div>
+                              </div>
+                              <div class="col-lg-4">
+                                 <div class="postbox-comment-input">
+                                    <input type="text" placeholder="Website">
+                                 </div>
+                              </div>
+                              <div class="col-lg-12">
+                                 <div class="postbox-comment-agree d-flex align-items-start mb-35">
+                                    <input class="e-check-input" type="checkbox" id="e-agree">
+                                    <label class="e-check-label" for="e-agree">Save my name, email, and website in this
+                                       browser for the next time I comment.</label>
+                                 </div>
+                              </div>
+                              <div class="col-xxl-12">
+                                 <div class="postbox-comment-btn">
+                                    <button type="submit" class="tp-btn">Post Comment</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                     </div> -->
+                    </div>
+                </div>
+
+                <div class="col-xxl-4 col-xl-4 col-lg-4">
+                    <div class="sidebar__wrapper ml-30">
+                        <!-- <div class="sidebar__widget mb-20">
+                        <div class="sidebar__widget-content">
+                           <div class="sidebar__search">
+                              <form action="#">
+                                 <div class="sidebar__search-input-2">
+                                    <div class="sidebar__search-input-2-box">
+                                       <input type="text" placeholder="Type something...">
+                                    </div>
+                                    <button type="submit"><i class="far fa-search"></i></button>
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                     </div> -->
+                        <div class="sidebar__widget mb-20">
+                            <h3 class="sidebar__widget-title">Recent Post</h3>
+                            <div class="sidebar__widget-content">
+                                <div class="sidebar__post rc__post">
+                                    <div class="rc__post mb-10 d-flex align-items-center" v-for="blog in blogs.slice(0, 3)"
+                                        :key="blog.id">
+                                        <div class="rc__post-thumb mr-20">
+                                            <router-link :to="'/blog-details/' + blog.attributes.slug" class="thumb">
+                                                <img :src="blog.attributes.image.data.attributes.url" alt="blog">
+                                            </router-link>
+                                        </div>
+                                        <div class="rc__post-content">
+                                            <h3 class="rc__post-title">
+                                                <router-link :to="'/blog-details/' + blog.attributes.slug">
+                                                    {{ blog.attributes.title }}
+                                                </router-link>
+                                            </h3>
+                                            <div class="rc__meta">
+                                                <span>{{ blog.attributes.date }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar__widget mb-20">
+                            <h3 class="sidebar__widget-title">Categories</h3>
+                            <div class="sidebar__widget-content">
                                 <ul>
-                                    <li><i class="ri-calendar-2-line"></i>{{ details[0].attributes.date }}</li>
-                                    <!-- <li><i class="ri-message-2-line"></i><router-link to="/blog-grid">(4)
-                                            Comments</router-link></li> -->
+                                    <li v-for="blogcategory in blogcategories" :key="blogcategory.id">
+                                        <router-link :to="`/category-details/${blogcategory.attributes.slug}`">
+                                            {{ blogcategory.attributes.name }}</router-link>
+                                    </li>
                                 </ul>
                             </div>
-                            <h4>{{ details[0].attributes.title }}</h4>
-                            <span v-html="details[0].attributes.longDesc"></span>
                         </div>
-
-                        <!-- <div class="article-footer">
-                            <div class="post-author-meta">
-                                <div class="d-flex align-items-center">
-                                    <img src="../../assets/images/user/user6.jpg" alt="user">
-                                    <div class="title">
-                                        <span class="name">By <router-link to="/blog-grid">Deal Dox</router-link></span>
-                                        <span class="date">March 17, 2021</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="article-share">
-                                <ul class="social">
-                                    <li><span>Share:</span></li>
-                                    <li><a href="#" class="facebook" target="_blank"><i class="ri-facebook-fill"></i></a>
-                                    </li>
-                                    <li><a href="#" class="twitter" target="_blank"><i class="ri-linkedin-fill"></i></a>
-                                    </li>
-                                    <li><a href="#" class="linkedin" target="_blank"><i class="ri-twitter-fill"></i></a>
-                                    </li>
-                                    <li><a href="#" class="instagram" target="_blank"><i class="ri-instagram-line"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div> -->
-
-                        <!-- <div class="related-post">
-                            <h3 class="title">Related Post</h3>
-                            <div class="row justify-content-center">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="single-blog-post">
-                                        <div class="image">
-                                            <router-link to="/blog-details" class="d-block">
-                                                <img src="../../assets/images/blog/blog2.jpg" alt="blog">
-                                            </router-link>
-                                            <router-link to="/blog-grid" class="tag">Branding</router-link>
-                                        </div>
-                                        <div class="content">
-                                            <ul class="meta">
-                                                <li><i class="ri-time-line"></i> April 14, 2021</li>
-                                                <li><i class="ri-message-2-line"></i> <router-link to="/blog-details">(0)
-                                                        Comment</router-link></li>
-                                            </ul>
-                                            <h3><router-link to="/blog-details">Branding involves developing strategy to
-                                                    create a point of differentiation</router-link></h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="single-blog-post">
-                                        <div class="image">
-                                            <router-link to="/blog-details" class="d-block">
-                                                <img src="../../assets/images/blog/blog3.jpg" alt="blog">
-                                            </router-link>
-                                            <router-link to="/blog-grid" class="tag">Agency</router-link>
-                                        </div>
-                                        <div class="content">
-                                            <ul class="meta">
-                                                <li><i class="ri-time-line"></i> April 13, 2021</li>
-                                                <li><i class="ri-message-2-line"></i> <router-link to="/blog-details">(4)
-                                                        Comment</router-link></li>
-                                            </ul>
-                                            <h3><router-link to="/blog-details">Design is a plan or specification for the
-                                                    construction of an object</router-link></h3>
-                                        </div>
-                                    </div>
+                        <!-- <div class="sidebar__widget mb-20">
+                            <h3 class="sidebar__widget-title">Tags</h3>
+                            <div class="sidebar__widget-content">
+                                <div class="tagcloud">
+                                    <a href="#">Technology</a>
+                                    <a href="#">Envato</a>
+                                    <a href="#">SEO</a>
+                                    <a href="#">UX / UI</a>
+                                    <a href="#">Marketing</a>
+                                    <a href="#">WordPress</a>
+                                    <a href="#">SEO Report</a>
+                                    <a href="#">Ecommerce SEO</a>
+                                    <a href="#">Content Marketing</a>
+                                    <a href="#">Website Audit</a>
+                                    <a href="#">On-Page SEO</a>
+                                    <a href="#">Keywords</a>
+                                    <a href="#">Website Promotion</a>
                                 </div>
                             </div>
                         </div> -->
-
-                        <div class="comments-area">
-                            <!-- <h3 class="comments-title">2 Comments:</h3>
-                            <ol class="comment-list">
-                                <li class="comment">
-                                    <div class="comment-body">
-                                        <footer class="comment-meta">
-                                            <div class="comment-author vcard">
-                                                <img src="../../assets/images/user/user1.jpg" class="avatar" alt="user">
-                                                <b class="fn">John Jones</b>
-                                            </div>
-                                            <div class="comment-metadata">
-                                                <span>January 01, 2021 at 10:59 am</span>
-                                            </div>
-                                        </footer>
-                                        <div class="comment-content">
-                                            <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,
-                                                when an unknown printer took a galley of type and scrambled it to make a
-                                                type specimen.</p>
-                                        </div>
-                                        <div class="reply">
-                                            <router-link to="/blog-details" class="comment-reply-link">Reply</router-link>
-                                        </div>
-                                    </div>
-                                    <ol class="children">
-                                        <li class="comment">
-                                            <div class="comment-body">
-                                                <footer class="comment-meta">
-                                                    <div class="comment-author vcard">
-                                                        <img src="../../assets/images/user/user2.jpg" class="avatar"
-                                                            alt="user">
-                                                        <b class="fn">Steven Smith</b>
-                                                    </div>
-                                                    <div class="comment-metadata">
-                                                        <span>January 02, 2021 at 21:59 am</span>
-                                                    </div>
-                                                </footer>
-                                                <div class="comment-content">
-                                                    <p>Lorem Ipsum has been the industry’s standard dummy text ever since
-                                                        the 1500s, when an unknown printer took a galley of type and
-                                                        scrambled it to make a type specimen.</p>
-                                                </div>
-                                                <div class="reply">
-                                                    <a href="#" class="comment-reply-link">
-                                                        Reply
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <ol class="children">
-                                                <li class="comment">
-                                                    <div class="comment-body">
-                                                        <footer class="comment-meta">
-                                                            <div class="comment-author vcard">
-                                                                <img src="../../assets/images/user/user3.jpg" class="avatar"
-                                                                    alt="user">
-                                                                <b class="fn">Sarah Taylor</b>
-                                                            </div>
-                                                            <div class="comment-metadata">
-                                                                <span>January 03, 2021 at 05:59 am</span>
-                                                            </div>
-                                                        </footer>
-                                                        <div class="comment-content">
-                                                            <p>Lorem Ipsum has been the industry’s standard dummy text ever
-                                                                since the 1500s, when an unknown printer took a galley of
-                                                                type and scrambled it to make a type specimen.</p>
-                                                        </div>
-                                                        <div class="reply">
-                                                            <a href="#" class="comment-reply-link">Reply</a>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ol>
-                                        </li>
-                                    </ol>
-                                </li>
-                                <li class="comment">
-                                    <div class="comment-body">
-                                        <footer class="comment-meta">
-                                            <div class="comment-author vcard">
-                                                <img src="../../assets/images/user/user4.jpg" class="avatar" alt="user">
-                                                <b class="fn">John Doe</b>
-                                            </div>
-                                            <div class="comment-metadata">
-                                                <span>January 04, 2021 at 05:59 am</span>
-                                            </div>
-                                        </footer>
-                                        <div class="comment-content">
-                                            <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,
-                                                when an unknown printer took a galley of type and scrambled it to make a
-                                                type specimen.</p>
-                                        </div>
-                                        <div class="reply">
-                                            <a href="#" class="comment-reply-link">Reply</a>
-                                        </div>
-                                    </div>
-                                    <ol class="children">
-                                        <li class="comment">
-                                            <div class="comment-body">
-                                                <footer class="comment-meta">
-                                                    <div class="comment-author vcard">
-                                                        <img src="../../assets/images/user/user1.jpg" class="avatar"
-                                                            alt="user">
-                                                        <b class="fn">James Anderson</b>
-                                                    </div>
-                                                    <div class="comment-metadata">
-                                                        <span>January 05, 2021 at 04:59 am</span>
-                                                    </div>
-                                                </footer>
-                                                <div class="comment-content">
-                                                    <p>Lorem Ipsum has been the industry’s standard dummy text ever since
-                                                        the 1500s, when an unknown printer took a galley of type and
-                                                        scrambled it to make a type specimen.</p>
-                                                </div>
-                                                <div class="reply">
-                                                    <a href="#" class="comment-reply-link">Reply</a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ol>
-                                </li>
-                            </ol> -->
-                            <!-- <div class="comment-respond">
-
-                                <h3 class="comment-reply-title">Leave A Reply</h3>
-                                <form class="comment-form">
-                                    <p class="comment-notes">
-                                        <span id="email-notes">Your email address will not be published.</span>
-                                        Required fields are marked <span class="required">*</span>
-                                    </p>
-                                    <p class="comment-form-author">
-                                        <label>Name <span class="required">*</span></label>
-                                        <input type="text" id="author" placeholder="Your Name*" name="author"
-                                            required="required">
-                                    </p>
-                                    <p class="comment-form-email">
-                                        <label>Email <span class="required">*</span></label>
-                                        <input type="email" id="email" placeholder="Your Email*" name="email"
-                                            required="required">
-                                    </p>
-                                    <p class="comment-form-url">
-                                        <label>Website</label>
-                                        <input type="url" id="url" placeholder="Website" name="url">
-                                    </p>
-                                    <p class="comment-form-comment">
-                                        <label>Comment</label>
-                                        <textarea name="comment" id="comment" cols="45" placeholder="Your Comment..."
-                                            rows="5" maxlength="65525" required="required"></textarea>
-                                    </p>
-                                    <p class="comment-form-cookies-consent">
-                                        <input type="checkbox" value="yes" name="wp-comment-cookies-consent"
-                                            id="wp-comment-cookies-consent">
-                                        <label for="wp-comment-cookies-consent">Save my name, email, and website in this
-                                            browser for the next time I comment.</label>
-                                    </p>
-                                    <p class="form-submit">
-                                        <input type="submit" name="submit" id="submit" class="submit"
-                                            value="Post A Comment">
-                                    </p>
-                                </form>
-                            </div> -->
+                        <div class="sidebar__widget mb-20">
+                            <h3 class="sidebar__widget-title">Social</h3>
+                            <div class="sidebar__widget-content">
+                                <div class="sidebar__widget-social">
+                                    <a target="_blank" href="https://www.facebook.com/EvolveBPM/" class="footer-facebook"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                    <a target="_blank" href="https://www.linkedin.com/company/evolve-bpm/"
+                                        class="footer-linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a target="_blank" href="https://twitter.com/evolvebpm" class="footer-linkedin"><i
+                                            class="fa-brands fa-twitter"></i></a>
+                                    <a target="_blank" href="https://www.instagram.com/evolvebpm" class="footer-insta"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar__widget sidebar__newsletter mb-40">
+                            <h3 class="sidebar__widget-title">Newsletter</h3>
+                            <p>Register Now to Get Latest Updates
+                                On Promotions & Coupons.</p>
+                            <div class="sidebar__widget-content">
+                                <div class="sidebar__widget-input">
+                                    <input type="email" placeholder="Type your email...">
+                                    <button class="blog-btn" type="submit">Subscribe</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12">
-                    <aside class="widget-area">
-                        <!-- <div class="widget widget_search">
-                            <form class="search-form">
-                                <label><input type="search" class="search-field" placeholder="Search..."></label>
-                                <button type="submit"><i class="ri-search-2-line"></i></button>
-                            </form>
-                        </div> -->
 
-                        <div class="widget widget_jexa_posts_thumb">
-                            <h3 class="widget-title">Popular Posts</h3>
-                            <article class="item" v-for="blog in blogs" :key="blog.id">
-                                <router-link :to="'/blog-details/' + blog.attributes.slug" class="thumb">
-                                    <img :src="blog.attributes.image.data.attributes.url" alt="blog">
-                                </router-link>
-                                <div class="info">
-                                    <h4 class="title usmall"><router-link :to="'/blog-details/' + blog.attributes.slug">
-                                            {{ blog.attributes.title }}
-                                        </router-link></h4>
-                                    <span class="date"><i class="ri-calendar-2-fill"></i> {{ blog.attributes.date
-                                    }}</span>
-                                </div>
-                            </article>
-                        </div>
-
-                        <div class="widget widget_categories">
-                            <h3 class="widget-title">Categories</h3>
-                            <ul>
-                                <li v-for="category in categories" :key="category.id">
-                                    <router-link :to="`/category-details/${category.attributes.slug}`">{{
-                                        category.attributes.name }}</router-link>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- <div class="widget widget_archive">
-                            <h3 class="widget-title">Archives</h3>
-                            <ul>
-                                <li><router-link to="/blog-right-sidebar">May 2020 (1)</router-link></li>
-                                <li><router-link to="/blog-right-sidebar">April 2020 (2)</router-link></li>
-                                <li><router-link to="/blog-right-sidebar">June 2020 (3)</router-link></li>
-                            </ul>
-                        </div> -->
-
-                        <!-- <div class="widget widget_tag_cloud">
-                            <h3 class="widget-title">Tags</h3>
-                            <div class="tagcloud">
-                                <router-link to="/blog-right-sidebar">Advertisment</router-link>
-                                <router-link to="/blog-right-sidebar">Business</router-link>
-                                <router-link to="/blog-right-sidebar">Life</router-link>
-                                <router-link to="/blog-right-sidebar">Lifestyle</router-link>
-                                <router-link to="/blog-right-sidebar">Fashion</router-link>
-                                <router-link to="/blog-right-sidebar">Ads</router-link>
-                                <router-link to="/blog-right-sidebar">Inspiration</router-link>
-                                <router-link to="/blog-right-sidebar">Blog</router-link>
-                            </div>
-                        </div> -->
-
-                    </aside>
-                </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -326,20 +310,21 @@ export default {
     data: function () {
         return {
             details: this.detailsContent,
-            categories: [],
+            blogcategories: [],
             blogs: [],
         }
     },
     created: async function () {
-        axios.get('https://cms.dealdox.io/api/blog-categories')
+        axios.get('https://evolvestrapi.pbwebvision.in/api/blogs?populate=*')
             .then(response => {
-                this.categories = response.data.data;
+                this.blogs = response.data.data.sort((b, a) => a.id - b.id);
+                this.rows = this.blogs?.length;
             })
             .catch(error => {
                 console.error(error);
             });
-        const response = await axios.get('https://cms.dealdox.io/api/blogs?populate=*')
-        this.blogs = response.data.data;
+        const response = await axios.get('https://evolvestrapi.pbwebvision.in/api/blog-categories')
+        this.blogcategories = response.data.data.sort((b, a) => a.id - b.id);
     },
 }
 </script>

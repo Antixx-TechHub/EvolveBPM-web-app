@@ -7,7 +7,7 @@
                   <div class="tplogo__area">
                      <nuxt-link to="/">
                         <span>
-                           <img src="../assets/img/logo/logo-white.svg" alt="">
+                           <img src="../assets/img/logo/logo.svg" alt="">
                         </span>
                      </nuxt-link>
                   </div>
