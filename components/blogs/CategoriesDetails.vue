@@ -2,10 +2,10 @@
     <div class="postbox__area pt-120 pb-95">
         <div class="container">
             <div class="row">
-                <div class="col-xxl-7 col-xl-7 col-lg-7">
+                <div class="col-xxl-12 col-xl-12 col-lg-12">
                     <div class="blog-grid-wrapper">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6" v-for="blog in details[0].attributes?.blogs?.data"
+                            <div class="col-lg-4 col-md-4" v-for="blog in details[0].attributes?.blogs?.data"
                                 :key="blog.id">
                                 <div class="tpblog-item-2 mb-30">
                                     <div class="tpblog-thumb-2">

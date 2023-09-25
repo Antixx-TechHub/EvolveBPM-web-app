@@ -11,7 +11,7 @@
 <script>
 import NavbarTwo from '../layouts/NavbarTwo'
 import Breadcrumb from '../components/CaseStudies/Breadcrumb'
-import Blog from '../components/CaseStudies/CaseStudy'
+import Blog from '../components/CaseStudies/CaseStudies'
 import Partner from '../components/Index/Partner'
 import Footer from '../layouts/Footer'
 

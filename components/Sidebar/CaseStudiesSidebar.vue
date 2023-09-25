@@ -25,7 +25,8 @@
                                     <div class="rc__post mb-10 d-flex align-items-center" v-for="blog in blogs.slice(0, 3)"
                                         :key="blog.id">
                                         <div class="rc__post-thumb mr-20">
-                                            <router-link :to="'/case-studies-details/' + blog.attributes.slug" class="thumb">
+                                            <router-link :to="'/case-studies-details/' + blog.attributes.slug"
+                                                class="thumb">
                                                 <img :src="blog.attributes.image.data.attributes.url" alt="blog">
                                             </router-link>
                                         </div>
