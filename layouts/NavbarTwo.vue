@@ -160,7 +160,7 @@
 <script>
 export default {
    props: {
-      sticky: Boolean,
+      // sticky: Boolean,
       headerId: String,
    },
    computed: {
