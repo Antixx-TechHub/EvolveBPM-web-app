@@ -69,7 +69,9 @@
                         </div>
 
                         <b-pagination class="basic-pagination mt-30" v-model="currentPage" :total-rows="rows"
-                            :per-page="perPage" aria-controls="itemList" align="center"></b-pagination>
+                            :per-page="perPage" aria-controls="itemList" align="center">
+                        </b-pagination>
+                        
                     </div>
                 </div>
             </div>

@@ -80,9 +80,6 @@ export default {
         return {
             details: this.detailsContent,
             categories: [],
-            rows: 0,
-            currentPage: 1,
-            perPage: 6,
         }
     },
 }
