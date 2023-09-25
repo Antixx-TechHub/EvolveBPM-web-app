@@ -39,31 +39,31 @@
                                              <li>
                                                 <nuxt-link to="/">
                                                    <span> <img src="../assets/img/header-icon/keyword.png" alt=""> </span>
-                                                   Service 1
+                                                   iRev
                                                 </nuxt-link>
                                              </li>
                                              <li>
                                                 <nuxt-link to="/">
                                                    <span> <img src="../assets/img/header-icon/audit.png" alt=""> </span>
-                                                   Service 2
+                                                   iIntel
                                                 </nuxt-link>
                                              </li>
                                              <li>
                                                 <nuxt-link to="/">
                                                    <span> <img src="../assets/img/header-icon/building.png" alt=""> </span>
-                                                   Service 3
+                                                   iMedia
                                                 </nuxt-link>
                                              </li>
                                              <li>
                                                 <nuxt-link to="/">
                                                    <span> <img src="../assets/img/header-icon/media.png" alt=""> </span>
-                                                   Service 4
+                                                   Innovator
                                                 </nuxt-link>
                                              </li>
                                              <li>
                                                 <nuxt-link to="/">
                                                    <span> <img src="../assets/img/header-icon/analysis.png" alt=""> </span>
-                                                   Service 5
+                                                   TechBase
                                                 </nuxt-link>
                                              </li>
                                              <li>
