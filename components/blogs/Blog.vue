@@ -1,8 +1,11 @@
 <template>
-    <div class="postbox__area pt-120 pb-95">
+    <div class="postbox__area pt-120 pb-5">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-12 col-xl-12 col-lg-12">
+                    <div class="tpsection__wrapper text-center mb-70">
+                            <h2 class="tpsection__title">Latest Blog</h2>
+                        </div>
                     <div class="blog-grid-wrapper">
                         <div class="row">
                             <div class="col-lg-4 col-md-4" v-for="blog in blogs.slice(

@@ -16,7 +16,7 @@
                 </div>
              </div>
              <div class="col-xxl-5 col-xl-5 col-lg-5">
-                <FeaturedBlogSidebar />
+                <BlogSidebar />
              </div>
           </div>
        </div>
@@ -25,13 +25,13 @@
  
  <script>
  
- import FeaturedBlogSidebar from '../../components/Sidebar/FeaturedBlogSidebar'
+ import BlogSidebar from '../../components/Sidebar/FeaturedBlogSidebar'
  
  export default {
-    name: 'BlogDetails',
+    name: 'FeaturedBlogDetails',
     props: ['detailsContent'],
     components: {
-        FeaturedBlogSidebar,
+       BlogSidebar,
     },
     data: function () {
        return {

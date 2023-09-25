@@ -52,8 +52,8 @@
 
 <script>
 import NavbarTwo from '../../../layouts/NavbarTwo';
-import BlogDetails from '../../../components/blogs/FeaturedBlogDetails'
 import PageTitle from '../../../components/Common/PageTitle';
+import BlogDetails from '../../../components/Blogs/FeaturedBlogDetails'
 import Partner from '../../../components/Index/Partner'
 import Footer from '../../../layouts/Footer'
 import axios from 'axios';
@@ -84,9 +84,7 @@ export default {
         const pageData = this.details.length > 0 ? this.details[0] : {};
         if (pageData?.attributes?.seo) {
             this.seoData = pageData.attributes.seo;
-            // console.log( this.seoData ,' this.seoData ');
         }
-        // console.log("this.details....", this.details);
     },
     head({ $seo }) {
 

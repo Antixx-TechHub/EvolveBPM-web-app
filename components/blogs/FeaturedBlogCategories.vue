@@ -5,11 +5,12 @@
                 <div class="col-xxl-7 col-xl-7 col-lg-7">
                     <div class="blog-grid-wrapper">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6" v-for="featuredblog in details[0].attributes?.featuredblogs?.data"
-                                :key="featuredblog.id">
+                            <div class="col-lg-6 col-md-6"
+                                v-for="featuredblog in details[0].attributes?.featured_blogs?.data" :key="featuredblog.id">
                                 <div class="tpblog-item-2 mb-30">
                                     <div class="tpblog-thumb-2">
-                                        <router-link :to="'/featured-blog-details/' + featuredblog.attributes.slug" class="d-block">
+                                        <router-link :to="'/featured-blog-details/' + featuredblog.attributes.slug"
+                                            class="d-block">
                                             <img :src="featuredblog?.attributes?.image?.data?.attributes?.url" alt="blog">
                                         </router-link>
                                     </div>
@@ -73,7 +74,7 @@
 <script>
 
 export default {
-    name: 'CategoryDetails',
+    name: 'FeaturedBlogCategories',
     props: ['detailsContent'],
     data: function () {
         return {

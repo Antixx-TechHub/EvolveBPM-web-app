@@ -6,11 +6,11 @@
         <div class="row">
           <div class="col-xxl-12">
             <div class="breadcrumb__content breadcrumb__content-2 text-center p-relative z-index-1">
-              <h3 class="breadcrumb__title">Featured Categories</h3>
+              <h3 class="breadcrumb__title">Featured Blog Categories</h3>
               <div class="breadcrumb__list">
                 <span><a href="index.html">Home</a></span>
                 <span class="dvdr"></span>
-                <span>Featured Categories</span>
+                <span>Featured Blog Categories</span>
               </div>
             </div>
           </div>
@@ -28,10 +28,10 @@
 
   </div>
 </template>
-  
+    
 <script>
 import NavbarTwo from '../../../layouts/NavbarTwo';
-import CategoryDetails from '../../../components/blogs/FeaturedCategories'
+import CategoryDetails from '../../../components/Blogs/FeaturedBlogCategories'
 import Partner from '../../../components/Index/Partner'
 import Footer from '../../../layouts/Footer'
 import axios from 'axios';
