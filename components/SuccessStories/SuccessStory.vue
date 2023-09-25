@@ -2,16 +2,17 @@
     <div class="postbox__area pt-120 pb-95">
         <div class="container">
             <div class="row">
-                <div class="col-xxl-8 col-xl-8 col-lg-8">
+                <div class="col-xxl-12 col-xl-12 col-lg-12">
                     <div class="blog-grid-wrapper">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6" v-for="blog in blogs.slice(
+                            <div class="col-lg-4 col-md-4" v-for="blog in blogs.slice(
                                 (currentPage - 1) * perPage,
                                 currentPage * perPage,
                             )" :key="blog.id">
                                 <div class="tpblog-item-2 mb-30">
                                     <div class="tpblog-thumb-2">
-                                        <router-link :to="'/success-stories-details/' + blog.attributes.slug" class="d-block">
+                                        <router-link :to="'/success-stories-details/' + blog.attributes.slug"
+                                            class="d-block">
                                             <img :src="blog.attributes.image.data.attributes.url" alt="blog">
                                         </router-link>
                                     </div>
@@ -66,7 +67,9 @@
                         </div>
 
                         <b-pagination class="basic-pagination mt-30" v-model="currentPage" :total-rows="rows"
-                            :per-page="perPage" aria-controls="itemList" align="center"></b-pagination>
+                            :per-page="perPage" aria-controls="itemList" align="center">
+                        </b-pagination>
+
                     </div>
                 </div>
             </div>

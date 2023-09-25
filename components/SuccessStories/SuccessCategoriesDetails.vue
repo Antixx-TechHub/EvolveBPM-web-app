@@ -2,14 +2,15 @@
     <div class="postbox__area pt-120 pb-95">
         <div class="container">
             <div class="row">
-                <div class="col-xxl-7 col-xl-7 col-lg-7">
+                <div class="col-xxl-12 col-xl-12 col-lg-12">
                     <div class="blog-grid-wrapper">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6" v-for="successstory in details[0].attributes?.success_stories?.data"
-                                :key="successstory.id">
+                            <div class="col-lg-4 col-md-4"
+                                v-for="successstory in details[0].attributes?.success_stories?.data" :key="successstory.id">
                                 <div class="tpblog-item-2 mb-30">
                                     <div class="tpblog-thumb-2">
-                                        <router-link :to="'/success-stories-details/' + successstory.attributes.slug" class="d-block">
+                                        <router-link :to="'/success-stories-details/' + successstory.attributes.slug"
+                                            class="d-block">
                                             <img :src="successstory?.attributes?.image?.data?.attributes?.url" alt="blog">
                                         </router-link>
                                     </div>
@@ -79,9 +80,6 @@ export default {
         return {
             details: this.detailsContent,
             categories: [],
-            rows: 0,
-            currentPage: 1,
-            perPage: 6,
         }
     },
 }
