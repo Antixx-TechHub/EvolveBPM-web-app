@@ -32,7 +32,7 @@
 <script>
 import NavbarTwo from '../../../layouts/NavbarTwo';
 import CategoryDetails from '../../../components/Glossary/Glossary-CategoriesDetails'
-import Partner from '../../../components/Index/Partner'
+import Partner from '../../../components/Common/Partner'
 import Footer from '../../../layouts/Footer'
 import axios from 'axios';
 

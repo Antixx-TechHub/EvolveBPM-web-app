@@ -10,7 +10,7 @@
 <script>
 import Navbar from '../layouts/Navbar'
 import TeamAreaHomeFive from '../components/AboutUs/TeamAreaHomeFive'
-import Partner from '../components/Index/Partner'
+import Partner from '../components/Common/Partner'
 import Footer from '../layouts/Footer'
 
 export default {

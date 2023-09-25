@@ -54,7 +54,7 @@
 import NavbarTwo from '../../../layouts/NavbarTwo';
 import BlogDetails from '../../../components/SuccessStories/SuccesStoryDetails'
 import PageTitle from '../../../components/Common/PageTitle';
-import Partner from '../../../components/Index/Partner'
+import Partner from '../../../components/Common/Partner'
 import Footer from '../../../layouts/Footer'
 import axios from 'axios';
 

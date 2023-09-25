@@ -12,7 +12,7 @@
 import NavbarTwo from '../layouts/NavbarTwo'
 import Breadcrumb from '../components/SuccessStories/Breadcrumb'
 import Blog from '../components/SuccessStories/SuccessStory'
-import Partner from '../components/Index/Partner'
+import Partner from '../components/Common/Partner'
 import Footer from '../layouts/Footer'
 
 export default {

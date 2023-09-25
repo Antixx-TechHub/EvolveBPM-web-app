@@ -30,7 +30,7 @@ import Testimonials from '../components/Index/Testimonials'
 import Faq from '../components/Index/Faq'
 import SocialButton from '../components/Index/SocialButton'
 import CallUs from '../components/Index/CallUs'
-import Partner from '../components/Index/Partner'
+import Partner from '../components/Common/Partner'
 import Footer from '../layouts/Footer'
 
 export default {
