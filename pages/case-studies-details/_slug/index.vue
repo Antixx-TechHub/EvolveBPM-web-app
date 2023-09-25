@@ -52,7 +52,7 @@
 
 <script>
 import NavbarTwo from '../../../layouts/NavbarTwo';
-import BlogDetails from '../../../components/Blogs/BlogDetails'
+import BlogDetails from '../../../components/CaseStudies/CaseStudyDetails'
 import PageTitle from '../../../components/Common/PageTitle';
 import Partner from '../../../components/Index/Partner'
 import Footer from '../../../layouts/Footer'

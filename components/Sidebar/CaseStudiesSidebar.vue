@@ -25,13 +25,13 @@
                                     <div class="rc__post mb-10 d-flex align-items-center" v-for="blog in blogs.slice(0, 3)"
                                         :key="blog.id">
                                         <div class="rc__post-thumb mr-20">
-                                            <router-link :to="'/blog-details/' + blog.attributes.slug" class="thumb">
+                                            <router-link :to="'/case-studies-details/' + blog.attributes.slug" class="thumb">
                                                 <img :src="blog.attributes.image.data.attributes.url" alt="blog">
                                             </router-link>
                                         </div>
                                         <div class="rc__post-content">
                                             <h3 class="rc__post-title">
-                                                <router-link :to="'/blog-details/' + blog.attributes.slug">
+                                                <router-link :to="'/case-studies-details/' + blog.attributes.slug">
                                                     {{ blog.attributes.title }}
                                                 </router-link>
                                             </h3>
@@ -48,7 +48,7 @@
                             <div class="sidebar__widget-content">
                                 <ul>
                                     <li v-for="blogcategory in blogcategories" :key="blogcategory.id">
-                                        <router-link :to="`/category-details/${blogcategory.attributes.slug}`">
+                                        <router-link :to="`/case-studies-category-details/${blogcategory.attributes.slug}`">
                                             {{ blogcategory.attributes.name }}</router-link>
                                     </li>
                                 </ul>
