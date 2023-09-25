@@ -5,24 +5,23 @@
                 <div class="col-xxl-8 col-xl-8 col-lg-8">
                     <div class="blog-grid-wrapper">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6" v-for="blog in blogs.slice(
-                                (currentPage - 1) * perPage,
-                                currentPage * perPage,
-                            )" :key="blog.id">
+                            <div class="col-lg-6 col-md-6" v-for="casestudy in details[0].attributes?.casestudies?.data"
+                                :key="casestudy.id">
                                 <div class="tpblog-item-2 mb-30">
                                     <div class="tpblog-thumb-2">
-                                        <router-link :to="'/case-studies-details/' + blog.attributes.slug" class="d-block">
-                                            <img :src="blog.attributes.image.data.attributes.url" alt="blog">
+                                        <router-link :to="'/case-studies-details/' + casestudy.attributes.slug" class="d-block">
+                                            <img :src="casestudy?.attributes?.image?.data?.attributes?.url" alt="blog">
                                         </router-link>
                                     </div>
                                     <div class="tpblog-wrap">
                                         <div class="tpblog-content-2">
-                                            <span>{{ blog.attributes.tag }}</span>
-                                            <h4 class="tpblog-title-2"><router-link
-                                                    :to="'/case-studies-details/' + blog.attributes.slug">
-                                                    {{ blog.attributes.title }}
-                                                </router-link></h4>
-                                            <p>{{ blog.attributes.shortDesc }}</p>
+                                            <span>{{ casestudy.attributes.tag }}</span>
+                                            <h4 class="tpblog-title-2">
+                                                <NuxtLink :to="'/case-studies-details/' + casestudy.attributes.slug">
+                                                    {{ casestudy.attributes.title }}
+                                                </NuxtLink>
+                                            </h4>
+                                            <p>{{ casestudy.attributes.shortDesc }}</p>
                                         </div>
                                         <div class="tpblog-meta-2">
                                             <span>
@@ -39,7 +38,7 @@
                                                             stroke-linejoin="round" />
                                                     </svg>
                                                 </i>
-                                                {{ blog.attributes.date }}
+                                                {{ casestudy.attributes.date }}
                                             </span>
                                             <span>
                                                 <a href="#">
@@ -56,7 +55,7 @@
                                                                 stroke-linejoin="round" />
                                                         </svg>
                                                     </i>
-                                                    {{ blog.attributes.author }}
+                                                    {{ casestudy.attributes.author }}
                                                 </a>
                                             </span>
                                         </div>
@@ -64,10 +63,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <b-pagination class="basic-pagination mt-30" v-model="currentPage" :total-rows="rows"
-                            :per-page="perPage" aria-controls="itemList" align="center"></b-pagination>
-
                     </div>
                 </div>
 
@@ -91,21 +86,22 @@
                             <h3 class="sidebar__widget-title">Recent Post</h3>
                             <div class="sidebar__widget-content">
                                 <div class="sidebar__post rc__post">
-                                    <div class="rc__post mb-10 d-flex align-items-center" v-for="blog in blogs.slice(0, 3)"
-                                        :key="blog.id">
+                                    <div class="rc__post mb-10 d-flex align-items-center"
+                                        v-for="casestudy in casestudies.slice(0, 3)" :key="casestudy.id">
                                         <div class="rc__post-thumb mr-20">
-                                            <router-link :to="'/case-studies-details/' + blog.attributes.slug" class="thumb">
-                                                <img :src="blog.attributes.image.data.attributes.url" alt="blog">
+                                            <router-link :to="'/case-studies-details/' + casestudy.attributes.slug"
+                                                class="thumb">
+                                                <img :src="casestudy.attributes.image.data.attributes.url" alt="blog">
                                             </router-link>
                                         </div>
                                         <div class="rc__post-content">
                                             <h3 class="rc__post-title">
-                                                <router-link :to="'/case-studies-details/' + blog.attributes.slug">
-                                                    {{ blog.attributes.title }}
+                                                <router-link :to="'/case-studies-details/' + casestudy.attributes.slug">
+                                                    {{ casestudy.attributes.title }}
                                                 </router-link>
                                             </h3>
                                             <div class="rc__meta">
-                                                <span>{{ blog.attributes.date }}</span>
+                                                <span>{{ casestudy.attributes.date }}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -116,9 +112,10 @@
                             <h3 class="sidebar__widget-title">Categories</h3>
                             <div class="sidebar__widget-content">
                                 <ul>
-                                    <li v-for="blogcategory in blogcategories" :key="blogcategory.id">
-                                        <router-link :to="`/case-studies-category-details/${blogcategory.attributes.slug}`">
-                                            {{ blogcategory.attributes.name }}</router-link>
+                                    <li v-for="casestudiescategory in casestudiescategories" :key="casestudiescategory.id">
+                                        <router-link
+                                            :to="`/case-studies-category-details/${casestudiescategory.attributes.slug}`">
+                                            {{ casestudiescategory.attributes.name }}</router-link>
                                     </li>
                                 </ul>
                             </div>
@@ -182,28 +179,30 @@
 import axios from 'axios';
 
 export default {
-    name: 'Blog',
-    data() {
+    name: 'CategoryDetails',
+    props: ['detailsContent'],
+    data: function () {
         return {
-            featuredblogs: [],
+            details: this.detailsContent,
+            categories: [],
             rows: 0,
             currentPage: 1,
             perPage: 6,
-            blogcategories: [],
-            blogs: [],
+            casestudiescategories: [],
+            casestudies: [],
         }
     },
     created: async function () {
         axios.get('https://evolvestrapi.pbwebvision.in/api/case-studies?populate=*')
             .then(response => {
-                this.blogs = response.data.data.sort((b, a) => a.id - b.id);
+                this.casestudies = response.data.data.sort((b, a) => a.id - b.id);
                 this.rows = this.blogs?.length;
             })
             .catch(error => {
                 console.error(error);
             });
         const response = await axios.get('https://evolvestrapi.pbwebvision.in/api/case-study-categories')
-        this.blogcategories = response.data.data.sort((b, a) => a.id - b.id);
+        this.casestudiescategories = response.data.data.sort((b, a) => a.id - b.id);
     },
 }
 </script>
