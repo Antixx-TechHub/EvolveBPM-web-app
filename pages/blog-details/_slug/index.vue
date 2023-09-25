@@ -52,8 +52,8 @@
 
 <script>
 import NavbarTwo from '../../../layouts/NavbarTwo';
-import BlogDetails from '../../../components/Blogs/BlogDetails'
 import PageTitle from '../../../components/Common/PageTitle';
+import BlogDetails from '../../../components/Blogs/BlogDetails'
 import Partner from '../../../components/Index/Partner'
 import Footer from '../../../layouts/Footer'
 import axios from 'axios';
