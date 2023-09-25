@@ -2,26 +2,27 @@
     <div class="postbox__area pt-120 pb-95">
         <div class="container">
             <div class="row">
-                <div class="col-xxl-7 col-xl-7 col-lg-7">
+                <div class="col-xxl-12 col-xl-12 col-lg-12">
                     <div class="blog-grid-wrapper">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6" v-for="casestudy in details[0].attributes?.case_studies?.data"
-                                :key="casestudy.id">
+                            <div class="col-lg-4 col-md-4" v-for="blog in blogs.slice(
+                                (currentPage - 1) * perPage,
+                                currentPage * perPage,
+                            )" :key="blog.id">
                                 <div class="tpblog-item-2 mb-30">
                                     <div class="tpblog-thumb-2">
-                                        <router-link :to="'/case-studies-details/' + casestudy.attributes.slug" class="d-block">
-                                            <img :src="casestudy?.attributes?.image?.data?.attributes?.url" alt="blog">
+                                        <router-link :to="'/featured-blog-details/' + blog.attributes.slug" class="d-block">
+                                            <img :src="blog.attributes.image.data.attributes.url" alt="blog">
                                         </router-link>
                                     </div>
                                     <div class="tpblog-wrap">
                                         <div class="tpblog-content-2">
-                                            <span>{{ casestudy.attributes.tag }}</span>
-                                            <h4 class="tpblog-title-2">
-                                                <NuxtLink :to="'/case-studies-details/' + casestudy.attributes.slug">
-                                                    {{ casestudy.attributes.title }}
-                                                </NuxtLink>
-                                            </h4>
-                                            <p>{{ casestudy.attributes.shortDesc }}</p>
+                                            <span>{{ blog.attributes.tag }}</span>
+                                            <h4 class="tpblog-title-2"><router-link
+                                                    :to="'/featured-blog-details/' + blog.attributes.slug">
+                                                    {{ blog.attributes.title }}
+                                                </router-link></h4>
+                                            <p>{{ blog.attributes.shortDesc }}</p>
                                         </div>
                                         <div class="tpblog-meta-2">
                                             <span>
@@ -38,7 +39,7 @@
                                                             stroke-linejoin="round" />
                                                     </svg>
                                                 </i>
-                                                {{ casestudy.attributes.date }}
+                                                {{ blog.attributes.date }}
                                             </span>
                                             <span>
                                                 <a href="#">
@@ -55,7 +56,7 @@
                                                                 stroke-linejoin="round" />
                                                         </svg>
                                                     </i>
-                                                    {{ casestudy.attributes.author }}
+                                                    {{ blog.attributes.author }}
                                                 </a>
                                             </span>
                                         </div>
@@ -63,6 +64,9 @@
                                 </div>
                             </div>
                         </div>
+
+                        <b-pagination class="basic-pagination mt-30" v-model="currentPage" :total-rows="rows"
+                            :per-page="perPage" aria-controls="itemList" align="center"></b-pagination>
                     </div>
                 </div>
             </div>
@@ -72,17 +76,22 @@
 
 <script>
 
+import axios from 'axios';
+
 export default {
-    name: 'SuccessCategoryDetails',
-    props: ['detailsContent'],
-    data: function () {
+    name: 'Blog',
+    data() {
         return {
-            details: this.detailsContent,
-            categories: [],
+            blogs: [],
             rows: 0,
             currentPage: 1,
             perPage: 6,
         }
+    },
+    created: async function () {
+        const response = await axios.get('https://evolvestrapi.pbwebvision.in/api/featuredblogs?populate=*')
+        this.blogs = response.data.data;
+        this.rows = this.blogs?.length;
     },
 }
 </script>

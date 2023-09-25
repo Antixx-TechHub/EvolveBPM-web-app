@@ -52,7 +52,7 @@
 
 <script>
 import NavbarTwo from '../../../layouts/NavbarTwo';
-import BlogDetails from '../../../components/CaseStudies/CaseStudyDetails'
+import BlogDetails from '../../../components/blogs/FeaturedBlogDetails'
 import PageTitle from '../../../components/Common/PageTitle';
 import Partner from '../../../components/Index/Partner'
 import Footer from '../../../layouts/Footer'
@@ -79,7 +79,7 @@ export default {
 
     created: async function () {
         const { slug } = this.$route.params
-        const reaponse = await axios.get(`https://evolvestrapi.pbwebvision.in/api/case-studies?filters[slug][$eq]=${slug}&populate=*`, { params: { slug } })
+        const reaponse = await axios.get(`https://evolvestrapi.pbwebvision.in/api/featuredblogs?filters[slug][$eq]=${slug}&populate=*`, { params: { slug } })
         this.details = reaponse.data.data;
         const pageData = this.details.length > 0 ? this.details[0] : {};
         if (pageData?.attributes?.seo) {
@@ -94,7 +94,6 @@ export default {
             title: this.seoData?.metaTitle,
             description: this.seoData?.metaDescription,
             keywords: this.seoData?.keywords,
-            // image: this.post.image || '',
         });
     },
 };

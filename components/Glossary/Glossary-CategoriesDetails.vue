@@ -5,23 +5,23 @@
                 <div class="col-xxl-7 col-xl-7 col-lg-7">
                     <div class="blog-grid-wrapper">
                         <div class="row">
-                            <div class="col-lg-6 col-md-6" v-for="casestudy in details[0].attributes?.case_studies?.data"
-                                :key="casestudy.id">
+                            <div class="col-lg-6 col-md-6" v-for="glossary in details[0].attributes?.glossaries?.data"
+                                :key="glossary.id">
                                 <div class="tpblog-item-2 mb-30">
                                     <div class="tpblog-thumb-2">
-                                        <router-link :to="'/case-studies-details/' + casestudy.attributes.slug" class="d-block">
-                                            <img :src="casestudy?.attributes?.image?.data?.attributes?.url" alt="blog">
+                                        <router-link :to="'/glossary-details/' + glossary.attributes.slug" class="d-block">
+                                            <img :src="glossary?.attributes?.image?.data?.attributes?.url" alt="blog">
                                         </router-link>
                                     </div>
                                     <div class="tpblog-wrap">
                                         <div class="tpblog-content-2">
-                                            <span>{{ casestudy.attributes.tag }}</span>
+                                            <span>{{ glossary.attributes.tag }}</span>
                                             <h4 class="tpblog-title-2">
-                                                <NuxtLink :to="'/case-studies-details/' + casestudy.attributes.slug">
-                                                    {{ casestudy.attributes.title }}
+                                                <NuxtLink :to="'/glossary-details/' + glossary.attributes.slug">
+                                                    {{ glossary.attributes.title }}
                                                 </NuxtLink>
                                             </h4>
-                                            <p>{{ casestudy.attributes.shortDesc }}</p>
+                                            <p>{{ glossary.attributes.shortDesc }}</p>
                                         </div>
                                         <div class="tpblog-meta-2">
                                             <span>
@@ -38,7 +38,7 @@
                                                             stroke-linejoin="round" />
                                                     </svg>
                                                 </i>
-                                                {{ casestudy.attributes.date }}
+                                                {{ glossary.attributes.date }}
                                             </span>
                                             <span>
                                                 <a href="#">
@@ -55,7 +55,7 @@
                                                                 stroke-linejoin="round" />
                                                         </svg>
                                                     </i>
-                                                    {{ casestudy.attributes.author }}
+                                                    {{ glossary.attributes.author }}
                                                 </a>
                                             </span>
                                         </div>
@@ -73,7 +73,7 @@
 <script>
 
 export default {
-    name: 'SuccessCategoryDetails',
+    name: 'CategoryDetails',
     props: ['detailsContent'],
     data: function () {
         return {
