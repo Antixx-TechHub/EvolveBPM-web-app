@@ -2,7 +2,7 @@
     <div class="postbox__area pt-120 pb-95">
         <div class="container">
             <div class="row">
-                <div class="col-xxl-8 col-xl-8 col-lg-8">
+                <div class="col-xxl-7 col-xl-7 col-lg-7">
                     <div class="blog-grid-wrapper">
                         <div class="row">
                             <div class="col-lg-6 col-md-6" v-for="blog in details[0].attributes?.blogs?.data"
@@ -65,116 +65,12 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-xxl-4 col-xl-4 col-lg-4">
-                    <div class="sidebar__wrapper ml-30">
-                        <!-- <div class="sidebar__widget mb-20">
-                        <div class="sidebar__widget-content">
-                           <div class="sidebar__search">
-                              <form action="#">
-                                 <div class="sidebar__search-input-2">
-                                    <div class="sidebar__search-input-2-box">
-                                       <input type="text" placeholder="Type something...">
-                                    </div>
-                                    <button type="submit"><i class="far fa-search"></i></button>
-                                 </div>
-                              </form>
-                           </div>
-                        </div>
-                     </div> -->
-                        <div class="sidebar__widget mb-20">
-                            <h3 class="sidebar__widget-title">Recent Post</h3>
-                            <div class="sidebar__widget-content">
-                                <div class="sidebar__post rc__post">
-                                    <div class="rc__post mb-10 d-flex align-items-center" v-for="blog in blogs.slice(0, 3)"
-                                        :key="blog.id">
-                                        <div class="rc__post-thumb mr-20">
-                                            <router-link :to="'/blog-details/' + blog.attributes.slug" class="thumb">
-                                                <img :src="blog.attributes.image.data.attributes.url" alt="blog">
-                                            </router-link>
-                                        </div>
-                                        <div class="rc__post-content">
-                                            <h3 class="rc__post-title">
-                                                <router-link :to="'/blog-details/' + blog.attributes.slug">
-                                                    {{ blog.attributes.title }}
-                                                </router-link>
-                                            </h3>
-                                            <div class="rc__meta">
-                                                <span>{{ blog.attributes.date }}</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sidebar__widget mb-20">
-                            <h3 class="sidebar__widget-title">Categories</h3>
-                            <div class="sidebar__widget-content">
-                                <ul>
-                                    <li v-for="blogcategory in blogcategories" :key="blogcategory.id">
-                                        <router-link :to="`/category-details/${blogcategory.attributes.slug}`">
-                                            {{ blogcategory.attributes.name }}</router-link>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- <div class="sidebar__widget mb-20">
-                            <h3 class="sidebar__widget-title">Tags</h3>
-                            <div class="sidebar__widget-content">
-                                <div class="tagcloud">
-                                    <a href="#">Technology</a>
-                                    <a href="#">Envato</a>
-                                    <a href="#">SEO</a>
-                                    <a href="#">UX / UI</a>
-                                    <a href="#">Marketing</a>
-                                    <a href="#">WordPress</a>
-                                    <a href="#">SEO Report</a>
-                                    <a href="#">Ecommerce SEO</a>
-                                    <a href="#">Content Marketing</a>
-                                    <a href="#">Website Audit</a>
-                                    <a href="#">On-Page SEO</a>
-                                    <a href="#">Keywords</a>
-                                    <a href="#">Website Promotion</a>
-                                </div>
-                            </div>
-                        </div> -->
-                        <div class="sidebar__widget mb-20">
-                            <h3 class="sidebar__widget-title">Social</h3>
-                            <div class="sidebar__widget-content">
-                                <div class="sidebar__widget-social">
-                                    <a target="_blank" href="https://www.facebook.com/EvolveBPM/" class="footer-facebook"><i
-                                            class="fa-brands fa-facebook-f"></i></a>
-                                    <a target="_blank" href="https://www.linkedin.com/company/evolve-bpm/"
-                                        class="footer-linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    <a target="_blank" href="https://twitter.com/evolvebpm" class="footer-linkedin"><i
-                                            class="fa-brands fa-twitter"></i></a>
-                                    <a target="_blank" href="https://www.instagram.com/evolvebpm" class="footer-insta"><i
-                                            class="fa-brands fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sidebar__widget sidebar__newsletter mb-40">
-                            <h3 class="sidebar__widget-title">Newsletter</h3>
-                            <p>Register Now to Get Latest Updates
-                                On Promotions & Coupons.</p>
-                            <div class="sidebar__widget-content">
-                                <div class="sidebar__widget-input">
-                                    <input type="email" placeholder="Type your email...">
-                                    <button class="blog-btn" type="submit">Subscribe</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
 </template>
 
 <script>
-
-import axios from 'axios';
 
 export default {
     name: 'CategoryDetails',
@@ -186,21 +82,7 @@ export default {
             rows: 0,
             currentPage: 1,
             perPage: 6,
-            blogcategories: [],
-            blogs: [],
         }
-    },
-    created: async function () {
-        axios.get('https://evolvestrapi.pbwebvision.in/api/blogs?populate=*')
-            .then(response => {
-                this.blogs = response.data.data.sort((b, a) => a.id - b.id);
-                this.rows = this.blogs?.length;
-            })
-            .catch(error => {
-                console.error(error);
-            });
-        const response = await axios.get('https://evolvestrapi.pbwebvision.in/api/blog-categories')
-        this.blogcategories = response.data.data.sort((b, a) => a.id - b.id);
     },
 }
 </script>
