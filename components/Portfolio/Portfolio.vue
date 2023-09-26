@@ -8,24 +8,24 @@
                     </div> -->
                     <div class="blog-grid-wrapper">
                         <div class="row">
-                            <div class="col-lg-4 col-md-4" v-for="blog in blogs.slice(
+                            <div class="col-lg-4 col-md-4" v-for="portfolio in portfolios.slice(
                                 (currentPage - 1) * perPage,
                                 currentPage * perPage,
-                            )" :key="blog.id">
+                            )" :key="portfolio.id">
                                 <div class="tpblog-item-2 mb-30">
                                     <div class="tpblog-thumb-2">
-                                        <router-link :to="'/portfolio-details/' + blog.attributes.slug" class="d-block">
-                                            <img :src="blog.attributes.image.data.attributes.url" alt="blog">
+                                        <router-link :to="'/portfolio-details/' + portfolio.attributes.slug" class="d-block">
+                                            <img :src="portfolio.attributes.image.data.attributes.url" alt="blog">
                                         </router-link>
                                     </div>
                                     <div class="tpblog-wrap">
                                         <div class="tpblog-content-2">
-                                            <span>{{ blog.attributes.tag }}</span>
+                                            <span>{{ portfolio.attributes.tag }}</span>
                                             <h4 class="tpblog-title-2"><router-link
-                                                    :to="'/portfolio-details/' + blog.attributes.slug">
-                                                    {{ blog.attributes.title }}
+                                                    :to="'/portfolio-details/' + portfolio.attributes.slug">
+                                                    {{ portfolio.attributes.title }}
                                                 </router-link></h4>
-                                            <p>{{ blog.attributes.shortDesc }}</p>
+                                            <p>{{ portfolio.attributes.shortDesc }}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -48,10 +48,10 @@
 import axios from 'axios';
 
 export default {
-    name: 'Blog',
+    name: 'PortfolioMain',
     data() {
         return {
-            blogs: [],
+            portfolios: [],
             rows: 0,
             currentPage: 1,
             perPage: 6,
@@ -59,8 +59,8 @@ export default {
     },
     created: async function () {
         const response = await axios.get('https://evolvestrapi.pbwebvision.in/api/portfolios?populate=*')
-        this.blogs = response.data.data;
-        this.rows = this.blogs?.length;
+        this.portfolios = response.data.data;
+        this.rows = this.portfolios?.length;
     },
 }
 </script>
