@@ -23,7 +23,7 @@
                                  stroke-linejoin="round" />
                            </svg>
                         </span>
-                        Info@contact.com
+                        corporate@evolvebpm.com
                         <i>
                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M1 7H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
@@ -50,7 +50,7 @@
                                  stroke="#565764" stroke-linecap="round" stroke-linejoin="round" />
                            </svg>
                         </span>
-                        +1 415 704 6387
+                        91-020-69029999
                         <i>
                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M1 7H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
@@ -62,10 +62,10 @@
                      </a>
                   </div>
                   <div class="contact-social">
-                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                     <a href="https://www.facebook.com/EvolveBPM/"><i class="fa-brands fa-facebook-f"></i></a>
+                     <a href="https://twitter.com/evolvebpm"><i class="fa-brands fa-twitter"></i></a>
+                     <a href="https://www.linkedin.com/company/evolve-bpm/"><i class="fa-brands fa-linkedin-in"></i></a>
+                     <a href="https://www.instagram.com/evolvebpm/"><i class="fa-brands fa-instagram"></i></a>
                   </div>
                </div>
             </div>

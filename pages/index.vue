@@ -6,7 +6,7 @@
     <BusinessGrowth />
     <OurServices />
     <Award />
-    <OurProjects />
+    <!-- <OurProjects /> -->
     <FunFact />
     <Testimonials />
     <faq />
@@ -24,7 +24,7 @@ import KeyFeaturesHome from '../components/Index/KeyFeaturesHome'
 import BusinessGrowth from '../components/Index/BusinessGrowth'
 import OurServices from '../components/Index/OurServices'
 import Award from '../components/Index/Award'
-import OurProjects from '../components/Index/OurProjects'
+// import OurProjects from '../components/Index/OurProjects'
 import FunFact from '../components/Index/FunFact'
 import Testimonials from '../components/Index/Testimonials'
 import Faq from '../components/Index/Faq'
@@ -41,7 +41,7 @@ export default {
     BusinessGrowth,
     OurServices,
     Award,
-    OurProjects,
+    // OurProjects,
     FunFact,
     Testimonials,
     Faq,
