@@ -1,27 +1,20 @@
 <template>
-  <div>
-    <Navbar />
-    <ContactArea />
-    <GoogleMapArea />
-    <Footer />
-  </div>
-</template>
+    <div>
+      <Navbar />
+      <Footer />
+    </div>
+  </template>
+  
+  <script>
+  import Navbar from '../layouts/Navbar'
+  import Footer from '../layouts/Footer'
+  import axios from 'axios';
 
-<script>
-import Navbar from '../layouts/Navbar'
-import ContactArea from '../components/ContactUs/ContactArea'
-import GoogleMapArea from '../components/ContactUs/GoogleMapArea'
-import Footer from '../layouts/Footer'
-import axios from 'axios';
-
-
-export default {
-  components: {
-    Navbar,
-    ContactArea,
-    GoogleMapArea,
-    Footer,
-  },
+  export default {
+    components: {
+      Navbar,
+      Footer,
+    },
         data() {
         return {
             seoData: null,
@@ -29,7 +22,7 @@ export default {
     },
     created: async function () {
         const { slug } = this.$route.params
-        const reaponse = await axios.get(`https://evolvestrapi.pbwebvision.in/api/pages?filters[slug][$eq]=contact-us&populate=deep,5`, { params: { slug } })
+        const reaponse = await axios.get(`https://evolvestrapi.pbwebvision.in/api/pages?filters[slug][$eq]=privacy-policy&populate=deep,5`, { params: { slug } })
         this.details = reaponse.data.data;
         const pageData = this.details.length > 0 ? this.details[0] : {};
         if (pageData?.attributes?.seo) {

@@ -76,6 +76,8 @@
                            <li><nuxt-link to="/careers">Careers</nuxt-link></li>
                            <li><nuxt-link to="/blogs">Blogs</nuxt-link></li>
                            <li><nuxt-link to="/contact-us">Contact Us</nuxt-link></li>
+                           <li><nuxt-link to="/security">Security</nuxt-link></li>
+                           <li><nuxt-link to="/cookie-preference">Cookie Preference</nuxt-link></li>
                         </ul>
                      </div>
                   </div>
@@ -85,11 +87,15 @@
                      <h4 class="footer-widget-title mb-15">Services</h4>
                      <div class="footer-widget-link">
                         <ul>
-                           <li><nuxt-link to="/">iRev</nuxt-link></li>
-                           <li><nuxt-link to="/">iIntel</nuxt-link></li>
-                           <li><nuxt-link to="/">iMedia</nuxt-link></li>
-                           <li><nuxt-link to="/">Innovator</nuxt-link></li>
-                           <li><nuxt-link to="/">TechBase</nuxt-link></li>
+                           <li><nuxt-link to="/irev">iRev</nuxt-link></li>
+                           <li><nuxt-link to="/iintel">iIntel</nuxt-link></li>
+                           <li><nuxt-link to="/imedia">iMedia</nuxt-link></li>
+                           <li><nuxt-link to="/innovator">Innovator</nuxt-link></li>
+                           <li><nuxt-link to="/techbase">TechBase</nuxt-link></li>
+                           <li><nuxt-link to="/privacy-policy">Privacy Policy</nuxt-link></li>
+                           <li><nuxt-link to="/terms-condition">Terms and  Condition</nuxt-link></li>
+                          
+
                         </ul>
                      </div>
                   </div>
