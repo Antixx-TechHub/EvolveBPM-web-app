@@ -10,6 +10,7 @@
     <AwardAreaHomeFour />
     <FunfactAreaHomeOne />
     <TeamAreaHomeFive />
+    <Partner />
     <Footer />
   </div>
 </template>
@@ -25,6 +26,7 @@ import AboutCompanyArea from '../components/AboutUs/AboutCompanyArea'
 import AwardAreaHomeFour from '../components/AboutUs/AwardAreaHomeFour'
 import FunfactAreaHomeOne from '../components/AboutUs/FunfactAreaHomeOne'
 import TeamAreaHomeFive from '../components/AboutUs/TeamAreaHomeFive'
+import Partner from '../components/Common/Partner'
 import Footer from '../layouts/Footer'
 
 export default {
@@ -39,6 +41,7 @@ export default {
     AwardAreaHomeFour,
     FunfactAreaHomeOne,
     TeamAreaHomeFive,
+    Partner,
     Footer,
   }
 }

@@ -114,7 +114,7 @@
                                        <li><nuxt-link to="/our-team">Our Team</nuxt-link></li>
                                        <li><nuxt-link to="/team-details">Team Details</nuxt-link></li>
                                        <li><nuxt-link to="/faqs">FAQ's</nuxt-link></li>
-                                       <li><nuxt-link to="/pricing">Pricing</nuxt-link></li>
+                                       <!-- <li><nuxt-link to="/pricing">Pricing</nuxt-link></li> -->
                                        <!-- <li><nuxt-link to="/">Sign In</nuxt-link></li>
                                        <li><nuxt-link to="/">Sign Up</nuxt-link></li> -->
                                     </ul>
@@ -127,8 +127,8 @@
                                  <li><nuxt-link to="/blogs">Blogs</nuxt-link></li>
                                  <li><nuxt-link to="/sucess-stories">Sucess Stories</nuxt-link></li>
                                  <li><nuxt-link to="/case-studies">Case Studies</nuxt-link></li>
-                                 <li><nuxt-link to="/portfolio">Portfolio</nuxt-link></li>
-                                 <li><nuxt-link to="/glossary">Glossary</nuxt-link></li>
+                                 <!-- <li><nuxt-link to="/portfolio">Portfolio</nuxt-link></li>
+                                 <li><nuxt-link to="/glossary">Glossary</nuxt-link></li> -->
                               </ul>
                            </li>
                            <li>

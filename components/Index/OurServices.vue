@@ -39,6 +39,7 @@
                   <div class="services-two-content">
                      <span>SEO Strategy</span>
                      <h4 class="services-two-title">The Easiest Way to <br> Improve Your Site Speed</h4>
+                     <p>Intent-driven Demand Generation engine ensures a customised and comprehensive framework that has the ability to drive outcome based conversations. We facilitate our partners to take tactical decisions that lead to strategic outcomes. </p>
                   </div>
                </div>
             </div>
@@ -51,6 +52,7 @@
                   <div class="services-two-content">
                      <span>SEO Optimization</span>
                      <h4 class="services-two-title">Complete Site <br> Speed Optimization Service</h4>
+                     <p>Cutting-edge Data Research and Management Solutions to the global clientele including data research, cleansing, consolidation, and maintenance. We use a 5 stage approach, filtering out the data at every stage, to finally hand over lead </p>
                   </div>
                </div>
             </div>
@@ -63,6 +65,7 @@
                   <div class="services-two-content">
                      <span>SEO Analysis</span>
                      <h4 class="services-two-title">Instantly Analyze Your <br> SEO Issues</h4>
+                     <p>Expert, research-driven Media and Content solutions through a growing team of content and creative specialists. Starting with an in-depth understanding of tertiary audiences and their needs, the ability to pair audience demand with client solutions </p>
                   </div>
                </div>
             </div>
@@ -75,6 +78,7 @@
                   <div class="services-two-content">
                      <span>Web & Mobile</span>
                      <h4 class="services-two-title">Enhanced Mobile & <br> Desktop UX</h4>
+                     <p>Innovator provides you with a dynamic demand landscape, so you can understand the bigger picture of your marketing activities. With Innovator and its data leverage as your audiences engage with your content, you'll realize the value </p>
                   </div>
                </div>
             </div>
