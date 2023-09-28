@@ -1,18 +1,21 @@
 <template>
     <div>
       <Navbar />
+      <cookiescontent />
       <Footer />
     </div>
   </template>
   
   <script>
   import Navbar from '../layouts/Navbar'
+  import cookiescontent from '../components/Cookies/cookiescontent'
   import Footer from '../layouts/Footer'
   import axios from 'axios';
 
   export default {
     components: {
       Navbar,
+      cookiescontent,
       Footer,
     },
         data() {

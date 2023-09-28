@@ -1,18 +1,21 @@
 <template>
     <div>
       <Navbar />
+      <maincontent />
       <Footer />
     </div>
   </template>
   
   <script>
   import Navbar from '../layouts/Navbar'
+  import maincontent from '../components/TermsConditions/maincontent'
   import Footer from '../layouts/Footer'
   import axios from 'axios';
 
   export default {
     components: {
       Navbar,
+      maincontent,
       Footer,
     },
         data() {

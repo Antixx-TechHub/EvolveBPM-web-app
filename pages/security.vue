@@ -1,21 +1,24 @@
 <template>
     <div>
-      <Navbar />
-      <Footer />
+        <Navbar />
+        <securitycontent />
+        <Footer />
     </div>
-  </template>
+</template>
   
-  <script>
-  import Navbar from '../layouts/Navbar'
-  import Footer from '../layouts/Footer'
-  import axios from 'axios';
+<script>
+import Navbar from '../layouts/Navbar'
+import securitycontent from '../components/Security/securitycontent'
+import Footer from '../layouts/Footer'
+import axios from 'axios';
 
-  export default {
+export default {
     components: {
-      Navbar,
-      Footer,
+        Navbar,
+        securitycontent,
+        Footer,
     },
-        data() {
+    data() {
         return {
             seoData: null,
         }
