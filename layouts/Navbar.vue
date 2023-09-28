@@ -27,7 +27,7 @@
                               </NuxtLink>
                            </li>
                            <li class="header-services has-dropdown has-mega-menu">
-                              <NuxtLink to="/services">
+                              <NuxtLink to="/">
                                  services
                               </NuxtLink>
                               <div class="tp-mega-menu tp-submenu submenu">
@@ -37,31 +37,31 @@
                                           <h5 class="tp-menu-banner-title">Services Overview</h5>
                                           <ul>
                                              <li>
-                                                <nuxt-link to="/">
+                                                <nuxt-link to="/irev">
                                                    <span> <img src="../assets/img/header-icon/keyword.png" alt=""> </span>
                                                    iRev
                                                 </nuxt-link>
                                              </li>
                                              <li>
-                                                <nuxt-link to="/">
+                                                <nuxt-link to="/iintel">
                                                    <span> <img src="../assets/img/header-icon/audit.png" alt=""> </span>
                                                    iIntel
                                                 </nuxt-link>
                                              </li>
                                              <li>
-                                                <nuxt-link to="/">
+                                                <nuxt-link to="/imedia">
                                                    <span> <img src="../assets/img/header-icon/building.png" alt=""> </span>
                                                    iMedia
                                                 </nuxt-link>
                                              </li>
                                              <li>
-                                                <nuxt-link to="/">
+                                                <nuxt-link to="/innovator">
                                                    <span> <img src="../assets/img/header-icon/media.png" alt=""> </span>
                                                    Innovator
                                                 </nuxt-link>
                                              </li>
                                              <li>
-                                                <nuxt-link to="/">
+                                                <nuxt-link to="/techbase">
                                                    <span> <img src="../assets/img/header-icon/analysis.png" alt=""> </span>
                                                    TechBase
                                                 </nuxt-link>
