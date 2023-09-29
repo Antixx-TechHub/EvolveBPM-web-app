@@ -1,24 +1,27 @@
 <template>
     <div>
-      <Navbar />
-      <maincontent />
-      <Footer />
+        <Navbar />
+        <TermsHeader />
+        <maincontent />
+        <Footer />
     </div>
-  </template>
+</template>
   
-  <script>
-  import Navbar from '../layouts/Navbar'
-  import maincontent from '../components/TermsConditions/maincontent'
-  import Footer from '../layouts/Footer'
-  import axios from 'axios';
+<script>
+import Navbar from '../layouts/Navbar'
+import TermsHeader from '../components/TermsConditions/TermsHeader'
+import maincontent from '../components/TermsConditions/maincontent'
+import Footer from '../layouts/Footer'
+import axios from 'axios';
 
-  export default {
+export default {
     components: {
-      Navbar,
-      maincontent,
-      Footer,
+        Navbar,
+        TermsHeader,
+        maincontent,
+        Footer,
     },
-        data() {
+    data() {
         return {
             seoData: null,
         }

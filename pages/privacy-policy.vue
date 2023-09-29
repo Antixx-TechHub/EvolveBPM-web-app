@@ -1,6 +1,7 @@
 <template>
     <div>
       <Navbar />
+      <PrivacyHeader />
       <privacycontent />
       <Footer />
     </div>
@@ -8,6 +9,7 @@
   
   <script>
   import Navbar from '../layouts/Navbar'
+  import PrivacyHeader from '../components/PrivacyPolicy/PrivacyHeader'
   import privacycontent from '../components/PrivacyPolicy/privacycontent'
   import Footer from '../layouts/Footer'
   import axios from 'axios';
@@ -15,6 +17,7 @@
   export default {
     components: {
       Navbar,
+      PrivacyHeader,
       privacycontent,
       Footer,
     },

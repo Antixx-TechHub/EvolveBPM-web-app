@@ -1,18 +1,21 @@
 <template>
     <div>
       <Navbar />
+      <InovatorHeader />
       <Footer />
     </div>
   </template>
   
   <script>
   import Navbar from '../layouts/Navbar'
+  import InovatorHeader from '../components/Inovator/InovatorHeader'
   import Footer from '../layouts/Footer'
   import axios from 'axios';
 
   export default {
     components: {
       Navbar,
+      InovatorHeader,
       Footer,
     },
         data() {

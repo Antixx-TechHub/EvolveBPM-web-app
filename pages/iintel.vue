@@ -1,18 +1,23 @@
 <template>
     <div>
       <Navbar />
+      <ilntelHeader />
       <Footer />
     </div>
   </template>
   
   <script>
   import Navbar from '../layouts/Navbar'
+  
+  import ilntelHeader from '../components/ilntel/ilntelHeader'
+
   import Footer from '../layouts/Footer'
   import axios from 'axios';
 
   export default {
     components: {
       Navbar,
+      ilntelHeader,
       Footer,
     },
         data() {

@@ -1,18 +1,21 @@
 <template>
     <div>
       <Navbar />
+      <TechBaseHeader />
       <Footer />
     </div>
   </template>
   
   <script>
   import Navbar from '../layouts/Navbar'
+  import TechBaseHeader from '../components/TechBase/TechBaseHeader'
   import Footer from '../layouts/Footer'
   import axios from 'axios';
 
   export default {
     components: {
       Navbar,
+      TechBaseHeader,
       Footer,
     },
         data() {

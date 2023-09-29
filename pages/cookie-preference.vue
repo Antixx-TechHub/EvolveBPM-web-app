@@ -1,6 +1,7 @@
 <template>
     <div>
       <Navbar />
+      <CookiesHeader />
       <cookiescontent />
       <Footer />
     </div>
@@ -8,6 +9,7 @@
   
   <script>
   import Navbar from '../layouts/Navbar'
+  import CookiesHeader from '../components/Cookies/CookiesHeader'
   import cookiescontent from '../components/Cookies/cookiescontent'
   import Footer from '../layouts/Footer'
   import axios from 'axios';
@@ -15,6 +17,7 @@
   export default {
     components: {
       Navbar,
+      CookiesHeader,
       cookiescontent,
       Footer,
     },

@@ -1,18 +1,21 @@
 <template>
     <div>
       <Navbar />
+      <imediaHeader />
       <Footer />
     </div>
   </template>
   
   <script>
   import Navbar from '../layouts/Navbar'
+  import imediaHeader from '../components/iMedia/imediaHeader'
   import Footer from '../layouts/Footer'
   import axios from 'axios';
 
   export default {
     components: {
       Navbar,
+      imediaHeader,
       Footer,
     },
         data() {

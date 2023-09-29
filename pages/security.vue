@@ -1,6 +1,7 @@
 <template>
     <div>
         <Navbar />
+        <SecurityHeader />
         <securitycontent />
         <Footer />
     </div>
@@ -8,6 +9,7 @@
   
 <script>
 import Navbar from '../layouts/Navbar'
+import SecurityHeader from '../components/Security/SecurityHeader'
 import securitycontent from '../components/Security/securitycontent'
 import Footer from '../layouts/Footer'
 import axios from 'axios';
@@ -15,6 +17,7 @@ import axios from 'axios';
 export default {
     components: {
         Navbar,
+        SecurityHeader,
         securitycontent,
         Footer,
     },
