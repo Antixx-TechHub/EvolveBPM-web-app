@@ -1,31 +1,34 @@
 <template>
     <div>
-      <Navbar />
-      <IrevHeader />
-      <Footer />
+        <Navbar />
+        <TermsHeader />
+        <maincontent />
+        <Footer />
     </div>
-  </template>
+</template>
   
-  <script>
-  import Navbar from '../layouts/Navbar'
-  import IrevHeader from '../components/Irev/IrevHeader'
-  import Footer from '../layouts/Footer'
-  import axios from 'axios';
+<script>
+import Navbar from '../layouts/Navbar'
+import TermsHeader from '../components/TermsConditions/TermsHeader'
+import maincontent from '../components/TermsConditions/maincontent'
+import Footer from '../layouts/Footer'
+import axios from 'axios';
 
-  export default {
+export default {
     components: {
-      Navbar,
-      IrevHeader,
-      Footer,
+        Navbar,
+        TermsHeader,
+        maincontent,
+        Footer,
     },
-        data() {
+    data() {
         return {
             seoData: null,
         }
     },
     created: async function () {
         const { slug } = this.$route.params
-        const reaponse = await axios.get(`https://evolvestrapi.pbwebvision.in/api/pages?filters[slug][$eq]=irev&populate=deep,5`, { params: { slug } })
+        const reaponse = await axios.get(`https://evolvestrapi.pbwebvision.in/api/pages?filters[slug][$eq]=terms-condition&populate=deep,5`, { params: { slug } })
         this.details = reaponse.data.data;
         const pageData = this.details.length > 0 ? this.details[0] : {};
         if (pageData?.attributes?.seo) {

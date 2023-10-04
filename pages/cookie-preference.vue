@@ -1,21 +1,24 @@
 <template>
     <div>
       <Navbar />
-      <IrevHeader />
+      <CookiesHeader />
+      <cookiescontent />
       <Footer />
     </div>
   </template>
   
   <script>
   import Navbar from '../layouts/Navbar'
-  import IrevHeader from '../components/Irev/IrevHeader'
+  import CookiesHeader from '../components/Cookies/CookiesHeader'
+  import cookiescontent from '../components/Cookies/cookiescontent'
   import Footer from '../layouts/Footer'
   import axios from 'axios';
 
   export default {
     components: {
       Navbar,
-      IrevHeader,
+      CookiesHeader,
+      cookiescontent,
       Footer,
     },
         data() {
@@ -25,7 +28,7 @@
     },
     created: async function () {
         const { slug } = this.$route.params
-        const reaponse = await axios.get(`https://evolvestrapi.pbwebvision.in/api/pages?filters[slug][$eq]=irev&populate=deep,5`, { params: { slug } })
+        const reaponse = await axios.get(`https://evolvestrapi.pbwebvision.in/api/pages?filters[slug][$eq]=cookie-preference&populate=deep,5`, { params: { slug } })
         this.details = reaponse.data.data;
         const pageData = this.details.length > 0 ? this.details[0] : {};
         if (pageData?.attributes?.seo) {
