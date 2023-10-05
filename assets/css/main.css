@@ -125,6 +125,7 @@
   /** @color declaration */
   --tp-common-white: #ffffff;
   --tp-common-black: #000;
+  --tp-common-main: #00538E;
   --tp-common-1: #3EB9FF;
   --tp-common-2: #ABBF78;
   --tp-common-3: #FFB876;
@@ -151,7 +152,7 @@
   --tp-theme-primary: #4260FF;
   --tp-theme-secondary: #131683;
   --tp-theme-3: #05003B;
-  --tp-theme-green: #59BA41;
+  --tp-theme-green: #FF5A5F;
   --tp-theme-apple: #F5F1EB;
   --tp-theme-dark-blue: #1E2B8A;
   --tp-theme-blue: #775AFC;
@@ -3555,11 +3556,12 @@ div.test img {
 .tpheader-btn-two a {
   display: inline-block;
   font-family: var(--tp-ff-dmsans);
+  background: var(--tp-theme-green);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 12px;
-  color: var(--tp-common-11);
+  color: var(--tp-common-white);
   border: 1.5px solid #010F1C;
   padding: 16px 25px;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -3570,7 +3572,7 @@ div.test img {
 }
 .tpheader-btn-two a:hover {
   color: #f5f7f4;
-  background-color: var(--tp-common-11);
+  background-color: var(--tp-common-main);
 }
 
 .tptransparent__header {
@@ -7486,7 +7488,7 @@ blockquote cite::before {
 /*  6.2 Footer Style 2
 /*----------------------------------------*/
 .footer-bg2 {
-  background-color: #F5F1EB;
+  background-color: #00538E;
 }
 .footer-widget-social2 {
   margin-bottom: 40px;
