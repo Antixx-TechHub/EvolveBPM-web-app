@@ -14579,7 +14579,7 @@ div.price-open {
   }
 }
 .contact-info {
-  padding-right: 100px;
+  padding-right: 75px;
 }
 @media (max-width: 767px) {
   .contact-info {
@@ -14638,6 +14638,7 @@ div.price-open {
 }
 .contact-mail i svg {
   color: #0E1331;
+  margin-top: 9px;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -14646,6 +14647,7 @@ div.price-open {
 }
 .contact-social {
   border-radius: 6px;
+  padding: 5px;
   background: var(--tp-common-white);
   display: inline-block;
 }
