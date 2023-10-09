@@ -141,11 +141,8 @@
                <div class="col-xl-3 col-lg-6 col-sm-8 col-6">
                   <div class="tpheader__right d-flex align-items-center justify-content-end">
                      <div class="d-none d-md-block">
-                        
+                        <nuxt-link to="/contact-us">Contact</nuxt-link>
                      </div>
-                     <li>
-                              <nuxt-link to="/contact-us">Contact</nuxt-link>
-                           </li>
                      <div class="tpheader-btn-two ml-25 d-none d-md-block">
                         <nuxt-link to="/contact-us">Get Free Consultation</nuxt-link>
                      </div>
