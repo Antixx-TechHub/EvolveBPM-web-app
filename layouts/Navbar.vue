@@ -16,19 +16,19 @@
                   <div class="tpmenu__area main-mega-menu pl-35">
                      <nav class="tp-main-menu-content">
                         <ul>
-                           <li>
+                           <li class="header-services has-dropdown has-mega-menu">
                               <NuxtLink to="/">
-                                 Home
+                                 Solutions
                               </NuxtLink>
                            </li>
-                           <li>
+                           <li class="header-services has-dropdown has-mega-menu">
                               <NuxtLink to="/about-us">
-                                 About
+                                 Products
                               </NuxtLink>
                            </li>
                            <li class="header-services has-dropdown has-mega-menu">
                               <NuxtLink to="/">
-                                 services
+                                 Resources
                               </NuxtLink>
                               <div class="tp-mega-menu tp-submenu submenu">
                                  <div class="row">
@@ -106,7 +106,7 @@
                               </div>
                            </li>
                            <li class="has-dropdown">
-                              <nuxt-link to="/">Company</nuxt-link>
+                              <nuxt-link to="/">About US</nuxt-link>
                               <ul class="tp-submenu submenu">
                                  <li>
                                     <ul>
@@ -122,7 +122,7 @@
                               </ul>
                            </li>
                            <li class="has-dropdown">
-                              <nuxt-link to="/">Blogs</nuxt-link>
+                              <nuxt-link to="/">What's New</nuxt-link>
                               <ul class="tp-submenu submenu">
                                  <li><nuxt-link to="/blogs">Blogs</nuxt-link></li>
                                  <li><nuxt-link to="/sucess-stories">Sucess Stories</nuxt-link></li>
@@ -131,9 +131,9 @@
                                  <li><nuxt-link to="/glossary">Glossary</nuxt-link></li> -->
                               </ul>
                            </li>
-                           <li>
+                           <!-- <li>
                               <nuxt-link to="/contact-us">Contact</nuxt-link>
-                           </li>
+                           </li> -->
                         </ul>
                      </nav>
                   </div>
@@ -141,8 +141,11 @@
                <div class="col-xl-3 col-lg-6 col-sm-8 col-6">
                   <div class="tpheader__right d-flex align-items-center justify-content-end">
                      <div class="d-none d-md-block">
-                        <!-- Add your content here -->
+                        
                      </div>
+                     <li>
+                              <nuxt-link to="/contact-us">Contact</nuxt-link>
+                           </li>
                      <div class="tpheader-btn-two ml-25 d-none d-md-block">
                         <nuxt-link to="/contact-us">Get Free Consultation</nuxt-link>
                      </div>

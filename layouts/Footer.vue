@@ -39,7 +39,7 @@
                      <div class="footer-widget-logo mb-20">
                         <nuxt-link to="/">
                            <span>
-                              <img src="../assets/img/logo/logo.svg" alt="">
+                              <img src="../assets/img/logo/evolelogo.png" alt="">
                            </span>
                         </nuxt-link>
                      </div>
@@ -68,38 +68,32 @@
                </div>
                <div class="col-lg-3 col-md-6 col-sm-6">
                   <div class="footer-widget footer-widget-2 footer-2-col-2 mb-40">
-                     <h4 class="footer-widget-title mb-15">Information</h4>
+                     <h4 class="footer-widget-title mb-15">Services</h4>
                      <div class="footer-widget-link">
                         <ul>
-                           <li><nuxt-link to="/">Home</nuxt-link></li>
-                           <li><nuxt-link to="/about-us">About Us</nuxt-link></li>
-                           <li><nuxt-link to="/careers">Careers</nuxt-link></li>
-                           <li><nuxt-link to="/blogs">Blogs</nuxt-link></li>
-                           <li><nuxt-link to="/contact-us">Contact Us</nuxt-link></li>
+                           <li><nuxt-link to="/irev">iRev-Demand Gen</nuxt-link></li>
+                           <li><nuxt-link to="/iintel">iData-Data Management</nuxt-link></li>
+                           <li><nuxt-link to="/imedia">iMedia-Media & Content</nuxt-link></li>
+                           <!-- <li><nuxt-link to="/contact-us">Contact Us</nuxt-link></li>
                            <li><nuxt-link to="/security">Security</nuxt-link></li>
-                           <li><nuxt-link to="/cookie-preference">Cookie Preference</nuxt-link></li>
+                           <li><nuxt-link to="/cookie-preference">Cookie Preference</nuxt-link></li> -->
                         </ul>
                      </div>
                   </div>
                </div>
                <div class="col-lg-3 col-md-6 col-sm-6">
                   <div class="footer-widget footer-widget-2 footer-2-col-3 mb-40">
-                     <h4 class="footer-widget-title mb-15">Services</h4>
+                     <h4 class="footer-widget-title mb-15">Evolve Brands</h4>
                      <div class="footer-widget-link">
                         <ul>
-                           <li><nuxt-link to="/irev">iRev</nuxt-link></li>
-                           <li><nuxt-link to="/iintel">iIntel</nuxt-link></li>
-                           <li><nuxt-link to="/imedia">iMedia</nuxt-link></li>
-                           <li><nuxt-link to="/innovator">Innovator</nuxt-link></li>
-                           <li><nuxt-link to="/techbase">TechBase</nuxt-link></li>
-                           <li><nuxt-link to="/privacy-policy">Privacy Policy</nuxt-link></li>
-                           <li><nuxt-link to="/terms-condition">Terms and  Condition</nuxt-link></li>
-                          
-
+                           <li><nuxt-link to="/irev">Evolve Global Corp</nuxt-link></li>
+                           <li><nuxt-link to="/iintel">EvolveBPO</nuxt-link></li>
+                           <li><nuxt-link to="/imedia">Evolve Cloud Labs</nuxt-link></li>
                         </ul>
                      </div>
                   </div>
                </div>
+
                <div class="col-lg-3 col-md-6 col-sm-6">
                   <div class="footer-widget footer-widget-2 footer-2-col-4 mb-40">
                      <h4 class="footer-widget-title mb-20">Contact Us</h4>
@@ -111,14 +105,20 @@
                            <i><img src="../assets/img/icon/massage-icon.png" alt=""></i> corporate@evolvebpm.com
                         </nuxt-link>
                         <nuxt-link to="/">
-                           <i><img src="../assets/img/icon/location-icon.png" alt=""></i> PUNE - Vatika Business Centre &
-                           Co-working Spaces, 3rd Floor, Sky Belvedere, Opp Symbiosis Law College, New Airport Rd, Viman
-                           Nagar, Pune 411014, Maharashtra, IN.
+                           <i><img src="../assets/img/icon/location-icon.png" alt=""></i> EvolveBPM, LLC
+                           (Global Headquarters)99 Wall Street #3966
+                           New York, NY 10005.
                         </nuxt-link>
                      </div>
                   </div>
                </div>
             </div>
+         </div>
+         <div class="row">
+            <div class="col-sm-5">Copyright © 2023 EvolveBPM, LLC. All rights reserved.</div>
+            <div class="col-sm-2">Privacy Policy</div>
+            <div class="col-sm-2">Terms of Service</div>
+            <div class="col-sm-3">Data Processing Agreement</div>
          </div>
          <div class="footer-bottom">
             <div class="row">

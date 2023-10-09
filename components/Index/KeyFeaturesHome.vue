@@ -25,7 +25,7 @@
                      <h4 class="tpseo-title mb-15">iRev</h4>
                      <h4>Demand<br>GenSolutions</h4>
                      <div class="tpseo-info">
-                        <p>Intent-driven Demand Generation engine ensures a customised and comprehensive framework that has the ability to drive outcome based</p>
+                        <p>Our state-of-the-art AI, Intent, and Tech Insights-driven demand generation solutions are designed to supercharge your sales force. </p>
                         <div class="tpseo-details">
                            <a href="keyword-search.html">Learn More <i class="fa-light fa-arrow-right"></i></a>
                         </div>
@@ -43,7 +43,7 @@
                      <h4 class="tpseo-title mb-15">iIntel</h4>
                      <h4>Data<br>Solutions</h4>
                      <div class="tpseo-info">
-                        <p>Intent-driven Demand Generation engine ensures a customised and comprehensive framework that has the ability to drive outcome based.</p>
+                        <p>Cutting-edge Data Research and Management Solutions to the global clientele including data research, cleansing, consolidation, and maintenance.</p>
                         <div class="tpseo-details">
                            <a href="keyword-search.html">Learn More <i class="fa-light fa-arrow-right"></i></a>
                         </div>
@@ -61,7 +61,7 @@
                      <h4 class="tpseo-title mb-15">iMedia</h4>
                      <h4>Media & Content<br>Solutions</h4>
                      <div class="tpseo-info">
-                        <p>Intent-driven Demand Generation engine ensures a customised and comprehensive framework that has the ability to drive outcome based.</p>
+                        <p>Expert, research-driven Media and Content solutions through a growing team of content and creative specialists.</p>
                         <div class="tpseo-details">
                            <a href="keyword-search.html">Learn More <i class="fa-light fa-arrow-right"></i></a>
                         </div>
