@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
   color: #ffffff;
   text-transform: uppercase;
-  background-color: #0000ff;
+  background-color: #00538E;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 5px;
@@ -165,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 0;
   height: 0;
   border-radius: 50%;
-  background-color: #fa7070;
+  background-color: #E9262C;
   -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
   transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
   -webkit-transform: translate(-50%, -50%);
@@ -8538,7 +8538,7 @@ SaaS Startup Page CSS
 }
 
 .saas-banner-two .saas-banner-image .solution-video .video-btn {
-  background-color: #0000ff;
+  background-color: #00538E;
   color: #ffffff;
 }
 

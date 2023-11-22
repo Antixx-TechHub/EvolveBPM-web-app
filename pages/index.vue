@@ -15,6 +15,7 @@
         <GetOnlyNewUpdate />
         <OurLatestNews />
         <Footer />
+        <Copyright />
     </div>
 </template>
 
@@ -34,9 +35,10 @@ import ChooseYourBestPlan from '../components/Common/ChooseYourBestPlan'
 import GetOnlyNewUpdate from '../components/Common/GetOnlyNewUpdate'
 import OurLatestNews from '../components/Common/OurLatestNews'
 import Footer from '../layouts/Footer'
+import Copyright from '../layouts/Copyright'
 
 export default {
-    components: { 
+    components: {
         Navbar,
         MainBanner,
         OurFeaturedServices,
@@ -52,6 +54,7 @@ export default {
         GetOnlyNewUpdate,
         OurLatestNews,
         Footer,
+        Copyright,
     }
 }
 </script>

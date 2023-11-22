@@ -3,13 +3,14 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-sm-6 col-md-6">
-                    <p>&copy; {{currentYear}} Bionix. All rights reserved <a href="https://envytheme.com/" target="_blank">EnvyTheme</a></p>
+                    <p>&copy; {{currentYear}}. All rights reserved. <a href="https://www.evolvebpm.com/" target="_blank">Evolve BPM</a></p>
                 </div>
 
                 <div class="col-lg-6 col-sm-6 col-md-6">
                     <ul class="list">
-                        <li><NuxtLink to="/contact">Terms & Conditions</NuxtLink></li>
-                        <li><NuxtLink to="/contact">Privacy Policy</NuxtLink></li>
+                        <li><NuxtLink to="/">Privacy</NuxtLink></li>
+                        <li><NuxtLink to="/">GDPR</NuxtLink></li>
+                        <li><NuxtLink to="/">CASL</NuxtLink></li>
                     </ul>
                 </div>
             </div>
