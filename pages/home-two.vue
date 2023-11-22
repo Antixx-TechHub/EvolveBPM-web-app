@@ -1,56 +1,62 @@
 <template>
     <div>
         <Navbar />
-        <MainBanner />
-        <OurFeaturedServices class="pt-40" />
-        <Partner />
-        <AmazingBusinessSolution />
-        <WeAlwaysTryToUnderstand />
+        <MainBannerOne />
+        <OurFeaturedServices />
+        <WeAreDigitalExplorers />
+        <ProvideAwesomeService />
+        <TheKeyToYourMotivation />
         <FunFacts />
         <WeveDoneLotsOfWork />
+        <WeAlwaysTryToUnderstand />
         <MeetOurAwesomeTeam />
         <GetBetterSolution />
         <SomeLovelyFeedback />
         <ChooseYourBestPlan />
-        <GetOnlyNewUpdate />
+        <WePartnerWithCompanies />
         <OurLatestNews />
+        <GetOnlyNewUpdateTwo />
         <Footer />
     </div>
 </template>
 
 <script>
 import Navbar from '../layouts/Navbar'
-import MainBanner from '../components/HomeOne/MainBanner'
+import MainBannerOne from '../components/HomeTwo/MainBannerOne'
 import OurFeaturedServices from '../components/Common/OurFeaturedServices'
-import Partner from '../components/Common/Partner'
-import AmazingBusinessSolution from '../components/Common/AmazingBusinessSolution'
-import WeAlwaysTryToUnderstand from '../components/Common/WeAlwaysTryToUnderstand'
+import WeAreDigitalExplorers from '../components/Common/WeAreDigitalExplorers'
+import ProvideAwesomeService from '../components/Common/ProvideAwesomeService'
+import TheKeyToYourMotivation from '../components/Common/TheKeyToYourMotivation'
 import FunFacts from '../components/Common/FunFacts'
 import WeveDoneLotsOfWork from '../components/Common/WeveDoneLotsOfWork'
+import WeAlwaysTryToUnderstand from '../components/Common/WeAlwaysTryToUnderstand'
 import MeetOurAwesomeTeam from '../components/Common/MeetOurAwesomeTeam'
 import GetBetterSolution from '../components/Common/GetBetterSolution'
 import SomeLovelyFeedback from '../components/Common/SomeLovelyFeedback'
 import ChooseYourBestPlan from '../components/Common/ChooseYourBestPlan'
-import GetOnlyNewUpdate from '../components/Common/GetOnlyNewUpdate'
+import WePartnerWithCompanies from '../components/Common/WePartnerWithCompanies'
 import OurLatestNews from '../components/Common/OurLatestNews'
+import GetOnlyNewUpdateTwo from '../components/Common/GetOnlyNewUpdateTwo'
 import Footer from '../layouts/Footer'
 
 export default {
     components: { 
         Navbar,
-        MainBanner,
+        MainBannerOne,
         OurFeaturedServices,
-        Partner,
-        AmazingBusinessSolution,
-        WeAlwaysTryToUnderstand,
+        WeAreDigitalExplorers,
+        ProvideAwesomeService,
+        TheKeyToYourMotivation,
         FunFacts,
         WeveDoneLotsOfWork,
+        WeAlwaysTryToUnderstand,
         MeetOurAwesomeTeam,
         GetBetterSolution,
         SomeLovelyFeedback,
         ChooseYourBestPlan,
-        GetOnlyNewUpdate,
+        WePartnerWithCompanies,
         OurLatestNews,
+        GetOnlyNewUpdateTwo,
         Footer,
     }
 }

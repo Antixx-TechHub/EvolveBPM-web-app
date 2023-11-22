@@ -1,17 +1,17 @@
 <template>
-    <div class="page-title-area page-title-bg1">
-        <div class="d-table">
-            <div class="d-table-cell">
-                <div class="container">
-                    <div class="page-title-content">
-                        <h2>{{pageTitle}}</h2>
+    <div class="main-banner">
+        <div class="container">
+            <div class="main-banner-content">
+                <span class="sub-title">Welcome to Bionix</span>
+                <h1>Creative & Strategic Digital Marketing Agency</h1>
 
-                        <ul>
-                            <li><NuxtLink to="/">Home</NuxtLink></li>
-                            <li>{{pageTitle}}</li>
-                        </ul>
-                    </div>
+                <div class="btn-box">
+                    <NuxtLink to="/contact" class="default-btn">Get Started <span></span></NuxtLink>
                 </div>
+            </div>
+
+            <div class="main-banner-image">
+                <img src="~/assets/images/banner/banner-1-1.png" alt="image">
             </div>
         </div>
 
@@ -19,6 +19,7 @@
         <div class="shape-img3"><img src="~/assets/images/shape/shape-3.svg" alt="image"></div>
         <div class="shape-img4"><img src="~/assets/images/shape/shape-4.png" alt="image"></div>
         <div class="shape-img5"><img src="~/assets/images/shape/shape-5.png" alt="image"></div>
+        <div class="shape-img6"><img src="~/assets/images/shape/shape-6.png" alt="image"></div>
         <div class="shape-img7"><img src="~/assets/images/shape/shape-7.png" alt="image"></div>
         <div class="shape-img8"><img src="~/assets/images/shape/shape-8.png" alt="image"></div>
         <div class="shape-img9"><img src="~/assets/images/shape/shape-9.png" alt="image"></div>
@@ -28,6 +29,6 @@
 
 <script>
     export default {
-        props: ['pageTitle'],
+        name: 'MainBannerOne'
     }
 </script>

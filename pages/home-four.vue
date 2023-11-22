@@ -1,7 +1,7 @@
 <template>
     <div>
         <Navbar />
-        <MainBanner />
+        <MainBannerThree />
         <OurFeaturedServices class="pt-40" />
         <Partner />
         <AmazingBusinessSolution />
@@ -20,7 +20,7 @@
 
 <script>
 import Navbar from '../layouts/Navbar'
-import MainBanner from '../components/HomeOne/MainBanner'
+import MainBannerThree from '../components/HomeFour/MainBannerThree'
 import OurFeaturedServices from '../components/Common/OurFeaturedServices'
 import Partner from '../components/Common/Partner'
 import AmazingBusinessSolution from '../components/Common/AmazingBusinessSolution'
@@ -38,7 +38,7 @@ import Footer from '../layouts/Footer'
 export default {
     components: { 
         Navbar,
-        MainBanner,
+        MainBannerThree,
         OurFeaturedServices,
         Partner,
         AmazingBusinessSolution,
