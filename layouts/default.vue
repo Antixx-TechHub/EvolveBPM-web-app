@@ -1,19 +1,19 @@
 <template>
     <div>
-        <!-- <Preloader v-if="isLoading" /> -->
+        <Preloader v-if="isLoading" />
         <Nuxt />
-        <GoTop />
+        <BackToTop />
     </div>
 </template>
 
 <script>
-// import Preloader from './Preloader'
-// import GoTop from './GoTop'
+import Preloader from './Preloader'
+import BackToTop from './BackToTop'
 
 export default {
-    components: {
-        // Preloader,
-        // GoTop,
+    components: { 
+        Preloader,
+        BackToTop
     },
     data() {
         return {
@@ -23,7 +23,7 @@ export default {
     mounted() {
         setTimeout(() => {
             this.isLoading = false
-        }, 0)
+        }, 2000)
     }
 }
 </script>

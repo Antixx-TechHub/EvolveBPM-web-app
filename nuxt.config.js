@@ -22,21 +22,24 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    "~/assets/css/bootstrap.css",
-    "~/assets/css/animate.css",
-    "~/assets/css/swiper-bundle.css",
-    "~/assets/css/slick.css",
-    "~/assets/css/nouislider.css",
-    "~/assets/css/magnific-popup.css",
-    "~/assets/css/font-awesome-pro.css",
-    "~/assets/css/spacing.css",
-    "~/assets/css/main.css",
+    "~/assets/css/animate.min.css",
+    "~/assets/css/bootstrap.min.css",
+    "~/assets/css/boxicons.min.css",
+    "~/assets/css/fontawesome.min.css",
+    "~/assets/css/flaticon.css",
+    "~/assets/css/style.css",
+    "~/assets/css/responsive.css",
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '~/plugins/vue-carousel', ssr: false },
-    { src: '~/plugins/vue-backtotop', ssr: false },
+    // { src: '~/plugins/vue-carousel', ssr: false },
+    // { src: '~/plugins/vue-backtotop', ssr: false },
+
+    { src: "~/plugins/vue-carousel", ssr: false },
+    { src: "~/plugins/vue-backtotop", ssr: false },
+    { src: "~/plugins/vue-cool-lightbox", ssr: false },
+    { src: "~/plugins/vue-toastification", ssr: false },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
