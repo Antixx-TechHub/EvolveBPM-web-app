@@ -1,25 +1,25 @@
 <template>
     <div>
-        <NavbarTwo />
-        <Breadcrumb />
-        <Blog />
+        <Navbar />
+        <PageTitle pageTitle="Case Studies" />
+        <CaseStudies />
         <Partner />
         <Footer />
     </div>
 </template>
 
 <script>
-import NavbarTwo from '../layouts/NavbarTwo'
-import Breadcrumb from '../components/CaseStudies/Breadcrumb'
-import Blog from '../components/CaseStudies/CaseStudies'
+import Navbar from '../layouts/Navbar'
+import PageTitle from '../components/Common/PageTitle'
+import CaseStudies from '../components/CaseStudies/CaseStudies'
 import Partner from '../components/Common/Partner'
 import Footer from '../layouts/Footer'
 
 export default {
     components: {
-        NavbarTwo,
-        Breadcrumb,
-        Blog,
+        Navbar,
+        PageTitle,
+        CaseStudies,
         Partner,
         Footer,
     },

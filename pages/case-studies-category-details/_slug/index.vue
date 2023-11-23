@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div>
     <NavbarTwo />
     <div class="breadcrumb-area breadcrumb-overlay p-relative pb-115 pt-195 jarallax" :style="bannerStyle">
@@ -40,6 +40,63 @@ export default {
   components: {
     NavbarTwo,
     CategoryDetails,
+    Partner,
+    Footer
+  },
+  data() {
+    return {
+      category: null,
+      bannerStyle: {
+        backgroundImage: `url(${require('../../../assets/img/breadcrumb/breadcrumb-bg-1.jpg')})`
+      }
+    };
+  },
+  mounted() {
+    this.fetchCategories();
+  },
+  methods: {
+    async fetchCategories() {
+      try {
+        const { slug } = this.$route.params
+        const reaponse = await axios.get(`https://evolvestrapi.pbwebvision.in/api/case-study-categories?filters[slug][$eq]=${slug}&populate=deep,5`, { params: { slug } })
+        this.category = reaponse.data.data.sort((b, a) => a.id - b.id);
+        this.rows = this.category?.length;
+      } catch (error) {
+        console.error(error);
+      }
+    },
+  },
+};
+</script> -->
+
+
+
+<template>
+  <div>
+    <Navbar />
+    <PageTitle pageTitle="Case Study Categories" pageDesc="News and Insights" />
+    <div v-if="category !== null">
+      <CaseStudyCategoriesDetails v-bind:detailsContent="category" />
+      <Partner />
+      <Footer />
+    </div>
+
+  </div>
+</template>
+  
+<script>
+import Navbar from '../../../layouts/Navbar'
+import PageTitle from '../../../components/Common/PageTitle'
+import CaseStudyCategoriesDetails from '../../../components/CaseStudies/CaseStudyCategoriesDetails'
+import Partner from '../../../components/Common/Partner'
+import Footer from '../../../layouts/Footer'
+import axios from 'axios';
+
+export default {
+  components: {
+    Navbar,
+    PageTitle,
+    CaseStudyCategoriesDetails,
     Partner,
     Footer
   },
