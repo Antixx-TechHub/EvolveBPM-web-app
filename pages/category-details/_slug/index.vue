@@ -1,26 +1,8 @@
 <template>
   <div>
-    <NavbarTwo />
-    <div class="breadcrumb-area breadcrumb-overlay p-relative pb-115 pt-195 jarallax" :style="bannerStyle">
-      <div class="container">
-        <div class="row">
-          <div class="col-xxl-12">
-            <div class="breadcrumb__content breadcrumb__content-2 text-center p-relative z-index-1">
-              <h3 class="breadcrumb__title">Blog Categories</h3>
-              <div class="breadcrumb__list">
-                <span><a href="index.html">Home</a></span>
-                <span class="dvdr"></span>
-                <span>Blog Categories</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="inner-shape-dots">
-        <img src="../../../assets/img/shape/inner-dots-shape.png" alt="">
-      </div>
-    </div>
-    <div v-if="category !== null">
+    <Navbar />
+        <PageTitle v-if="details !== null" :pageTitle="details[0].attributes.title" pageDesc="News and Insights" />
+        <div v-if="details !== null">
       <CategoryDetails v-bind:detailsContent="category" />
       <Partner />
       <Footer />
@@ -30,7 +12,8 @@
 </template>
   
 <script>
-import NavbarTwo from '../../../layouts/NavbarTwo';
+import Navbar from '../../../layouts/Navbar'
+import PageTitle from '../../../components/Common/PageTitle'
 import CategoryDetails from '../../../components/Blogs/CategoriesDetails'
 import Partner from '../../../components/Common/Partner'
 import Footer from '../../../layouts/Footer'
@@ -38,7 +21,8 @@ import axios from 'axios';
 
 export default {
   components: {
-    NavbarTwo,
+    Navbar,
+    PageTitle,
     CategoryDetails,
     Partner,
     Footer

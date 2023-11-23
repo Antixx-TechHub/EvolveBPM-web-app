@@ -1,8 +1,7 @@
 <template>
     <div>
-        <NavbarTwo />
-        <Breadcrumb />
-        <FeaturedBlog />
+        <Navbar />
+        <PageTitle pageTitle="Blog Grid" />
         <Blog />
         <Partner />
         <Footer />
@@ -10,18 +9,16 @@
 </template>
 
 <script>
-import NavbarTwo from '../layouts/NavbarTwo'
-import Breadcrumb from '../components/Blogs/Breadcrumb'
-import FeaturedBlog from '../components/Blogs/FeaturedBlog'
+import Navbar from '../layouts/Navbar'
+import PageTitle from '../components/Common/PageTitle'
 import Blog from '../components/Blogs/Blog'
 import Partner from '../components/Common/Partner'
 import Footer from '../layouts/Footer'
 
 export default {
     components: {
-        NavbarTwo,
-        Breadcrumb,
-        FeaturedBlog,
+        Navbar,
+        PageTitle,
         Blog,
         Partner,
         Footer,
