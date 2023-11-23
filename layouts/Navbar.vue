@@ -175,6 +175,9 @@
                                         <NuxtLink to="/blogs" class="nav-link">Blogs</NuxtLink>
                                     </li>
                                     <li class="nav-item">
+                                        <NuxtLink to="/sucess-stories" class="nav-link">Success Stories</NuxtLink>
+                                    </li>
+                                    <li class="nav-item">
                                         <NuxtLink to="/blog-one" class="nav-link">Blog Grid</NuxtLink>
                                     </li>
                                     <li class="nav-item">
