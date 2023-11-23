@@ -1,8 +1,8 @@
 <template>
   <div>
     <Navbar />
-        <PageTitle v-if="details !== null" :pageTitle="details[0].attributes.title" pageDesc="News and Insights" />
-        <div v-if="details !== null">
+    <PageTitle pageTitle="Blog Categories" pageDesc="News and Insights" />
+    <div v-if="category !== null">
       <CategoryDetails v-bind:detailsContent="category" />
       <Partner />
       <Footer />
