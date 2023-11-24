@@ -115,7 +115,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <NuxtLink to="/case-studies" class="nav-link">Case Studies</NuxtLink>
-<<<<<<< HEAD
+
                                     </li>
                                     <li class="nav-item">
                                         <NuxtLink to="/blog-one" class="nav-link">Blog Grid</NuxtLink>
@@ -125,8 +125,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <NuxtLink to="/blog-details" class="nav-link">Blog Details</NuxtLink>
-=======
->>>>>>> 1d38fe566657f68b64caa8b96e39aa50c10c4943
+
                                     </li>
                                 </ul>
                             </li>
