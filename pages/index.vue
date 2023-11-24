@@ -1,7 +1,7 @@
 <template>
     <div>
         <Navbar />
-        <MainBanner />
+        <HomeMainBanner />
         <WeveDoneLotsOfWork />
         <Partner />
         <OurFeaturedServices class="pt-40" />
@@ -14,6 +14,8 @@
         <ChooseYourBestPlan />
         <GetOnlyNewUpdate />
         <OurLatestNews />
+        <OurMediaAssets />
+        <LetsGetToWork />
         <Footer />
         <Copyright />
     </div>
@@ -21,9 +23,9 @@
 
 <script>
 import Navbar from '../layouts/Navbar'
-import MainBanner from '../components/HomeOne/MainBanner'
+import HomeMainBanner from '../components/Index/HomeMainBanner'
 import OurFeaturedServices from '../components/Common/OurFeaturedServices'
-import Partner from '../components/HomeOne/Partner'
+import Partner from '../components/Index/Partner'
 import AmazingBusinessSolution from '../components/Common/AmazingBusinessSolution'
 import WeAlwaysTryToUnderstand from '../components/Common/WeAlwaysTryToUnderstand'
 import FunFacts from '../components/Common/FunFacts'
@@ -34,13 +36,15 @@ import SomeLovelyFeedback from '../components/Common/SomeLovelyFeedback'
 import ChooseYourBestPlan from '../components/Common/ChooseYourBestPlan'
 import GetOnlyNewUpdate from '../components/Common/GetOnlyNewUpdate'
 import OurLatestNews from '../components/Common/OurLatestNews'
+import OurMediaAssets from '../components/Index/OurMediaAssets'
+import LetsGetToWork from '../components/Common/LetsGetToWork'
 import Footer from '../layouts/Footer'
 import Copyright from '../layouts/Copyright'
 
 export default {
     components: {
         Navbar,
-        MainBanner,
+        HomeMainBanner,
         OurFeaturedServices,
         Partner,
         AmazingBusinessSolution,
@@ -53,6 +57,8 @@ export default {
         ChooseYourBestPlan,
         GetOnlyNewUpdate,
         OurLatestNews,
+        OurMediaAssets,
+        LetsGetToWork,
         Footer,
         Copyright,
     }

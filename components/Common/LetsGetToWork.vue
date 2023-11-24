@@ -4,14 +4,14 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <span class="sub-title">READY TO DO THIS</span>
                         <h2>Let's get to work!</h2>
+                        <span class="sub-title">READY TO DO THIS</span>
                     </div>
 
                     <div class="col-lg-6">
                         <div class="contact-btn">
                             <NuxtLink to="/contact" class="default-btn">
-                                Contact Us <span></span>
+                                Request Demo <span></span>
                             </NuxtLink>
                         </div>
                     </div>
