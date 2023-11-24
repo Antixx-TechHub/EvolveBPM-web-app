@@ -8,9 +8,9 @@
 
                 <div class="col-lg-6 col-sm-6 col-md-6">
                     <ul class="list">
-                        <li><NuxtLink to="/">Privacy</NuxtLink></li>
-                        <li><NuxtLink to="/">GDPR</NuxtLink></li>
-                        <li><NuxtLink to="/">CASL</NuxtLink></li>
+                        <li><NuxtLink to="/privacy-policy">Privacy</NuxtLink></li>
+                        <li><NuxtLink to="/gdpr">GDPR</NuxtLink></li>
+                        <li><NuxtLink to="/casl">CASL</NuxtLink></li>
                     </ul>
                 </div>
             </div>

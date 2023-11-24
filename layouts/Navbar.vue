@@ -104,7 +104,7 @@
 
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
-                                    Blog <i class="fas fa-chevron-down"></i>
+                                    Resources<i class="fas fa-chevron-down"></i>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">

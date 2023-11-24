@@ -1,7 +1,7 @@
 <template>
     <div>
       <Navbar />
-      <PageTitle pageTitle="Pivacy Policy" />
+      <PageTitle pageTitle="Leadership" />
       <LetsGetToWork />
       <Footer />
     </div>
@@ -28,7 +28,7 @@
     },
     created: async function () {
         const { slug } = this.$route.params
-        const reaponse = await axios.get(`https://evolvestrapi.pbwebvision.in/api/pages?filters[slug][$eq]=privacy-policy&populate=deep,5`, { params: { slug } })
+        const reaponse = await axios.get(`https://evolvestrapi.pbwebvision.in/api/pages?filters[slug][$eq]=leadership&populate=deep,5`, { params: { slug } })
         this.details = reaponse.data.data;
         const pageData = this.details.length > 0 ? this.details[0] : {};
         if (pageData?.attributes?.seo) {
