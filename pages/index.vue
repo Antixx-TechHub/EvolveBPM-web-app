@@ -2,12 +2,12 @@
     <div>
         <Navbar />
         <MainBanner />
-        <OurFeaturedServices class="pt-40" />
+        <WeveDoneLotsOfWork />
         <Partner />
+        <OurFeaturedServices class="pt-40" />
         <AmazingBusinessSolution />
         <WeAlwaysTryToUnderstand />
         <FunFacts />
-        <WeveDoneLotsOfWork />
         <MeetOurAwesomeTeam />
         <GetBetterSolution />
         <SomeLovelyFeedback />
@@ -23,7 +23,7 @@
 import Navbar from '../layouts/Navbar'
 import MainBanner from '../components/HomeOne/MainBanner'
 import OurFeaturedServices from '../components/Common/OurFeaturedServices'
-import Partner from '../components/Common/Partner'
+import Partner from '../components/HomeOne/Partner'
 import AmazingBusinessSolution from '../components/Common/AmazingBusinessSolution'
 import WeAlwaysTryToUnderstand from '../components/Common/WeAlwaysTryToUnderstand'
 import FunFacts from '../components/Common/FunFacts'
