@@ -1,23 +1,24 @@
 <template>
     <div>
       <Navbar />
-      <ilntelHeader />
+      <PageTitle pageTitle="IIntel" />
+      <LetsGetToWork />
       <Footer />
     </div>
   </template>
   
   <script>
   import Navbar from '../layouts/Navbar'
-  
-  import ilntelHeader from '../components/ilntel/ilntelHeader'
-
+  import PageTitle from '../components/Common/PageTitle'
+  import LetsGetToWork from '../components/Common/LetsGetToWork'
   import Footer from '../layouts/Footer'
   import axios from 'axios';
 
   export default {
     components: {
       Navbar,
-      ilntelHeader,
+      PageTitle,
+      LetsGetToWork,
       Footer,
     },
         data() {

@@ -1,21 +1,24 @@
 <template>
     <div>
       <Navbar />
-      <InovatorHeader />
+      <PageTitle pageTitle="Inovator" />
+      <LetsGetToWork />
       <Footer />
     </div>
   </template>
   
   <script>
   import Navbar from '../layouts/Navbar'
-  import InovatorHeader from '../components/Inovator/InovatorHeader'
+  import PageTitle from '../components/Common/PageTitle'
+  import LetsGetToWork from '../components/Common/LetsGetToWork'
   import Footer from '../layouts/Footer'
   import axios from 'axios';
 
   export default {
     components: {
       Navbar,
-      InovatorHeader,
+      PageTitle,
+      LetsGetToWork,
       Footer,
     },
         data() {

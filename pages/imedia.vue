@@ -1,21 +1,27 @@
 <template>
     <div>
       <Navbar />
-      <imediaHeader />
+      <PageTitle pageTitle="IMedia" />
+      <!-- <imediaHeader /> -->
+      <LetsGetToWork />
       <Footer />
     </div>
   </template>
   
   <script>
   import Navbar from '../layouts/Navbar'
-  import imediaHeader from '../components/iMedia/imediaHeader'
+  import PageTitle from '../components/Common/PageTitle'
+//   import imediaHeader from '../components/iMedia/imediaHeader'
+  import LetsGetToWork from '../components/Common/LetsGetToWork'
   import Footer from '../layouts/Footer'
   import axios from 'axios';
 
   export default {
     components: {
       Navbar,
-      imediaHeader,
+      PageTitle,
+    //   imediaHeader,
+      LetsGetToWork,
       Footer,
     },
         data() {
