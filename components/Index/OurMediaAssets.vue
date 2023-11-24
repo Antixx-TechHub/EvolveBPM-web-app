@@ -12,29 +12,6 @@
                 <div class="d-table-cell">
                     <div class="container mt-50">
                         <div class="row align-items-center">
-                            <div class="col-lg-6">
-                                <div class="banner-content">
-                                    <h1>Secure IT Solutions for a More Secure Environment!</h1>
-                                    <p>We work hand-in-hand with industry-leading brands to help redefine the possibilities and potential of digital engagements.</p>
-                                    
-                                    <div class="banner-btn">
-                                        <NuxtLink to="/contact" class="default-btn mr-3">
-                                            Get Started <span></span>
-                                        </NuxtLink>
-                
-                                        <a 
-                                            class="video-btn popup-youtube"
-                                            v-for="(image, imageIndex) in items"
-                                            :key="imageIndex"
-                                            @click="index = imageIndex"
-                                            style="cursor: pointer"
-                                        >
-                                            <i class="flaticon-play-button"></i> 
-                                            Play Video
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
 
                             <div class="col-lg-6">
                                 <carousel
@@ -59,6 +36,31 @@
                                     </slide>
                                 </carousel>
                             </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="banner-content">
+                                    <h1>Secure IT Solutions for a More Secure Environment!</h1>
+                                    <p>We work hand-in-hand with industry-leading brands to help redefine the possibilities and potential of digital engagements.</p>
+                                    
+                                    <div class="banner-btn">
+                                        <NuxtLink to="/contact" class="default-btn mr-3">
+                                            Get Started <span></span>
+                                        </NuxtLink>
+                
+                                        <a 
+                                            class="video-btn popup-youtube"
+                                            v-for="(image, imageIndex) in items"
+                                            :key="imageIndex"
+                                            @click="index = imageIndex"
+                                            style="cursor: pointer"
+                                        >
+                                            <i class="flaticon-play-button"></i> 
+                                            Play Video
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
