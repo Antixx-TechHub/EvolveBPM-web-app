@@ -31,6 +31,8 @@
                         <div class="content">
                             <h3>{{ team.title }}</h3>
                             <span>{{ team.designation }}</span>
+                            <span>{{ team.shortDesc }}</span>
+
                         </div>
                     </div>
                 </div>
