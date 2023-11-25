@@ -4,6 +4,7 @@
       <PageTitle pageTitle="Contact" />
       <ContactContent />
       <Footer />
+      <Copyright />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Navbar from '../layouts/Navbar'
 import PageTitle from '../components/Common/PageTitle'
 import ContactContent from '../components/Contact/ContactContent'
 import Footer from '../layouts/Footer'
+import Copyright from '../layouts/Copyright'
 
 export default {
   components: { 
@@ -19,6 +21,7 @@ export default {
       PageTitle,
       ContactContent,
       Footer,
+      Copyright,
   }
 }
 </script>
