@@ -5,6 +5,7 @@
       <!-- <imediaHeader /> -->
       <LetsGetToWork />
       <Footer />
+      <Copyright />
     </div>
   </template>
   
@@ -14,6 +15,7 @@
 //   import imediaHeader from '../components/iMedia/imediaHeader'
   import LetsGetToWork from '../components/Common/LetsGetToWork'
   import Footer from '../layouts/Footer'
+  import Copyright from '../layouts/Copyright'
   import axios from 'axios';
 
   export default {
@@ -23,6 +25,7 @@
     //   imediaHeader,
       LetsGetToWork,
       Footer,
+      Copyright,
     },
         data() {
         return {

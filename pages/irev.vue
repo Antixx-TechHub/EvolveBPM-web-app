@@ -5,6 +5,7 @@
       <!-- <IrevHeader /> -->
       <LetsGetToWork />
       <Footer />
+      <Copyright />
     </div>
   </template>
   
@@ -14,6 +15,7 @@
 //   import IrevHeader from '../components/Irev/IrevHeader'
   import LetsGetToWork from '../components/Common/LetsGetToWork'
   import Footer from '../layouts/Footer'
+  import Copyright from '../layouts/Copyright'
   import axios from 'axios';
 
   export default {
@@ -22,6 +24,7 @@
       PageTitle,
     //   IrevHeader,
       LetsGetToWork,
+      Copyright,
       Footer,
     },
         data() {
