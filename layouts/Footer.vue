@@ -93,13 +93,13 @@
                                 <NuxtLink to="/blogs"><i class="fas fa-angle-double-right"></i> Blogs</NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="/"><i class="fas fa-angle-double-right"></i> Pillar pages</NuxtLink>
+                                <NuxtLink to="/pillar-pages"><i class="fas fa-angle-double-right"></i> Pillar pages</NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="/"><i class="fas fa-angle-double-right"></i> Whitepapers</NuxtLink>
+                                <NuxtLink to="/whitepapers"><i class="fas fa-angle-double-right"></i> Whitepapers</NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="/"><i class="fas fa-angle-double-right"></i> Ebooks</NuxtLink>
+                                <NuxtLink to="/ebooks"><i class="fas fa-angle-double-right"></i> Ebooks</NuxtLink>
                             </li>
                             <li>
                                 <NuxtLink to="/case-studies"><i class="fas fa-angle-double-right"></i> Case studies</NuxtLink>
