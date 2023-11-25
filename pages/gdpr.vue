@@ -4,6 +4,7 @@
       <PageTitle pageTitle="GDPR" />
       <LetsGetToWork />
       <Footer />
+      <Copyright />
     </div>
   </template>
   
@@ -12,6 +13,7 @@
   import PageTitle from '../components/Common/PageTitle'
   import LetsGetToWork from '../components/Common/LetsGetToWork'
   import Footer from '../layouts/Footer'
+  import Copyright from '../layouts/Copyright'
   import axios from 'axios';
 
   export default {
@@ -19,6 +21,7 @@
       Navbar,
       PageTitle,
       LetsGetToWork,
+      Copyright,
       Footer,
     },
         data() {
