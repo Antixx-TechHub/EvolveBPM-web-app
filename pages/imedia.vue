@@ -1,7 +1,7 @@
 <template>
     <div>
-      <Navbar />
-      <PageTitle pageTitle="IMedia" />
+      <NavbarStyleTwo />
+      <PageTitle />
       <!-- <imediaHeader /> -->
       <LetsGetToWork />
       <Footer />
@@ -10,8 +10,8 @@
   </template>
   
   <script>
-  import Navbar from '../layouts/Navbar'
-  import PageTitle from '../components/Common/PageTitle'
+  import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
+  import PageTitle from '../components/iMedia/PageTitle'
 //   import imediaHeader from '../components/iMedia/imediaHeader'
   import LetsGetToWork from '../components/Common/LetsGetToWork'
   import Footer from '../layouts/Footer'
@@ -20,7 +20,7 @@
 
   export default {
     components: {
-      Navbar,
+      NavbarStyleTwo,
       PageTitle,
     //   imediaHeader,
       LetsGetToWork,
