@@ -5,7 +5,7 @@
         <div v-if="details !== null">
             <BlogDetails v-bind:detailsContent="details" />
         </div>
-        <Partner />
+        <LetsGetToWork />
         <Footer />
     </div>
 </template>
@@ -14,7 +14,7 @@
 import Navbar from '../../../layouts/Navbar'
 import PageTitle from '../../../components/Common/PageTitle'
 import BlogDetails from '../../../components/Blogs/BlogDetails'
-import Partner from '../../../components/Common/Partner'
+import LetsGetToWork from '../../../components/Common/LetsGetToWork'
 import Footer from '../../../layouts/Footer'
 import axios from 'axios';
 
@@ -23,7 +23,7 @@ export default {
         Navbar,
         PageTitle,
         BlogDetails,
-        Partner,
+        LetsGetToWork,
         Footer,
     },
 

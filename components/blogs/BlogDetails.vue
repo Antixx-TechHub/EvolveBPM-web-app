@@ -49,7 +49,7 @@
                             </div>
                         </div>
 
-                        <div class="post-navigation">
+                        <!-- <div class="post-navigation">
                             <div class="navigation-links">
                                 <div class="nav-previous">
                                     <a href="/blog-details"><i class="flaticon-left-chevron"></i> Prev Post</a>
@@ -59,8 +59,8 @@
                                     <a href="/blog-details">Next Post <i class="flaticon-right-chevron"></i></a>
                                 </div>
                             </div>
-                        </div>
-
+                        </div> -->
+<!-- 
                         <div class="comments-area">
                             <h3 class="comments-title">2 Comments:</h3>
 
@@ -242,7 +242,7 @@
                                     </p>
                                 </form>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
