@@ -3802,15 +3802,16 @@ Team Area CSS
   position: absolute;
   top: 50%;
   left: 50%;
+  right: -50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 2;
   text-decoration: none;
   opacity: 0;
   margin-top: -100px;
-  padding: 10px 15px 5px;
+  padding: 25px 25px 25px 25px;
   background: #ffffff;
-  border-radius: 35px;
+  border-radius: 0px;
   visibility: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;

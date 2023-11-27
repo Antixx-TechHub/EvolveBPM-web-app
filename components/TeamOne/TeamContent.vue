@@ -13,6 +13,8 @@
                             <img :src="team.image.data.attributes.url" alt="teams">
 
                             <div class="social">
+                              <p> <span>{{ team.shortDesc }}</span></p> 
+                               
                                 <a href="team.linkedin" target="_blank">
                                     <i class="fab fa-linkedin"></i>
                                 </a>
@@ -31,8 +33,6 @@
                         <div class="content">
                             <h3>{{ team.title }}</h3>
                             <span>{{ team.designation }}</span>
-                            <span>{{ team.shortDesc }}</span>
-
                         </div>
                     </div>
                 </div>
