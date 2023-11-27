@@ -1,7 +1,8 @@
 <template>
     <div>
       <NavbarStyleTwo />
-      <PageTitle />
+      <PageTitle pageTitle="CASL" />
+      <CaslContent />
       <LetsGetToWork />
       <Footer />
       <Copyright />
@@ -10,7 +11,8 @@
   
   <script>
   import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
-  import PageTitle from '../components/CASL/PageTitle'
+  import PageTitle from '../components/Common/PageTitle'
+  import CaslContent from '../components/CASL/CaslContent'
   import LetsGetToWork from '../components/Common/LetsGetToWork'
   import Footer from '../layouts/Footer'
   import Copyright from '../layouts/Copyright'
@@ -20,6 +22,7 @@
     components: {
       NavbarStyleTwo,
       PageTitle,
+      CaslContent,
       LetsGetToWork,
       Footer,
       Copyright,
