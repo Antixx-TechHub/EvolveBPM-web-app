@@ -22,7 +22,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <NuxtLink to="/about-one" class="nav-link">
+                                <NuxtLink to="/about-us" class="nav-link">
                                     About Us
                                 </NuxtLink>
                             </li>
@@ -116,7 +116,7 @@
                                     <li class="nav-item">
                                         <NuxtLink to="/case-studies" class="nav-link">Case Studies</NuxtLink>
                                     </li>
-                                    
+
                                 </ul>
                             </li>
 
