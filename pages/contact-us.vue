@@ -13,7 +13,7 @@
 import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
 import PageTitle from '../components/ContactUs/PageTitle'
 import LetsGetToWork from '../components/Common/LetsGetToWork'
-import ContactContent from '../components/Contact/ContactContent'
+import ContactContent from '../components/ContactUs/ContactContent'
 import Footer from '../layouts/Footer'
 import Copyright from '../layouts/Copyright'
 
