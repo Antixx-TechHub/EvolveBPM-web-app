@@ -24,7 +24,7 @@
 
                         <ul class="footer-quick-links">
                             <li>
-                                <NuxtLink to="/about-one"><i class="fas fa-angle-double-right"></i> About</NuxtLink>
+                                <NuxtLink to="/about-us"><i class="fas fa-angle-double-right"></i> About Us</NuxtLink>
                             </li>
                             <li>
                                 <NuxtLink to="/leadership"><i class="fas fa-angle-double-right"></i> Leadership</NuxtLink>
