@@ -2,8 +2,9 @@
     <div>
         <NavbarStyleTwo />
         <PageTitle />
+        <OverViewDescription />
         <CaseStudies />
-        <Partner />
+        <LetsGetToWork />
         <Footer />
         <Copyright />
     </div>
@@ -12,8 +13,9 @@
 <script>
 import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
 import PageTitle from '../components/CaseStudies/PageTitle'
+import OverViewDescription from '../components/blogs/OverViewDescription'
 import CaseStudies from '../components/CaseStudies/CaseStudies'
-import Partner from '../components/Common/Partner'
+import LetsGetToWork from '../components/Common/LetsGetToWork'
 import Footer from '../layouts/Footer'
 import Copyright from '../layouts/Copyright'
 
@@ -22,8 +24,9 @@ export default {
     components: {
         NavbarStyleTwo,
         PageTitle,
+        OverViewDescription,
         CaseStudies,
-        Partner,
+        LetsGetToWork,
         Footer,
         Copyright,
     },

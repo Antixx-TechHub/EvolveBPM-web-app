@@ -1,33 +1,33 @@
 <template>
     <div>
-      <NavbarStyleTwo />
-      <PageTitle pageTitle="GDPR" />
-      <GdprContent />
-      <LetsGetToWork />
-      <Footer />
-      <Copyright />
+        <Navbar />
+        <PageTitle pageTitle="GDPR" />
+        <GdprContent />
+        <LetsGetToWork />
+        <Footer />
+        <Copyright />
     </div>
-  </template>
+</template>
   
-  <script>
-  import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
-  import PageTitle from '../components/Common/PageTitle'
-  import GdprContent from '../components/GDPR/GdprContent'
-  import LetsGetToWork from '../components/Common/LetsGetToWork'
-  import Footer from '../layouts/Footer'
-  import Copyright from '../layouts/Copyright'
-  import axios from 'axios';
+<script>
+import Navbar from '../layouts/Navbar'
+import PageTitle from '../components/Common/PageTitle'
+import GdprContent from '../components/GDPR/GdprContent'
+import LetsGetToWork from '../components/Common/LetsGetToWork'
+import Footer from '../layouts/Footer'
+import Copyright from '../layouts/Copyright'
+import axios from 'axios';
 
-  export default {
+export default {
     components: {
-      NavbarStyleTwo,
-      PageTitle,
-      GdprContent,
-      LetsGetToWork,
-      Copyright,
-      Footer,
+        Navbar,
+        PageTitle,
+        GdprContent,
+        LetsGetToWork,
+        Copyright,
+        Footer,
     },
-        data() {
+    data() {
         return {
             seoData: null,
         }

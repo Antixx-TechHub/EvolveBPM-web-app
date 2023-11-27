@@ -1,5 +1,5 @@
 <template>
-    <div class="postbox__area pt-120 pb-5">
+    <div class="postbox__area pt-100 pb-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6" v-for="blog in blogs.slice(

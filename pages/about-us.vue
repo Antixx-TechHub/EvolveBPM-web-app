@@ -10,7 +10,9 @@
         <OurExpertTeam class="pt-0" />
         <GetOnlyNewUpdateFrom />
         <WePartnerWithCompaniessizes />
+        <LetsGetToWork />
         <Footer />
+        <Copyright />
     </div>
 </template>
 
@@ -25,7 +27,9 @@ import SomeLovelyFeedback from '../components/Common/SomeLovelyFeedback'
 import OurExpertTeam from '../components/Common/OurExpertTeam'
 import GetOnlyNewUpdateFrom from '../components/AboutTwo/GetOnlyNewUpdateFrom'
 import WePartnerWithCompaniessizes from '../components/AboutTwo/WePartnerWithCompaniessizes'
+import LetsGetToWork from '../components/Common/LetsGetToWork'
 import Footer from '../layouts/Footer'
+import Copyright from '../layouts/Copyright'
 
 export default {
     components: {
@@ -39,7 +43,9 @@ export default {
         OurExpertTeam,
         GetOnlyNewUpdateFrom,
         WePartnerWithCompaniessizes,
+        LetsGetToWork,
         Footer,
+        Copyright,
     }
 }
 </script>
