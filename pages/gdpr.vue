@@ -2,6 +2,7 @@
     <div>
       <NavbarStyleTwo />
       <PageTitle pageTitle="GDPR" />
+      <GdprContent />
       <LetsGetToWork />
       <Footer />
       <Copyright />
@@ -10,7 +11,8 @@
   
   <script>
   import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
-  import PageTitle from '../components/GDPR/PageTitle'
+  import PageTitle from '../components/Common/PageTitle'
+  import GdprContent from '../components/GDPR/GdprContent'
   import LetsGetToWork from '../components/Common/LetsGetToWork'
   import Footer from '../layouts/Footer'
   import Copyright from '../layouts/Copyright'
@@ -20,6 +22,7 @@
     components: {
       NavbarStyleTwo,
       PageTitle,
+      GdprContent,
       LetsGetToWork,
       Copyright,
       Footer,
