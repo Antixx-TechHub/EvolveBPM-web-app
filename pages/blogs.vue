@@ -5,6 +5,7 @@
         <Blog />
         <Partner />
         <Footer />
+        <Copyright  />
     </div>
 </template>
 
@@ -14,6 +15,8 @@ import PageTitle from '../components/Common/PageTitle'
 import Blog from '../components/Blogs/Blog'
 import Partner from '../components/Common/Partner'
 import Footer from '../layouts/Footer'
+import Copyright from '../layouts/Copyright'
+
 
 export default {
     components: {
@@ -22,6 +25,7 @@ export default {
         Blog,
         Partner,
         Footer,
+        Copyright ,
     },
 };
 </script>

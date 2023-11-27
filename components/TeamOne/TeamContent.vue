@@ -6,17 +6,17 @@
                 <h2>Our Expert Team</h2>
             </div>
 
-            <div class="row">
-                <div class="col-lg-4 col-sm-6">
+            <div class="row" v-if="teams !== null">
+                <div class="col-lg-4 col-sm-6" v-for="team in teams.singleTeam" :key="team.id">
                     <div class="single-team-box">
                         <div class="image">
-                            <img src="~/assets/images/team/team-10.jpg" alt="team">
+                            <img :src="team.image.data.attributes.url" alt="teams">
 
                             <div class="social">
-                                <a href="https://www.linkedin.com/" target="_blank">
+                                <a href="team.linkedin" target="_blank">
                                     <i class="fab fa-linkedin"></i>
                                 </a>
-                                <a href="https://www.facebook.com/" target="_blank">
+                                <!-- <a href="https://www.facebook.com/" target="_blank">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="https://twitter.com/" target="_blank">
@@ -24,18 +24,20 @@
                                 </a>
                                 <a href="https://www.instagram.com/" target="_blank">
                                     <i class="fab fa-instagram"></i>
-                                </a>
+                                </a> -->
                             </div>
                         </div>
 
                         <div class="content">
-                            <h3>John Smith</h3>
-                            <span>CEO & Founder</span>
+                            <h3>{{ team.title }}</h3>
+                            <span>{{ team.designation }}</span>
+                            <span>{{ team.shortDesc }}</span>
+
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-lg-4 col-sm-6">
+                <!-- <div class="col-lg-4 col-sm-6">
                     <div class="single-team-box">
                         <div class="image">
                             <img src="~/assets/images/team/team-11.jpg" alt="team">
@@ -257,10 +259,10 @@
                             <span>Marketing Manager</span>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Pagination -->
-                <div class="col-lg-12 col-sm-12">
+                <!-- <div class="col-lg-12 col-sm-12">
                     <div class="pagination-area">
                         <a href="/team-one" class="prev page-numbers">
                             <i class="fas fa-angle-double-left"></i>
@@ -273,22 +275,35 @@
                             <i class="fas fa-angle-double-right"></i>
                         </a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
-        <div class="shape-img2"><img src="~/assets/images/shape/shape-2.svg" alt="image"></div>
+        <!-- <div class="shape-img2"><img src="~/assets/images/shape/shape-2.svg" alt="image"></div>
         <div class="shape-img3"><img src="~/assets/images/shape/shape-3.svg" alt="image"></div>
         <div class="shape-img4"><img src="~/assets/images/shape/shape-4.png" alt="image"></div>
         <div class="shape-img5"><img src="~/assets/images/shape/shape-5.png" alt="image"></div>
         <div class="shape-img6"><img src="~/assets/images/shape/shape-6.png" alt="image"></div>
         <div class="shape-img9"><img src="~/assets/images/shape/shape-9.png" alt="image"></div>
-        <div class="shape-img10"><img src="~/assets/images/shape/shape-10.png" alt="image"></div>
+        <div class="shape-img10"><img src="~/assets/images/shape/shape-10.png" alt="image"></div> -->
     </div>
 </template>
 
 <script>
+
+import axios from 'axios'
+
     export default {
-        name: 'TeamContent'
-    }
+        name: 'TeamContent',
+        data() {
+        return {
+            teams: null,
+        }
+    },
+    created: async function () {
+        const response = await axios.get('https://evolvestrapi.pbwebvision.in/api/team?populate=deep,5')
+        const { data: { attributes } } = response.data
+        this.teams = attributes
+    },
+}
 </script>

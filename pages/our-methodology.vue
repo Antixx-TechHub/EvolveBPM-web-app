@@ -1,10 +1,9 @@
 <template>
     <div>
       <Navbar />
-      <PageTitle pageTitle="Pivacy Policy" />
+      <PageTitle pageTitle="Our Methodology" />
       <LetsGetToWork />
       <Footer />
-      <Copyright />
     </div>
   </template>
   
@@ -13,7 +12,6 @@
   import PageTitle from '../components/Common/PageTitle'
   import LetsGetToWork from '../components/Common/LetsGetToWork'
   import Footer from '../layouts/Footer'
-  import Copyright from '../layouts/Copyright'
   import axios from 'axios';
 
   export default {
@@ -22,7 +20,6 @@
       PageTitle,
       LetsGetToWork,
       Footer,
-      Copyright,
     },
         data() {
         return {
@@ -31,7 +28,7 @@
     },
     created: async function () {
         const { slug } = this.$route.params
-        const reaponse = await axios.get(`https://evolvestrapi.pbwebvision.in/api/pages?filters[slug][$eq]=privacy-policy&populate=deep,5`, { params: { slug } })
+        const reaponse = await axios.get(`https://evolvestrapi.pbwebvision.in/api/pages?filters[slug][$eq]=our-methodology&populate=deep,5`, { params: { slug } })
         this.details = reaponse.data.data;
         const pageData = this.details.length > 0 ? this.details[0] : {};
         if (pageData?.attributes?.seo) {

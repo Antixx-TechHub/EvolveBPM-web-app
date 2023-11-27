@@ -10,10 +10,10 @@
                         <p>Lorem ipsum dolor sit amet, is consectetur adipiscing elit, sed do ipsum lorem dollar eiusmo.
                             Lorem ipsum dolor sit amet, is sit consectetur adipiscing elit.</p>
                         <ul class="social-links">
-                            <li><a href="#" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                            <li><a href="#" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                            <li><a href="#" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                            <li><a href="#" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/evolve-bpm/" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                            <li><a href="https://www.instagram.com/evolvebpm/" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                            <li><a href="https://www.twitter.com/evolvebpm" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                            <li><a href="https://www.facebook.com/EvolveBPM/" target="_blank"><i class='bx bxl-facebook'></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -24,25 +24,25 @@
 
                         <ul class="footer-quick-links">
                             <li>
-                                <NuxtLink to="/"><i class="fas fa-angle-double-right"></i> About</NuxtLink>
+                                <NuxtLink to="/about-one"><i class="fas fa-angle-double-right"></i> About</NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="/"><i class="fas fa-angle-double-right"></i> Leadership</NuxtLink>
+                                <NuxtLink to="/leadership"><i class="fas fa-angle-double-right"></i> Leadership</NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="/"><i class="fas fa-angle-double-right"></i> Our Methodology (DDIA)</NuxtLink>
+                                <NuxtLink to="/our-methodology"><i class="fas fa-angle-double-right"></i> Our Methodology (DDIA)</NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="/"><i class="fas fa-angle-double-right"></i> Careers</NuxtLink>
+                                <NuxtLink to="/careers"><i class="fas fa-angle-double-right"></i> Careers</NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="/"><i class="fas fa-angle-double-right"></i> CSR Activities</NuxtLink>
+                                <NuxtLink to="/csr-activities"><i class="fas fa-angle-double-right"></i> CSR Activities</NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="/"><i class="fas fa-angle-double-right"></i> Contact us</NuxtLink>
+                                <NuxtLink to="/contact-us"><i class="fas fa-angle-double-right"></i> Contact us</NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="/"><i class="fas fa-angle-double-right"></i> Request Demo</NuxtLink>
+                                <NuxtLink to="/request-demo"><i class="fas fa-angle-double-right"></i> Request Demo</NuxtLink>
                             </li>
                         </ul>
                     </div>
@@ -54,13 +54,13 @@
 
                         <ul class="footer-quick-links">
                             <li>
-                                <NuxtLink to="/"><i class="fas fa-angle-double-right"></i> iRev</NuxtLink>
+                                <NuxtLink to="/irev"><i class="fas fa-angle-double-right"></i> iRev</NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="/"><i class="fas fa-angle-double-right"></i> iData</NuxtLink>
+                                <NuxtLink to="/idata"><i class="fas fa-angle-double-right"></i> iData</NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="/"><i class="fas fa-angle-double-right"></i> iMedia</NuxtLink>
+                                <NuxtLink to="/imedia"><i class="fas fa-angle-double-right"></i> iMedia</NuxtLink>
                             </li>
                         </ul>
                     </div>
@@ -72,13 +72,13 @@
 
                         <ul class="footer-quick-links">
                             <li>
-                                <NuxtLink to="/"><i class="fas fa-angle-double-right"></i> Innovator</NuxtLink>
+                                <NuxtLink to="/innovator"><i class="fas fa-angle-double-right"></i> Innovator</NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="/"><i class="fas fa-angle-double-right"></i> Predictor</NuxtLink>
+                                <NuxtLink to="/predictor"><i class="fas fa-angle-double-right"></i> Predictor</NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="/"><i class="fas fa-angle-double-right"></i> Intello</NuxtLink>
+                                <NuxtLink to="/intello"><i class="fas fa-angle-double-right"></i> Intello</NuxtLink>
                             </li>
                         </ul>
                     </div>
@@ -90,19 +90,19 @@
 
                         <ul class="footer-quick-links">
                             <li>
-                                <NuxtLink to="/"><i class="fas fa-angle-double-right"></i> Blogs</NuxtLink>
+                                <NuxtLink to="/blogs"><i class="fas fa-angle-double-right"></i> Blogs</NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="/"><i class="fas fa-angle-double-right"></i> Pillar pages</NuxtLink>
+                                <NuxtLink to="/pillar-pages"><i class="fas fa-angle-double-right"></i> Pillar pages</NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="/"><i class="fas fa-angle-double-right"></i> Whitepapers</NuxtLink>
+                                <NuxtLink to="/whitepapers"><i class="fas fa-angle-double-right"></i> Whitepapers</NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="/"><i class="fas fa-angle-double-right"></i> Ebooks</NuxtLink>
+                                <NuxtLink to="/ebooks"><i class="fas fa-angle-double-right"></i> Ebooks</NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="/"><i class="fas fa-angle-double-right"></i> Case studies</NuxtLink>
+                                <NuxtLink to="/case-studies"><i class="fas fa-angle-double-right"></i> Case studies</NuxtLink>
                             </li>
                         </ul>
                     </div>

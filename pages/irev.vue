@@ -1,21 +1,30 @@
 <template>
     <div>
       <Navbar />
-      <IrevHeader />
+      <PageTitle pageTitle="IRev" />
+      <!-- <IrevHeader /> -->
+      <LetsGetToWork />
       <Footer />
+      <Copyright />
     </div>
   </template>
   
   <script>
   import Navbar from '../layouts/Navbar'
-  import IrevHeader from '../components/Irev/IrevHeader'
+  import PageTitle from '../components/Common/PageTitle'
+//   import IrevHeader from '../components/Irev/IrevHeader'
+  import LetsGetToWork from '../components/Common/LetsGetToWork'
   import Footer from '../layouts/Footer'
+  import Copyright from '../layouts/Copyright'
   import axios from 'axios';
 
   export default {
     components: {
       Navbar,
-      IrevHeader,
+      PageTitle,
+    //   IrevHeader,
+      LetsGetToWork,
+      Copyright,
       Footer,
     },
         data() {

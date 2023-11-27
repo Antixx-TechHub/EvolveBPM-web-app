@@ -1,16 +1,21 @@
 <template>
     <div>
         <Navbar />
-        <TeamAreaHomeFive />
+        <PageTitle pageTitle="Our Team" />
+        <TeamContent />
         <Partner />
+        <LetsGetToWork />
         <Footer />
     </div>
 </template>
 
 <script>
 import Navbar from '../layouts/Navbar'
-import TeamAreaHomeFive from '../components/AboutUs/TeamAreaHomeFive'
+import PageTitle from '../components/Common/PageTitle'
+// import TeamAreaHomeFive from '../components/AboutUs/TeamAreaHomeFive'
+import TeamContent from '../components/TeamOne/TeamContent'
 import Partner from '../components/Common/Partner'
+import LetsGetToWork from '../components/Common/LetsGetToWork'
 import Footer from '../layouts/Footer'
 import axios from 'axios';
 
@@ -18,8 +23,10 @@ import axios from 'axios';
 export default {
     components: {
         Navbar,
-        TeamAreaHomeFive,
+        PageTitle,
+        TeamContent,
         Partner,
+        LetsGetToWork,
         Footer,
     },
         data() {

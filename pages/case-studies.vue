@@ -5,6 +5,7 @@
         <CaseStudies />
         <Partner />
         <Footer />
+        <Copyright />
     </div>
 </template>
 
@@ -14,6 +15,8 @@ import PageTitle from '../components/Common/PageTitle'
 import CaseStudies from '../components/CaseStudies/CaseStudies'
 import Partner from '../components/Common/Partner'
 import Footer from '../layouts/Footer'
+import Copyright from '../layouts/Copyright'
+
 
 export default {
     components: {
@@ -22,6 +25,7 @@ export default {
         CaseStudies,
         Partner,
         Footer,
+        Copyright,
     },
 };
 </script>
