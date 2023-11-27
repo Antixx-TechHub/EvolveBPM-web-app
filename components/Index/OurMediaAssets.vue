@@ -1,10 +1,6 @@
 <template>
     <div>
-        <CoolLightBox 
-            :items="items" 
-            :fullScreen="true"
-            :index="index"
-            @close="index = null">
+        <CoolLightBox :items="items" :fullScreen="true" :index="index" @close="index = null">
         </CoolLightBox>
 
         <div class="it-banner">
@@ -14,21 +10,15 @@
                         <div class="row align-items-center">
 
                             <div class="col-lg-6">
-                                <carousel
-                                    :autoplay="true"
-                                    :loop="true"
-                                    :autoplayTimeout="7000"
-                                    :speed="1000"
-                                    :paginationEnabled="false"
-                                    :perPageCustom="[[0, 1]]"
-                                    class="it-banner-image owl-carousel owl-theme"
-                                >
+                                <carousel :autoplay="true" :loop="true" :autoplayTimeout="7000" :speed="1000"
+                                    :paginationEnabled="false" :perPageCustom="[[0, 1]]"
+                                    class="it-banner-image owl-carousel owl-theme">
                                     <slide>
                                         <div class="image">
                                             <img src="~/assets/images/it-banner/animate-img.jpg" alt="image">
                                         </div>
                                     </slide>
-                                        
+
                                     <slide>
                                         <div class="image">
                                             <img src="~/assets/images/it-banner/animate-img2.jpg" alt="image">
@@ -36,28 +26,10 @@
                                     </slide>
                                 </carousel>
                             </div>
-                            
+
                             <div class="col-lg-6">
-                                <div class="banner-content">
-                                    <h1>Secure IT Solutions for a More Secure Environment!</h1>
-                                    <p>We work hand-in-hand with industry-leading brands to help redefine the possibilities and potential of digital engagements.</p>
-                                    
-                                    <div class="banner-btn">
-                                        <NuxtLink to="/contact" class="default-btn mr-3">
-                                            Get Started <span></span>
-                                        </NuxtLink>
-                
-                                        <a 
-                                            class="video-btn popup-youtube"
-                                            v-for="(image, imageIndex) in items"
-                                            :key="imageIndex"
-                                            @click="index = imageIndex"
-                                            style="cursor: pointer"
-                                        >
-                                            <i class="flaticon-play-button"></i> 
-                                            Play Video
-                                        </a>
-                                    </div>
+                                <div class="container">
+                                    <MicrositeLogos />
                                 </div>
                             </div>
 
@@ -65,7 +37,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="shape-img2"><img src="~/assets/images/shape/shape-2.svg" alt="image"></div>
             <div class="shape-img3"><img src="~/assets/images/shape/shape-3.svg" alt="image"></div>
             <div class="shape-img4"><img src="~/assets/images/shape/shape-4.png" alt="image"></div>
@@ -78,25 +50,29 @@
             <div class="shape-img11"><img src="~/assets/images/shape/shape-11.png" alt="image"></div>
             <div class="shape-img12"><img src="~/assets/images/shape/shape-12.png" alt="image"></div>
         </div>
-    </div>  
+    </div>
 </template>
 
 <script>
-    import CoolLightBox from 'vue-cool-lightbox'
-    import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
-    
-    export default {
-        name: 'MainBannerFour',
-        components: { CoolLightBox },
-        data: function () {
-            return {
-                items: [
-                    {
-                        src: 'https://www.youtube.com/watch?v=bk7McNUjWgw',
-                    }
-                ],
-                index: null
-            };
-        },
-    }
+import CoolLightBox from 'vue-cool-lightbox'
+import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
+import MicrositeLogos from '../Carousels/MicrositeLogos'
+
+export default {
+    name: 'MainBannerFour',
+    components: {
+        CoolLightBox,
+        MicrositeLogos
+    },
+    data: function () {
+        return {
+            items: [
+                {
+                    src: 'https://www.youtube.com/watch?v=bk7McNUjWgw',
+                }
+            ],
+            index: null
+        };
+    },
+}
 </script>
