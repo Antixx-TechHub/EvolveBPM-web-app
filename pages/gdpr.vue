@@ -1,6 +1,6 @@
 <template>
     <div>
-      <Navbar />
+      <NavbarStyleTwo />
       <PageTitle pageTitle="GDPR" />
       <LetsGetToWork />
       <Footer />
@@ -9,8 +9,8 @@
   </template>
   
   <script>
-  import Navbar from '../layouts/Navbar'
-  import PageTitle from '../components/Common/PageTitle'
+  import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
+  import PageTitle from '../components/GDPR/PageTitle'
   import LetsGetToWork from '../components/Common/LetsGetToWork'
   import Footer from '../layouts/Footer'
   import Copyright from '../layouts/Copyright'
@@ -18,7 +18,7 @@
 
   export default {
     components: {
-      Navbar,
+      NavbarStyleTwo,
       PageTitle,
       LetsGetToWork,
       Copyright,

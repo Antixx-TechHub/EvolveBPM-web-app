@@ -1,22 +1,22 @@
 <template>
     <div>
-      <Navbar />
-      <PageTitle pageTitle="Our Methodology" />
+      <NavbarStyleTwo />
+      <PageTitle />
       <LetsGetToWork />
       <Footer />
     </div>
   </template>
   
   <script>
-  import Navbar from '../layouts/Navbar'
-  import PageTitle from '../components/Common/PageTitle'
+  import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
+  import PageTitle from '../components/OurMethodology/PageTitle'
   import LetsGetToWork from '../components/Common/LetsGetToWork'
   import Footer from '../layouts/Footer'
   import axios from 'axios';
 
   export default {
     components: {
-      Navbar,
+      NavbarStyleTwo,
       PageTitle,
       LetsGetToWork,
       Footer,
