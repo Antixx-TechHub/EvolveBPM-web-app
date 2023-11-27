@@ -24,13 +24,13 @@
                                     class="it-banner-image owl-carousel owl-theme"
                                 >
                                     <slide>
-                                        <div class="animate-image">
+                                        <div class="image">
                                             <img src="~/assets/images/it-banner/animate-img.jpg" alt="image">
                                         </div>
                                     </slide>
                                         
                                     <slide>
-                                        <div class="animate-image">
+                                        <div class="image">
                                             <img src="~/assets/images/it-banner/animate-img2.jpg" alt="image">
                                         </div>
                                     </slide>
