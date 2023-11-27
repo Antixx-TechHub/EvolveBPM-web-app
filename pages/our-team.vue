@@ -3,7 +3,6 @@
         <Navbar />
         <PageTitle pageTitle="Our Team" />
         <TeamContent />
-        <Partner />
         <LetsGetToWork />
         <Footer />
     </div>
@@ -14,7 +13,6 @@ import Navbar from '../layouts/Navbar'
 import PageTitle from '../components/Common/PageTitle'
 // import TeamAreaHomeFive from '../components/AboutUs/TeamAreaHomeFive'
 import TeamContent from '../components/TeamOne/TeamContent'
-import Partner from '../components/Common/Partner'
 import LetsGetToWork from '../components/Common/LetsGetToWork'
 import Footer from '../layouts/Footer'
 import axios from 'axios';
@@ -25,7 +23,6 @@ export default {
         Navbar,
         PageTitle,
         TeamContent,
-        Partner,
         LetsGetToWork,
         Footer,
     },
