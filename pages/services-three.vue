@@ -1,17 +1,20 @@
 <template>
     <div>
         <Navbar />
-        <PageTitle pageTitle="SEO Services" />
+        <PageTitle />
         <ServicesCard />
         <Footer />
+        <Copyright />
     </div>
 </template>
 
 <script>
 import Navbar from '../layouts/Navbar'
-import PageTitle from '../components/Common/PageTitle'
+import PageTitle from '../components/ServicesOne/PageTitle'
 import ServicesCard from '../components/ServicesThree/ServicesCard'
 import Footer from '../layouts/Footer'
+import Copyright from '../layouts/Copyright'
+
 
 export default {
     components: { 
@@ -19,6 +22,7 @@ export default {
         PageTitle,
         ServicesCard,
         Footer,
+        Copyright,
     }
 }
 </script>

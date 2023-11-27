@@ -93,12 +93,6 @@
                                     <li class="nav-item">
                                         <NuxtLink to="/our-team" class="nav-link">Our Team</NuxtLink>
                                     </li>
-                                    <li class="nav-item">
-                                        <NuxtLink to="/team-details" class="nav-link">Team Details</NuxtLink>
-                                    </li>
-                                    <li class="nav-item">
-                                        <NuxtLink to="/faqs" class="nav-link">FAQ's</NuxtLink>
-                                    </li>
                                 </ul>
                             </li>
 
