@@ -5,8 +5,9 @@
         <div v-if="details !== null">
             <SuccesStoryDetails v-bind:detailsContent="details" />
         </div>
-        <Partner />
+        <LetsGetToWork />
         <Footer />
+        <Copyright />
     </div>
 </template>
 
@@ -14,8 +15,9 @@
 import Navbar from '../../../layouts/Navbar'
 import PageTitle from '../../../components/Common/PageTitle'
 import SuccesStoryDetails from '../../../components/SuccessStories/SuccesStoryDetails'
-import Partner from '../../../components/Common/Partner'
+import LetsGetToWork from '../../../components/Common/LetsGetToWork'
 import Footer from '../../../layouts/Footer'
+import Copyright from '../../../layouts/Copyright'
 import axios from 'axios';
 
 export default {
@@ -23,8 +25,9 @@ export default {
         Navbar,
         PageTitle,
         SuccesStoryDetails,
-        Partner,
+        LetsGetToWork,
         Footer,
+        Copyright,
     },
 
     data() {
