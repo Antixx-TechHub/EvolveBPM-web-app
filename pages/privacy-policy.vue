@@ -2,6 +2,7 @@
     <div>
       <Navbar />
       <PageTitle pageTitle="Pivacy Policy" />
+      <PrivacyPolicyContent />
       <LetsGetToWork />
       <Footer />
       <Copyright />
@@ -11,6 +12,7 @@
   <script>
   import Navbar from '../layouts/Navbar'
   import PageTitle from '../components/Common/PageTitle'
+  import PrivacyPolicyContent from '../components/PrivacyPolicy/PrivacyPolicyContent'
   import LetsGetToWork from '../components/Common/LetsGetToWork'
   import Footer from '../layouts/Footer'
   import Copyright from '../layouts/Copyright'
@@ -20,6 +22,7 @@
     components: {
       Navbar,
       PageTitle,
+      PrivacyPolicyContent,
       LetsGetToWork,
       Footer,
       Copyright,
