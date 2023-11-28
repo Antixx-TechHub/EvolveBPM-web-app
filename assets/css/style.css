@@ -1292,6 +1292,7 @@ Sidebar Area Style
   border-radius: 50%;
   color: #aba5a5;
   display: block;
+  padding-top: 10px;
 }
 
 .sidebar-modal-inner .sidebar-contact-area .contact-info .contact-info-content .social li a i {
