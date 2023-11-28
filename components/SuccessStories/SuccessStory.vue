@@ -1,5 +1,5 @@
 <template>
-    <div class="postbox__area pt-100 pb-95">
+    <div class="postbox__area pt-100 pb-5">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-12 col-xl-12 col-lg-12">

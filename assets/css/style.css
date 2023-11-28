@@ -197,8 +197,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* section-title */
 .section-title {
-  text-align: center;
-  max-width: 600px;
+  text-align: left;
+  max-width: 1366px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 55px;
@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-title h2 {
-  max-width: 560px;
+  max-width: 1366px;
   text-transform: capitalize;
   font-size: 40px;
   margin-left: auto;
@@ -1296,6 +1296,7 @@ Sidebar Area Style
   border-radius: 50%;
   color: #aba5a5;
   display: block;
+  padding-top: 10px;
 }
 
 .sidebar-modal-inner .sidebar-contact-area .contact-info .contact-info-content .social li a i {
@@ -1483,13 +1484,17 @@ Main Banner Area CSS
 .banner-content h1 {
   line-height: 1.2;
   margin-bottom: 0;
-  font-size: 59px;
+  font-size: 55px;
+  font-weight: 600;
+  color: #ffffff;
 }
 
 .banner-content p {
-  font-size: 17px;
+  font-size: 18px;
   margin-top: 15px;
   margin-bottom: 0;
+  color: #ffffff;
+  font-weight: 400;
 }
 
 .banner-content form {
@@ -7878,7 +7883,7 @@ Start IT Startup Page CSS
 .work-card .content .work-btn {
   background-color: #ffffff;
   color: #0000ff;
-  padding: 10px 20px 5px;
+  padding: 10px 15px 10px 15px;
   border-radius: 30px;
   font-size: 15px;
 }
@@ -9058,6 +9063,8 @@ Portfolio Agency Page CSS
 
 .pa-bg1 {
   background-image: url("../images/portfolio-agency.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*================================================
@@ -12277,7 +12284,7 @@ BD Choose Area CSS
 Footer Wrap Area CSS
 =================================================*/
 .footer-wrap-area {
-  background-color: #1F102B;
+  background-color: #00538E;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -12448,7 +12455,7 @@ Footer Wrap Area CSS
 Copyright Wrap Area CSS
 =================================================*/
 .copyright-wrap-area {
-  background-color: #11011E;
+  background-color: #004068;
   padding-top: 25px;
   padding-bottom: 25px;
 }

@@ -4,7 +4,9 @@
             <div class="sidebar-about-area">
                 <div class="title">
                     <h2>About Us</h2>
-                    <p>We believe brand interaction is key in communication. Real innovations and a positive customer experience are the heart of successful communication. No fake products and services. The customer is king, their lives and needs are the inspiration.</p>
+                    <p>In a world of ever-increasing automation and artificial intelligence, it can be easy to forget the
+                        magic of the human touch. At Pink Lemonade, we believe the combination of advanced technology and
+                        human intuition produces truly exceptional marketing campaigns.</p>
                 </div>
             </div>
 
@@ -59,9 +61,9 @@
                 <div class="contact-info">
                     <div class="contact-info-content">
                         <h2>
-                            <a href="tel:+0881306298615">+088 130 629 8615</a>
+                            <a href="tel:+916362606905">+91 63626 06905</a>
                             <span>OR</span>
-                            <a href="mailto:hello@bionix.com">hello@bionix.com</a>
+                            <a href="mailto:reachus@pinklemonade.in">reachus@pinklemonade.in</a>
                         </h2>
 
                         <ul class="social">

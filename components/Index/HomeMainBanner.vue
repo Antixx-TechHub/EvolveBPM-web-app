@@ -7,15 +7,15 @@
             @close="index = null">
         </CoolLightBox>
 
-        <div class="saas-banner-two">
+        <div class="saas-banner-two pa-bg1">
             <div class="d-table">
                 <div class="d-table-cell">
                     <div class="container mt-50">
                         <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="banner-content">
-                                    <h1>Manage Your Digital Marketing in One Place Bionix</h1>
-                                    <p>We work hand-in-hand with industry-leading brands to help redefine the possibilities and potential of digital engagements.</p>
+                                    <h1>MARKETING <br>MAGIC, MADE <br>WITH LOVE AND AI</h1>
+                                    <p>We're Pink Lemonade, the world's first integrated<br>marketing agency to combine human expertis<br>and AI to create marketing magic!</p>
                                     
                                     <div class="banner-btn">
                                         <NuxtLink to="/contact" class="default-btn mr-3">
@@ -27,7 +27,7 @@
 
                             <div class="col-lg-6">
                                 <div class="saas-banner-image animate-tb">
-                                    <img src="~/assets/images/saas-banner.png" alt="image">
+                                    <!-- <img src="~/assets/images/saas-banner.png" alt="image">
 
                                     <div class="solution-video">
                                         <a 
@@ -39,7 +39,7 @@
                                         >
                                             <i class="flaticon-play-button"></i>
                                         </a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
