@@ -1482,12 +1482,15 @@ Main Banner Area CSS
   margin-bottom: 0;
   font-size: 55px;
   font-weight: 600;
+  color: #ffffff;
 }
 
 .banner-content p {
-  font-size: 17px;
+  font-size: 18px;
   margin-top: 15px;
   margin-bottom: 0;
+  color: #ffffff;
+  font-weight: 400;
 }
 
 .banner-content form {
