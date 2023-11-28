@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import ProjectCarousel from '../Carousels/ProjectCarousel'
+import ProjectCarousel from '../Index/ProjectCarousel'
 export default {
     name: 'WeveDoneLotsOfWork',
     components: {

@@ -17,7 +17,7 @@
 <script>
 import Navbar from '../layouts/NavbarStyleTwo'
 import HomeMainBanner from '../components/Index/HomeMainBanner'
-import OurFeaturedServices from '../components/Common/OurFeaturedServices'
+import OurFeaturedServices from '../components/Index/OurFeaturedServices'
 import GlobalSalesTeam from '../components/Index/GlobalSalesTeam'
 import Certificates from '../components/Index/Certificates'
 import Awards from '../components/Index/Awards'
