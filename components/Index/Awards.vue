@@ -1,5 +1,5 @@
 <template>
-    <div class="partner-area ptb-100 pt-0">
+    <div class="partner-area">
         <div class="container">
             <AwardsCarousel />
         </div>
@@ -7,11 +7,11 @@
 </template>
 
 <script>
-import PartnerCarousel from '../Carousels/PartnerCarousel'
+import AwardsCarousel from '../Carousels/AwardsCarousel'
 export default {
     name: 'partner',
     components: {
-        PartnerCarousel
+        AwardsCarousel
     }
 }
 </script>

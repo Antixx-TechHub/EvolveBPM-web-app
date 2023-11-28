@@ -6,8 +6,6 @@
         <GlobalSalesTeam />
         <OurCaseStudies />
         <Certificates />
-        <Awards />
-        <FunFacts />
         <OurMediaAssets />
         <LetsGetToWork />
         <Footer />
@@ -22,10 +20,8 @@ import OurFeaturedServices from '../components/Index/OurFeaturedServices'
 import GlobalSalesTeam from '../components/Index/GlobalSalesTeam'
 import OurCaseStudies from '../components/Index/OurCaseStudies'
 import Certificates from '../components/Index/Certificates'
-import Awards from '../components/Index/Awards'
 import AmazingBusinessSolution from '../components/Common/AmazingBusinessSolution'
 import WeAlwaysTryToUnderstand from '../components/Common/WeAlwaysTryToUnderstand'
-import FunFacts from '../components/Common/FunFacts'
 import WeveDoneLotsOfWork from '../components/Common/WeveDoneLotsOfWork'
 import MeetOurAwesomeTeam from '../components/Common/MeetOurAwesomeTeam'
 import GetBetterSolution from '../components/Common/GetBetterSolution'
@@ -48,10 +44,8 @@ export default {
         GlobalSalesTeam,
         OurCaseStudies,
         Certificates,
-        Awards,
         AmazingBusinessSolution,
         WeAlwaysTryToUnderstand,
-        FunFacts,
         WeveDoneLotsOfWork,
         MeetOurAwesomeTeam,
         GetBetterSolution,
@@ -64,7 +58,7 @@ export default {
         Footer,
         Copyright,
     },
-        data() {
+    data() {
         return {
             seoData: null,
         }
