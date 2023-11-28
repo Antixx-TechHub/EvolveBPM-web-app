@@ -77,7 +77,7 @@ export default {
     <PageTitle pageTitle="Case Study Categories" pageDesc="News and Insights" />
     <div v-if="category !== null">
       <CaseStudyCategoriesDetails v-bind:detailsContent="category" />
-      <Partner />
+      <LetsGetToWork />
       <Footer />
     </div>
 
@@ -88,7 +88,7 @@ export default {
 import Navbar from '../../../layouts/Navbar'
 import PageTitle from '../../../components/Common/PageTitle'
 import CaseStudyCategoriesDetails from '../../../components/CaseStudies/CaseStudyCategoriesDetails'
-import Partner from '../../../components/Common/Partner'
+import LetsGetToWork from '../../../components/Common/LetsGetToWork'
 import Footer from '../../../layouts/Footer'
 import axios from 'axios';
 
@@ -97,7 +97,7 @@ export default {
     Navbar,
     PageTitle,
     CaseStudyCategoriesDetails,
-    Partner,
+    LetsGetToWork,
     Footer
   },
   data() {

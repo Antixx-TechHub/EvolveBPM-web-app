@@ -4,7 +4,7 @@
     <PageTitle pageTitle="Success Stories Categories" pageDesc="News and Insights" />
     <div v-if="category !== null">
       <SuccessCategoriesDetails v-bind:detailsContent="category" />
-      <Partner />
+      <LetsGetToWork />
       <Footer />
     </div>
 
@@ -15,7 +15,7 @@
 import Navbar from '../../../layouts/Navbar'
 import PageTitle from '../../../components/Common/PageTitle'
 import SuccessCategoriesDetails from '../../../components/SuccessStories/SuccessCategoriesDetails'
-import Partner from '../../../components/Common/Partner'
+import LetsGetToWork from '../../../components/Common/LetsGetToWork'
 import Footer from '../../../layouts/Footer'
 import axios from 'axios';
 
@@ -24,7 +24,7 @@ export default {
     Navbar,
     PageTitle,
     SuccessCategoriesDetails,
-    Partner,
+    LetsGetToWork,
     Footer
   },
   data() {

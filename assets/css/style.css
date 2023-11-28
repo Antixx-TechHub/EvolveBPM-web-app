@@ -3920,7 +3920,7 @@ Solution Area CSS
 }
 
 .solution-content h2 {
-  color: #212529;
+  color: #ffffff;
   margin-bottom: 12px;
   font-size: 39px;
   text-align: left;
@@ -3935,7 +3935,7 @@ Solution Area CSS
 }
 
 .solution-video {
-  text-align: end;
+  text-align: center;
 }
 
 .solution-video .video-btn {
@@ -4769,6 +4769,7 @@ Blog Details Area CSS
   background-color: #eeeef0;
   text-align: center;
   font-size: 14px;
+  padding-top: 9px;
 }
 
 .blog-details-desc .article-footer .article-share .social li a:hover {
