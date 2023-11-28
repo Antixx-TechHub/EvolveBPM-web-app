@@ -1,7 +1,7 @@
 <template>
     <div>
         <NavbarStyleTwo />
-        <!-- <BlogsPageTitle /> -->
+        <BlogsPageTitle />
         <Blog />
         <LetsGetToWork />
         <Footer />
@@ -11,7 +11,7 @@
 
 <script>
 import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
-// import BlogsPageTitle from '../components/blogs/BlogsPageTitle'
+import BlogsPageTitle from '../components/Blogs/BlogsPageTitle'
 import Blog from '../components/Blogs/Blog'
 import LetsGetToWork from '../components/Common/LetsGetToWork'
 import Footer from '../layouts/Footer'
@@ -21,7 +21,7 @@ import Copyright from '../layouts/Copyright'
 export default {
     components: {
         NavbarStyleTwo,
-        // BlogsPageTitle,
+        BlogsPageTitle,
         Blog,
         LetsGetToWork,
         Footer,

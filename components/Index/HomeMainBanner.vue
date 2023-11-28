@@ -7,7 +7,7 @@
             @close="index = null">
         </CoolLightBox>
 
-        <div class="saas-banner-two">
+        <div class="saas-banner-two pa-bg1">
             <div class="d-table">
                 <div class="d-table-cell">
                     <div class="container mt-50">
@@ -27,7 +27,7 @@
 
                             <div class="col-lg-6">
                                 <div class="saas-banner-image animate-tb">
-                                    <img src="~/assets/images/saas-banner.png" alt="image">
+                                    <!-- <img src="~/assets/images/saas-banner.png" alt="image">
 
                                     <div class="solution-video">
                                         <a 
@@ -39,7 +39,7 @@
                                         >
                                             <i class="flaticon-play-button"></i>
                                         </a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>

@@ -9055,6 +9055,8 @@ Portfolio Agency Page CSS
 
 .pa-bg1 {
   background-image: url("../images/portfolio-agency.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*================================================
