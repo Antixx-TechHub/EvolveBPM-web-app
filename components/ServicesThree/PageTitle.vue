@@ -8,7 +8,7 @@
                 <div class="row align-items-center pb-70">
                     <div class="col-lg-6 col-md-12">
                         <div class="solution-content">
-                            <h2>Services Page One</h2>
+                            <h2>Services Page Three</h2>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                         </div>
                     </div>

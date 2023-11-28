@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Navbar />
+        <NavbarStyleTwo />
         <PageTitle />
         <TheKeyToYourMotivationSuccess />
         <ProvideAwesomeServices />
@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import Navbar from '../layouts/Navbar'
+import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
 import PageTitle from '../components/ServicesOne/PageTitle'
 import TheKeyToYourMotivationSuccess from '../components/ServicesOne/TheKeyToYourMotivationSuccess'
 import ProvideAwesomeServices from '../components/ServicesOne/ProvideAwesomeServices'
@@ -20,7 +20,7 @@ import Copyright from '../layouts/Copyright'
 
 export default {
     components: { 
-        Navbar,
+        NavbarStyleTwo,
         PageTitle,
         TheKeyToYourMotivationSuccess,
         ProvideAwesomeServices,

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Navbar />
+        <NavbarStyleTwo />
         <PageTitle />
         <ServicesCard />
         <Footer />
@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import Navbar from '../layouts/Navbar'
-import PageTitle from '../components/ServicesOne/PageTitle'
+import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
+import PageTitle from '../components/ServicesThree/PageTitle'
 import ServicesCard from '../components/ServicesThree/ServicesCard'
 import Footer from '../layouts/Footer'
 import Copyright from '../layouts/Copyright'
@@ -18,7 +18,7 @@ import Copyright from '../layouts/Copyright'
 
 export default {
     components: { 
-        Navbar,
+        NavbarStyleTwo,
         PageTitle,
         ServicesCard,
         Footer,

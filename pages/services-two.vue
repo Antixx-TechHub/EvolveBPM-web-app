@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Navbar />
+        <NavbarStyleTwo />
         <PageTitle />
         <OverViewTwo />
         <OurServicesTwo />
@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import Navbar from '../layouts/Navbar'
-import PageTitle from '../components/ServicesOne/PageTitle'
+import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
+import PageTitle from '../components/ServicesTwo/PageTitle'
 import OverViewTwo from '../components/ServicesTwo/OverViewTwo'
 import OurServicesTwo from '../components/ServicesTwo/OurServicesTwo'
 import Footer from '../layouts/Footer'
@@ -20,7 +20,7 @@ import Copyright from '../layouts/Copyright'
 
 export default {
     components: { 
-        Navbar,
+        NavbarStyleTwo,
         PageTitle,
         OverViewTwo,
         OurServicesTwo,
