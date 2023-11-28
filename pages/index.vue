@@ -4,6 +4,7 @@
         <HomeMainBanner />
         <WeveDoneLotsOfWork />
         <GlobalSalesTeam />
+        <OurCaseStudies />
         <Certificates />
         <Awards />
         <FunFacts />
@@ -19,6 +20,7 @@ import Navbar from '../layouts/NavbarStyleTwo'
 import HomeMainBanner from '../components/Index/HomeMainBanner'
 import OurFeaturedServices from '../components/Index/OurFeaturedServices'
 import GlobalSalesTeam from '../components/Index/GlobalSalesTeam'
+import OurCaseStudies from '../components/Index/OurCaseStudies'
 import Certificates from '../components/Index/Certificates'
 import Awards from '../components/Index/Awards'
 import AmazingBusinessSolution from '../components/Common/AmazingBusinessSolution'
@@ -44,6 +46,7 @@ export default {
         HomeMainBanner,
         OurFeaturedServices,
         GlobalSalesTeam,
+        OurCaseStudies,
         Certificates,
         Awards,
         AmazingBusinessSolution,
