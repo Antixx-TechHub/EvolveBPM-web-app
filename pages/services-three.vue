@@ -2,7 +2,7 @@
     <div>
         <NavbarStyleTwo />
         <PageTitle />
-        <!-- <ServicesCard /> -->
+        <ServicesCard />
         <Footer />
         <Copyright />
     </div>
