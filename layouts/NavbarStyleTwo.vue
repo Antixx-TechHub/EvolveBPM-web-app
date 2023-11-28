@@ -104,7 +104,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="/resources" class="nav-link">
                                     Resources<i class="fas fa-chevron-down"></i>
                                 </a>
                                 <ul class="dropdown-menu">
