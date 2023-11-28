@@ -71,13 +71,13 @@
                                 </NuxtLink>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <NuxtLink to="/services-one" class="nav-link">Innovator</NuxtLink>
+                                        <NuxtLink to="/irev" class="nav-link">iRev</NuxtLink>
                                     </li>
                                     <li class="nav-item">
-                                        <NuxtLink to="/services-two" class="nav-link">Predictor</NuxtLink>
+                                        <NuxtLink to="/idata" class="nav-link">iData</NuxtLink>
                                     </li>
                                     <li class="nav-item">
-                                        <NuxtLink to="/services-three" class="nav-link">Intello</NuxtLink>
+                                        <NuxtLink to="/imedia" class="nav-link">iMedia</NuxtLink>
                                     </li>
                                 </ul>
                             </li>
