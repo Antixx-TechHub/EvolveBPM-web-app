@@ -2,8 +2,8 @@
     <div>
         <NavbarStyleTwo />
         <PageTitle />
-        <OverViewTwo />
-        <OurServicesTwo />
+        <!-- <OverViewTwo />
+        <OurServicesTwo /> -->
         <Footer />
         <Copyright />
     </div>

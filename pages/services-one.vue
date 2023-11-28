@@ -2,8 +2,8 @@
     <div>
         <NavbarStyleTwo />
         <PageTitle />
-        <TheKeyToYourMotivationSuccess />
-        <ProvideAwesomeServices />
+        <!-- <TheKeyToYourMotivationSuccess />
+        <ProvideAwesomeServices /> -->
         <Footer />
         <Copyright />
     </div>
