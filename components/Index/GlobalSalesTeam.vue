@@ -4,14 +4,14 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12">
                     <div class="section-title with-linear-gradient-text solution-content">
-                        <h2><span>Lorem Ipsum</span></h2>
+                        <h2><span>How Evolve Enables Global Sales Teams to Scale Their Revenues</span></h2>
                     </div>
                 </div>
 
                 <div class="col-lg-6 col-md-12">
                     <div class="banner-btn solution-video">
                         <NuxtLink to="/contact" class="default-btn mr-3">
-                            Get Started <span></span>
+                            Request Demo <span></span>
                         </NuxtLink>
                     </div>
                 </div>
@@ -21,10 +21,13 @@
                 <div class="col-lg-6 col-sm-6">
                     <div class="overview-content">
                         <div class="content">
-                            <span class="sub-title">Social Media Marketing</span>
-                            <h2>We are the next generation of the advertising world</h2>
-                            <p>We believe brand interaction is key in communication. Real innovations and a positive
-                                customer experience are the heart of successful communication.</p>
+                            <h3>We are the next generation of the advertising world</h3>
+                            <p>Synchronization of messaging across multi-channels, proprietary Intent-based & ABM tools
+                                leveraging Artificial Intelligence help drive our solutions to impact the end to end revenue
+                                stream of our partners.</p>
+                            ​<p>Our revolutionary 6W framework helps break down the marketing initiatives into more focused
+                                actionable toll gated action points. Our aspiration is to be the one stop solution for
+                                global partners related to revenue growth strategy & solutions.</p>
 
                             <div class="features-text">
                                 <h4><i class="flaticon-tick"></i> Core Development</h4>

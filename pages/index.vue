@@ -3,8 +3,9 @@
         <Navbar />
         <HomeMainBanner />
         <WeveDoneLotsOfWork />
-        <Partner />
         <GlobalSalesTeam />
+        <Certificates />
+        <Awards />
         <OurFeaturedServices class="pt-40" />
         <AmazingBusinessSolution />
         <WeAlwaysTryToUnderstand />
@@ -26,8 +27,9 @@
 import Navbar from '../layouts/Navbar'
 import HomeMainBanner from '../components/Index/HomeMainBanner'
 import OurFeaturedServices from '../components/Common/OurFeaturedServices'
-import Partner from '../components/Index/Partner'
 import GlobalSalesTeam from '../components/Index/GlobalSalesTeam'
+import Certificates from '../components/Index/Certificates'
+import Awards from '../components/Index/Awards'
 import AmazingBusinessSolution from '../components/Common/AmazingBusinessSolution'
 import WeAlwaysTryToUnderstand from '../components/Common/WeAlwaysTryToUnderstand'
 import FunFacts from '../components/Common/FunFacts'
@@ -50,8 +52,9 @@ export default {
         Navbar,
         HomeMainBanner,
         OurFeaturedServices,
-        Partner,
         GlobalSalesTeam,
+        Certificates,
+        Awards,
         AmazingBusinessSolution,
         WeAlwaysTryToUnderstand,
         FunFacts,

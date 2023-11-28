@@ -114,6 +114,6 @@
 
 <script>
 export default {
-    name: 'OverView'
+    name: 'OverViewDescription'
 }
 </script>
