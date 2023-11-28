@@ -1479,7 +1479,8 @@ Main Banner Area CSS
 .banner-content h1 {
   line-height: 1.2;
   margin-bottom: 0;
-  font-size: 59px;
+  font-size: 55px;
+  font-weight: 600;
 }
 
 .banner-content p {
@@ -12273,7 +12274,7 @@ BD Choose Area CSS
 Footer Wrap Area CSS
 =================================================*/
 .footer-wrap-area {
-  background-color: #1F102B;
+  background-color: #00538E;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -12444,7 +12445,7 @@ Footer Wrap Area CSS
 Copyright Wrap Area CSS
 =================================================*/
 .copyright-wrap-area {
-  background-color: #11011E;
+  background-color: #004068;
   padding-top: 25px;
   padding-bottom: 25px;
 }

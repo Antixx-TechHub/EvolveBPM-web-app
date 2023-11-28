@@ -6,16 +6,7 @@
         <GlobalSalesTeam />
         <Certificates />
         <Awards />
-        <OurFeaturedServices class="pt-40" />
-        <AmazingBusinessSolution />
-        <WeAlwaysTryToUnderstand />
         <FunFacts />
-        <MeetOurAwesomeTeam />
-        <GetBetterSolution />
-        <SomeLovelyFeedback />
-        <ChooseYourBestPlan />
-        <GetOnlyNewUpdate />
-        <OurLatestNews />
         <OurMediaAssets />
         <LetsGetToWork />
         <Footer />
