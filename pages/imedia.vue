@@ -2,7 +2,14 @@
     <div>
       <NavbarStyleTwo />
       <PageTitle />
+      <ImediaFourDivsions />
       <!-- <imediaHeader /> -->
+      <ImediaZigzag />
+      <ImediaImageAssets />
+      <ImediaInovatorPlatfom />
+      <ImediaIntelloPlatform />
+      <ImediaPredictorPlatfom />
+      <EmailMarketting />
       <LetsGetToWork />
       <Footer />
       <Copyright />
@@ -12,6 +19,13 @@
   <script>
   import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
   import PageTitle from '../components/iMedia/PageTitle'
+  import ImediaFourDivsions from '../components/iMedia/ImediaFourDivsions'
+  import ImediaZigzag from '../components/iMedia/ImediaZigzag'
+  import ImediaImageAssets from '../components/iMedia/ImediaImageAssets'
+  import ImediaInovatorPlatfom from '../components/iMedia/ImediaInovatorPlatfom'
+  import ImediaIntelloPlatform from '../components/iMedia/ImediaIntelloPlatform'
+  import ImediaPredictorPlatfom from '../components/iMedia/ImediaPredictorPlatfom'
+  import EmailMarketting from '../components/iMedia/EmailMarketting'
 //   import imediaHeader from '../components/iMedia/imediaHeader'
   import LetsGetToWork from '../components/Common/LetsGetToWork'
   import Footer from '../layouts/Footer'
@@ -22,6 +36,13 @@
     components: {
       NavbarStyleTwo,
       PageTitle,
+      ImediaFourDivsions,
+      ImediaZigzag,
+      ImediaImageAssets,
+      ImediaInovatorPlatfom,
+      ImediaIntelloPlatform,
+      ImediaPredictorPlatfom,
+      EmailMarketting,
     //   imediaHeader,
       LetsGetToWork,
       Footer,
