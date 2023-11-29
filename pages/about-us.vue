@@ -13,6 +13,8 @@
         <!-- <OurExpertTeam class="pt-0" /> -->
         <!-- <GetOnlyNewUpdateFrom /> -->
         <!-- <WePartnerWithCompaniessizes /> -->
+        <AboutPersonInfo />
+        <EvoleCoreValues />
         <LetsGetToWork />
         <Footer />
         <Copyright />
@@ -28,6 +30,8 @@ import AboutUsDescription from '../components/AboutUs/AboutUsDescription'
 import EngagingNew from '../components/AboutTwo/EngagingNew'
 // import GetBetterSolution from '../components/Common/GetBetterSolution'
 import CertficationsRecogniations from '../components/AboutUs/CertficationsRecogniations'
+import AboutPersonInfo from '../components/AboutUs/AboutPersonInfo'
+import EvoleCoreValues from '../components/AboutUs/EvoleCoreValues'
 import TeamContent from '../components/TeamOne/TeamContent'
 import SomeLovelyFeedback from '../components/Common/SomeLovelyFeedback'
 import OurExpertTeam from '../components/Common/OurExpertTeam'
@@ -48,6 +52,8 @@ export default {
         // GetBetterSolution,
         CertficationsRecogniations,
         TeamContent,
+        AboutPersonInfo,
+        EvoleCoreValues,
         SomeLovelyFeedback,
         OurExpertTeam,
         GetOnlyNewUpdateFrom,

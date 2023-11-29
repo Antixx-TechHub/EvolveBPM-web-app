@@ -26,72 +26,56 @@
                             <div class="row">
                                 <div class="col-lg-4 col-sm-6">
                                     <div class="fun-fact-card">
-                                        <i class='bx bx-list-check'></i>
-                                        <h3>524<span class="sign-icon">+</span></h3>
-                                        <p>Completed Projects</p>
+                                        <img src="~/assets/images/partner/partner-1.png" alt="image">
+                                        <!-- <h3>524<span class="sign-icon">+</span></h3>
+                                        <p>Completed Projects</p> -->
                                     </div>
                                 </div>
 
                                 <div class="col-lg-4 col-sm-6">
                                     <div class="fun-fact-card">
-                                        <i class='bx bx-smile'></i>
-                                        <h3>560<span class="sign-icon">+</span></h3>
-                                        <p>Happy Clients</p>
+                                        <img src="~/assets/images/partner/partner-2.png" alt="image">
                                     </div>
                                 </div>
 
                                 <div class="col-lg-4 col-sm-6">
                                     <div class="fun-fact-card">
-                                        <i class='bx bx-user-plus'></i>
-                                        <h3>128<span class="sign-icon">+</span></h3>
-                                        <p>Expert Members</p>
+                                        <img src="~/assets/images/partner/partner-3.png" alt="image">
                                     </div>
                                 </div>
 
                                 <div class="col-lg-4 col-sm-6">
                                     <div class="fun-fact-card">
-                                        <i class='bx bx-trophy'></i>
-                                        <h3>29<span class="sign-icon">+</span></h3>
-                                        <p>Winning Awards</p>
+                                        <img src="~/assets/images/partner/partner-4.png" alt="image">
                                     </div>
                                 </div>
 
                                 <div class="col-lg-4 col-sm-6">
                                     <div class="fun-fact-card">
-                                        <i class='bx bx-user-plus'></i>
-                                        <h3>128<span class="sign-icon">+</span></h3>
-                                        <p>Expert Members</p>
+                                        <img src="~/assets/images/partner/partner-5.png" alt="image">
                                     </div>
                                 </div>
 
                                 <div class="col-lg-4 col-sm-6">
                                     <div class="fun-fact-card">
-                                        <i class='bx bx-trophy'></i>
-                                        <h3>29<span class="sign-icon">+</span></h3>
-                                        <p>Winning Awards</p>
+                                        <img src="~/assets/images/partner/partner-6.png" alt="image">
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-sm-6">
                                     <div class="fun-fact-card">
-                                        <i class='bx bx-list-check'></i>
-                                        <h3>524<span class="sign-icon">+</span></h3>
-                                        <p>Completed Projects</p>
+                                        <img src="~/assets/images/partner/partner-7.png" alt="image">
                                     </div>
                                 </div>
 
                                 <div class="col-lg-4 col-sm-6">
                                     <div class="fun-fact-card">
-                                        <i class='bx bx-smile'></i>
-                                        <h3>560<span class="sign-icon">+</span></h3>
-                                        <p>Happy Clients</p>
+                                        <img src="~/assets/images/partner/partner-8.png" alt="image">
                                     </div>
                                 </div>
 
                                 <div class="col-lg-4 col-sm-6">
                                     <div class="fun-fact-card">
-                                        <i class='bx bx-user-plus'></i>
-                                        <h3>128<span class="sign-icon">+</span></h3>
-                                        <p>Expert Members</p>
+                                        <img src="~/assets/images/partner/partner-9.png" alt="image">
                                     </div>
                                 </div>
                             </div>
@@ -105,72 +89,56 @@
                             <div class="row">
                                 <div class="col-lg-4 col-sm-6">
                                     <div class="fun-fact-card">
-                                        <i class='bx bx-list-check'></i>
-                                        <h3>524<span class="sign-icon">+</span></h3>
-                                        <p>Completed Projects</p>
+                                        <img src="~/assets/images/partner/partner-1.png" alt="image">
+                                        <!-- <h3>524<span class="sign-icon">+</span></h3>
+                                        <p>Completed Projects</p> -->
                                     </div>
                                 </div>
 
                                 <div class="col-lg-4 col-sm-6">
                                     <div class="fun-fact-card">
-                                        <i class='bx bx-smile'></i>
-                                        <h3>560<span class="sign-icon">+</span></h3>
-                                        <p>Happy Clients</p>
+                                        <img src="~/assets/images/partner/partner-2.png" alt="image">
                                     </div>
                                 </div>
 
                                 <div class="col-lg-4 col-sm-6">
                                     <div class="fun-fact-card">
-                                        <i class='bx bx-user-plus'></i>
-                                        <h3>128<span class="sign-icon">+</span></h3>
-                                        <p>Expert Members</p>
+                                        <img src="~/assets/images/partner/partner-3.png" alt="image">
                                     </div>
                                 </div>
 
                                 <div class="col-lg-4 col-sm-6">
                                     <div class="fun-fact-card">
-                                        <i class='bx bx-trophy'></i>
-                                        <h3>29<span class="sign-icon">+</span></h3>
-                                        <p>Winning Awards</p>
+                                        <img src="~/assets/images/partner/partner-4.png" alt="image">
                                     </div>
                                 </div>
 
                                 <div class="col-lg-4 col-sm-6">
                                     <div class="fun-fact-card">
-                                        <i class='bx bx-user-plus'></i>
-                                        <h3>128<span class="sign-icon">+</span></h3>
-                                        <p>Expert Members</p>
+                                        <img src="~/assets/images/partner/partner-5.png" alt="image">
                                     </div>
                                 </div>
 
                                 <div class="col-lg-4 col-sm-6">
                                     <div class="fun-fact-card">
-                                        <i class='bx bx-trophy'></i>
-                                        <h3>29<span class="sign-icon">+</span></h3>
-                                        <p>Winning Awards</p>
+                                        <img src="~/assets/images/partner/partner-6.png" alt="image">
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-sm-6">
                                     <div class="fun-fact-card">
-                                        <i class='bx bx-list-check'></i>
-                                        <h3>524<span class="sign-icon">+</span></h3>
-                                        <p>Completed Projects</p>
+                                        <img src="~/assets/images/partner/partner-7.png" alt="image">
                                     </div>
                                 </div>
 
                                 <div class="col-lg-4 col-sm-6">
                                     <div class="fun-fact-card">
-                                        <i class='bx bx-smile'></i>
-                                        <h3>560<span class="sign-icon">+</span></h3>
-                                        <p>Happy Clients</p>
+                                        <img src="~/assets/images/partner/partner-8.png" alt="image">
                                     </div>
                                 </div>
 
                                 <div class="col-lg-4 col-sm-6">
                                     <div class="fun-fact-card">
-                                        <i class='bx bx-user-plus'></i>
-                                        <h3>128<span class="sign-icon">+</span></h3>
-                                        <p>Expert Members</p>
+                                        <img src="~/assets/images/partner/partner-9.png" alt="image">
                                     </div>
                                 </div>
                             </div>
