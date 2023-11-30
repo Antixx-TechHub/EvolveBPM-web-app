@@ -2,6 +2,11 @@
     <div>
       <NavbarStyleTwo />
       <PageTitle />
+      <IdataFourDivsions />
+      <IdataZigZag />
+      <DataCoverageIdata />
+      <FirstPartyUniverseData />
+      <FirstPartySlider />
       <LetsGetToWork />
       <Footer />
       <Copyright />
@@ -11,6 +16,11 @@
   <script>
   import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
   import PageTitle from '../components/IData/PageTitle'
+  import IdataFourDivsions from '../components/IData/IdataFourDivsions'
+  import IdataZigZag from '../components/IData/IdataZigZag'
+  import DataCoverageIdata from '../components/IData/DataCoverageIdata'
+  import FirstPartySlider from '../components/IData/FirstPartySlider'
+  import FirstPartyUniverseData from '../components/IData/FirstPartyUniverseData'
   import LetsGetToWork from '../components/Common/LetsGetToWork'
   import Footer from '../layouts/Footer'
   import Copyright from '../layouts/Copyright'
@@ -20,6 +30,11 @@
     components: {
       NavbarStyleTwo,
       PageTitle,
+      IdataFourDivsions,
+      IdataZigZag,
+      DataCoverageIdata,
+      FirstPartyUniverseData,
+      FirstPartySlider,
       LetsGetToWork,
       Copyright,
       Footer,
