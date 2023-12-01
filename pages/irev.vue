@@ -2,6 +2,12 @@
     <div>
       <NavbarStyleTwo />
       <PageTitle />
+      <IrevZigZag />
+      <designdefine />
+      <CrossFunnelEvoleBPM />
+      <CaseStudiesRsesources />
+      <IrevTelemarketing />
+      <IrevOurServicesTwo />
       <!-- <IrevHeader /> -->
       <LetsGetToWork />
       <Footer />
@@ -12,6 +18,12 @@
   <script>
   import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
   import PageTitle from '../components/Irev/PageTitle'
+  import IrevZigZag from '../components/Irev/IrevZigZag'
+  import designdefine from '../components/Irev/designdefine'
+  import CrossFunnelEvoleBPM from '../components/Irev/CrossFunnelEvoleBPM'
+  import CaseStudiesRsesources from '../components/Resources/CaseStudiesRsesources'
+  import IrevTelemarketing from '../components/Irev/IrevTelemarketing'
+  import IrevOurServicesTwo from '../components/Irev/IrevOurServicesTwo'
 //   import IrevHeader from '../components/Irev/IrevHeader'
   import LetsGetToWork from '../components/Common/LetsGetToWork'
   import Footer from '../layouts/Footer'
@@ -22,6 +34,12 @@
     components: {
       NavbarStyleTwo,
       PageTitle,
+      IrevZigZag,
+      designdefine,
+      CrossFunnelEvoleBPM,
+      CaseStudiesRsesources,
+      IrevTelemarketing,
+      IrevOurServicesTwo,
     //   IrevHeader,
       LetsGetToWork,
       Copyright,
