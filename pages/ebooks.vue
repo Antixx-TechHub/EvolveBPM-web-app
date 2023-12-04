@@ -2,6 +2,7 @@
     <div>
       <NavbarStyleTwo />
       <PageTitle />
+      <EbookDescription />
       <LetsGetToWork />  
       <Footer />
       <Copyright />
@@ -11,6 +12,7 @@
   <script>
   import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
   import PageTitle from '../components/Ebook/PageTitle'
+  import EbookDescription from '../components/Ebook/EbookDescription'
   import LetsGetToWork from '../components/Common/LetsGetToWork'
   import Footer from '../layouts/Footer'
   import Copyright from '../layouts/Copyright'
@@ -20,6 +22,7 @@
     components: {
       NavbarStyleTwo,
       PageTitle,
+      EbookDescription,
       LetsGetToWork,
       Footer,
       Copyright,

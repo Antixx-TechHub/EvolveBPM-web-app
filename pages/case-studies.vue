@@ -2,6 +2,7 @@
     <div>
         <NavbarStyleTwo />
         <PageTitle />
+        <CaseStudyDescription />
         <CaseStudies />
         <LetsGetToWork />
         <Footer />
@@ -12,6 +13,7 @@
 <script>
 import NavbarStyleTwo from '../layouts/NavbarStyleTwo'
 import PageTitle from '../components/CaseStudies/PageTitle'
+import CaseStudyDescription from '../components/CaseStudies/CaseStudyDescription'
 import CaseStudies from '../components/CaseStudies/CaseStudies'
 import LetsGetToWork from '../components/Common/LetsGetToWork'
 import Footer from '../layouts/Footer'
@@ -22,6 +24,7 @@ export default {
     components: {
         NavbarStyleTwo,
         PageTitle,
+        CaseStudyDescription,
         CaseStudies,
         LetsGetToWork,
         Footer,

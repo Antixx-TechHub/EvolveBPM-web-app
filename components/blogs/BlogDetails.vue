@@ -19,19 +19,13 @@
                                 </ul>
                             </div>
 
-                            <h3>{{ details[0].attributes.title }}</h3>
-
-                            <span v-html="details[0].attributes.longDesc"></span>
-
-                        </div>
-
-                        <div class="article-footer">
+                            <div class="article-footer">
                             <div class="article-tags">
-                                <span><i class="fas fa-bookmark"></i></span>
+                                <span><i class="fas fa-bookmark"></i> Love it? Share it:</span>
 
-                                <a href="/blog-one">Fashion</a>,
+                                <!-- <a href="/blog-one">Fashion</a>,
                                 <a href="/blog-one">Games</a>,
-                                <a href="/blog-one">Travel</a>
+                                <a href="/blog-one">Travel</a> -->
                             </div>
 
                             <div class="article-share">
@@ -49,6 +43,14 @@
                             </div>
                         </div>
 
+
+                            <h3>{{ details[0].attributes.title }}</h3>
+
+                            <span v-html="details[0].attributes.longDesc"></span>
+
+                        </div>
+
+                       
                         <!-- <div class="post-navigation">
                             <div class="navigation-links">
                                 <div class="nav-previous">
