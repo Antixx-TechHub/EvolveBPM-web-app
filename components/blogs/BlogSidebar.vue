@@ -1,6 +1,6 @@
 <template>
     <div class="widget-area" id="secondary">
-        <div class="widget widget_search">
+        <!-- <div class="widget widget_search">
             <form class="search-form">
                 <label>
                     <span class="screen-reader-text">Search for:</span>
@@ -8,7 +8,7 @@
                 </label>
                 <button type="submit"><i class="fas fa-search"></i></button>
             </form>
-        </div>
+        </div> -->
 
         <div class="widget widget_bionix_posts_thumb">
             <h3 class="widget-title">Popular Posts</h3>
