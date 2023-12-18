@@ -155,7 +155,7 @@
                             <i class='bx bxs-badge-check check-icon'></i>
                         </div>
                         <h3>
-                         Internal phone number tags
+                            Internal phone number tags
                         </h3>
                     </div>
                 </div>
@@ -189,6 +189,6 @@
 
 <script>
 export default {
-    name: 'OurServicesTwo'
+    name: 'IrevOurServicesTwo'
 }
 </script>

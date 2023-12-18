@@ -13,6 +13,6 @@
 
 <script>
 export default {
-    name: 'OurServicesTwo'
+    name: 'CrossFunnelEvoleBPM'
 }
 </script>

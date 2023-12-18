@@ -38,14 +38,14 @@
                                     {{ casestudy.attributes.title }}
                                 </NuxtLink>
                             </h3>
-                            
+
                             <p>{{ casestudy.attributes.shortDesc }}</p>
 
                             <NuxtLink :to="'/case-studies-details/' + casestudy.attributes.slug" class="read-more-btn">
                                 Read More
                                 <i class="flaticon-right-arrow"></i>
                             </NuxtLink>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -59,7 +59,7 @@
 import axios from 'axios';
 
 export default {
-    name: 'Blog',
+    name: 'CaseStudiesRsesources',
     data() {
         return {
             casestudies: [],
