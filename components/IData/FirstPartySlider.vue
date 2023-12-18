@@ -20,7 +20,7 @@
 import CertificatesCarousel from '../Carousels/CertificatesCarousel'
 import AwardsCarousel from '../Carousels/AwardsCarousel'
 export default {
-    name: 'partner',
+    name: 'FirstPartySlider',
     components: {
         CertificatesCarousel,
         AwardsCarousel,

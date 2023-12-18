@@ -53,6 +53,6 @@
 
 <script>
 export default {
-    name: 'OverViewTwo'
+    name: 'DataCoverageIdata'
 }
 </script>
