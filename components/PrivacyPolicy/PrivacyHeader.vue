@@ -23,7 +23,7 @@
 <script>
 
 export default {
-   name: 'Breadcrumb',
+   name: 'PrivacyHeader',
    data() {
       return {
          bannerStyle: {
