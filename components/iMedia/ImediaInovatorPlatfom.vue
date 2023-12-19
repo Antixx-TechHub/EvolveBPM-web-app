@@ -52,7 +52,7 @@
 import MicrositeLogos from '../Carousels/MicrositeLogos'
 
 export default {
-    name: 'MainBannerFour',
+    name: 'ImediaInovatorPlatfom',
     components: {
         MicrositeLogos
     },

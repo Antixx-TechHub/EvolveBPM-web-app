@@ -49,7 +49,7 @@
 import MicrositeLogos from '../Carousels/MicrositeLogos'
 
 export default {
-    name: 'MainBannerFour',
+    name: 'ImediaPredictorPlatfom',
     components: {
         MicrositeLogos
     },

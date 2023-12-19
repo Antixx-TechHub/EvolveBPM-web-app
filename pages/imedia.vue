@@ -3,7 +3,6 @@
       <NavbarStyleTwo />
       <PageTitle />
       <ImediaFourDivsions />
-      <!-- <imediaHeader /> -->
       <ImediaZigzag />
       <ImediaImageAssets />
       <ImediaInovatorPlatfom />
@@ -26,7 +25,6 @@
   import ImediaIntelloPlatform from '../components/iMedia/ImediaIntelloPlatform'
   import ImediaPredictorPlatfom from '../components/iMedia/ImediaPredictorPlatfom'
   import EmailMarketting from '../components/iMedia/EmailMarketting'
-//   import imediaHeader from '../components/iMedia/imediaHeader'
   import LetsGetToWork from '../components/Common/LetsGetToWork'
   import Footer from '../layouts/Footer'
   import Copyright from '../layouts/Copyright'
@@ -43,7 +41,6 @@
       ImediaIntelloPlatform,
       ImediaPredictorPlatfom,
       EmailMarketting,
-    //   imediaHeader,
       LetsGetToWork,
       Footer,
       Copyright,

@@ -41,7 +41,7 @@
 import MicrositeLogos from '../Carousels/MicrositeLogos'
 
 export default {
-    name: 'MainBannerFour',
+    name: 'ImediaImageAssets',
     components: {
         MicrositeLogos
     },

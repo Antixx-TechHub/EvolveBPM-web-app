@@ -15,7 +15,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="overview-image">
                     <div class="image">
                         <img src="~/assets/images/services/it-service-1.png" alt="image">
@@ -27,7 +26,7 @@
 </template>
 
 <script>
-    export default {
-        name: 'OverViewTwo'
-    }
+export default {
+    name: 'EmailMarketting'
+}
 </script>

@@ -12,42 +12,41 @@
                     <div class="content right-content">
                         <h2>Lorem Ipsum</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-
                         <ul class="features-list">
                             <li>
                                 <span>
                                     <i class='bx bxs-badge-check'></i>
-                                    Responsive Design
+                                    Lorem Ipsum
                                 </span>
                             </li>
                             <li>
                                 <span>
                                     <i class='bx bxs-badge-check'></i>
-                                    UI / UX Design
+                                    Lorem Ipsum
                                 </span>
                             </li>
                             <li>
                                 <span>
                                     <i class='bx bxs-badge-check'></i>
-                                    Mobile App Development
+                                    Lorem Ipsum
                                 </span>
                             </li>
                             <li>
                                 <span>
                                     <i class='bx bxs-badge-check'></i>
-                                    Laravel Development
+                                    Lorem Ipsum
                                 </span>
                             </li>
                             <li>
                                 <span>
                                     <i class='bx bxs-badge-check'></i>
-                                    React Development
+                                    Lorem Ipsum
                                 </span>
                             </li>
                             <li>
                                 <span>
                                     <i class='bx bxs-badge-check'></i>
-                                    Angular Development
+                                    Lorem Ipsum
                                 </span>
                             </li>
                         </ul>
@@ -67,6 +66,6 @@
 
 <script>
     export default {
-        name: 'OverViewTwo'
+        name: 'ImediaZigzag'
     }
 </script>

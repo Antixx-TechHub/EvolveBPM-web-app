@@ -15,7 +15,7 @@
 
                                     <div class="rm-btn">
                                         <NuxtLink to="/services-details" class="default-btn">
-                                            Intello site        
+                                            Intello site
                                         </NuxtLink>
                                     </div>
                                 </div>
@@ -50,7 +50,7 @@
 import MicrositeLogos from '../Carousels/MicrositeLogos'
 
 export default {
-    name: 'MainBannerFour',
+    name: 'ImediaIntelloPlatform',
     components: {
         MicrositeLogos
     },
