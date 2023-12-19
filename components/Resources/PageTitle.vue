@@ -32,7 +32,7 @@ import CoolLightBox from 'vue-cool-lightbox'
 import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
 
 export default {
-    name: 'GetBetterSolution',
+    name: 'PageTitle',
     components: { CoolLightBox },
     data: function () {
         return {

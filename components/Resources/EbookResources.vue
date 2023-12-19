@@ -59,7 +59,7 @@
 import axios from 'axios';
 
 export default {
-    name: 'Blog',
+    name: 'EbookResources',
     data() {
         return {
             blogs: [],
