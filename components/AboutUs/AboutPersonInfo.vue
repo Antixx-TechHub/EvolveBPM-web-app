@@ -3,9 +3,13 @@
         <div class="container">
             <div class="section-title">
                 <h2>Evolve’s POSH Committee</h2>
-                <p>At Evolve, our commitment to fostering an inclusive and respectful environment is unwavering. We stand firmly against any and all forms of racism, gender bias, and sexual harassment. Through our robust zero-tolerance policy, we consistently strive to deter, address, and eradicate any instances of such behavior.</p>
+                <p>At Evolve, our commitment to fostering an inclusive and respectful environment is unwavering. We stand
+                    firmly against any and all forms of racism, gender bias, and sexual harassment. Through our robust
+                    zero-tolerance policy, we consistently strive to deter, address, and eradicate any instances of such
+                    behavior.</p>
                 <br>
-               <h6>For further dialogue or concerns, please feel free to reach out directly to our dedicated POSH committee members:</h6>
+                <h6>For further dialogue or concerns, please feel free to reach out directly to our dedicated POSH committee
+                    members:</h6>
             </div>
 
             <div class="row">
@@ -72,10 +76,6 @@
 
                 <div class="col-lg-6 col-sm-6">
                     <div class="service-card-one bg-white center">
-                        <div class="icon">
-                            <!-- <i class='bx bx-cart'></i>
-                            <i class='bx bxs-badge-check check-icon'></i> -->
-                        </div>
                         <h3>
                             IC group email id (Bangalore)
                         </h3>
@@ -101,7 +101,7 @@
 </template>
 
 <script>
-    export default {
-        name: 'OurServicesTwo'
-    }
+export default {
+    name: 'AboutPersonInfo'
+}
 </script>

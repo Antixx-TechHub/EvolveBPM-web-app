@@ -3,10 +3,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12 gh-70">
-                        <div class="banner-btn solution-video">
-                            <NuxtLink to="/contact" class="default-btn mr-3">
-                                Certifications <span></span>
-                            </NuxtLink>
+                    <div class="banner-btn solution-video">
+                        <NuxtLink to="/contact" class="default-btn mr-3">
+                            Certifications <span></span>
+                        </NuxtLink>
                     </div>
                 </div>
 
@@ -152,6 +152,6 @@
 
 <script>
 export default {
-    name: 'GlobalSalesTeam'
+    name: 'CertficationsRecogniations'
 }
 </script>
