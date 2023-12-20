@@ -170,7 +170,7 @@
 import MicrositeLogos from '../Carousels/MicrositeLogos'
 
 export default {
-    name: 'Feedback',
+    name: 'OurMediaAssets',
     components: {
         MicrositeLogos
     },

@@ -3,7 +3,8 @@
         <div class="container-fluid">
             <div class="section-title">
                 <h2>Products</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna.</p>
             </div>
 
             <CaseStuduesCarousel />
@@ -14,7 +15,7 @@
 <script>
 import CaseStuduesCarousel from '../Index/CaseStuduesCarousel'
 export default {
-    name: 'OurCaseStudies',
+    name: 'Products',
     components: {
         CaseStuduesCarousel
     }

@@ -1,10 +1,6 @@
 <template>
     <div>
-        <CoolLightBox 
-            :items="items" 
-            :fullScreen="true"
-            :index="index"
-            @close="index = null">
+        <CoolLightBox :items="items" :fullScreen="true" :index="index" @close="index = null">
         </CoolLightBox>
 
         <div class="saas-banner-two pa-bg1">
@@ -15,8 +11,9 @@
                             <div class="col-lg-6">
                                 <div class="banner-content">
                                     <h1>MARKETING <br>MAGIC, MADE <br>WITH LOVE AND AI</h1>
-                                    <p>We're Pink Lemonade, the world's first integrated<br>marketing agency to combine human expertis<br>and AI to create marketing magic!</p>
-                                    
+                                    <p>We're Pink Lemonade, the world's first integrated<br>marketing agency to combine
+                                        human expertis<br>and AI to create marketing magic!</p>
+
                                     <div class="banner-btn">
                                         <NuxtLink to="/contact" class="default-btn mr-3">
                                             Get Started <span></span>
@@ -46,7 +43,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Shape Images -->
             <div class="shape-img2"><img src="~/assets/images/shape/shape-2.svg" alt="image"></div>
             <div class="shape-img3"><img src="~/assets/images/shape/shape-3.svg" alt="image"></div>
@@ -62,21 +59,21 @@
 </template>
 
 <script>
-    import CoolLightBox from 'vue-cool-lightbox'
-    import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
+import CoolLightBox from 'vue-cool-lightbox'
+import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
 
-    export default {
-        name: 'MainBannerSix',
-        components: { CoolLightBox },
-        data: function () {
-            return {
-                items: [
-                    {
-                        src: 'https://www.youtube.com/watch?v=bk7McNUjWgw',
-                    }
-                ],
-                index: null
-            };
-        },
-    }
+export default {
+    name: 'HomeMainBanner',
+    components: { CoolLightBox },
+    data: function () {
+        return {
+            items: [
+                {
+                    src: 'https://www.youtube.com/watch?v=bk7McNUjWgw',
+                }
+            ],
+            index: null
+        };
+    },
+}
 </script>

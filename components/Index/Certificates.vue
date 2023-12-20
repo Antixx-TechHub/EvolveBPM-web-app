@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <div class="section-title">
                 <h2>Certifications / Awards</h2>
-           </div>
+            </div>
 
             <div class="partner-area ">
                 <div class="container-fluid">
@@ -21,7 +21,7 @@
 import CertificatesCarousel from '../Carousels/CertificatesCarousel'
 import AwardsCarousel from '../Carousels/AwardsCarousel'
 export default {
-    name: 'partner',
+    name: 'Certificates',
     components: {
         CertificatesCarousel,
         AwardsCarousel,
