@@ -171,6 +171,30 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 13px;
 }
 
+/*  Default Button For HamBurger */
+
+.default-btn-one {
+  border: none;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+  color: #ffffff;
+  text-transform: uppercase;
+  /* background-color: #ffffff; */
+  background: linear-gradient(90deg, #FD5257 0%, #165EC9 100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 17px;
+  padding-bottom: 13px;
+}
+
 .default-btn span {
   position: absolute;
   display: block;
@@ -275,6 +299,104 @@ h1, h2, h3, h4, h5, h6 {
 textarea.form-control {
   padding-top: 13px;
 }
+
+
+/*  New Css SideBar Added  */
+.side-bar{
+  background: #FFFFFF;
+}
+
+.side-bar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.side-bar .menu{
+  width: 100%;
+  margin-top: 30px;
+ }
+ 
+ .side-bar .menu .item{
+  position: relative;
+  cursor: pointer;
+  border-bottom: 1px solid #e4c3c3;
+  font-size: 15px;
+  font-weight: 400;
+ }
+ 
+ .side-bar .menu .item a{
+  color: #090101;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  padding: 5px 30px;
+  line-height: 37px;
+}
+ 
+ .side-bar .menu .item a:hover{
+  background: #1c70dd;
+  transition: 0.3s ease;
+ }
+ 
+ .side-bar .menu .item i{
+  margin-right: 15px;
+ }
+ 
+ .side-bar .menu .item a .dropdown{
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  transition: 0.3s ease;
+ }
+ 
+ .side-bar .menu .item .sub-menu{
+  background: #262627;
+  display: none;
+ }
+ 
+ .side-bar .menu .item .sub-menu a{
+  padding-left: 80px;
+ }
+ 
+ .rotate{
+  transform: rotate(90deg);
+ }
+ 
+ .close-btn{
+  position: absolute;
+  color: #fff;
+ 
+  font-size: 23px;
+  right:  0px;
+  margin: 15px;
+  cursor: pointer;
+ }
+ 
+ .menu-btn{
+  position: absolute;
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  margin: 25px;
+  cursor: pointer;
+ }
+ 
+ .main{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+ }
+ 
+ .main h1{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 60px;
+  text-align: center;
+  line-height: 80px;
+ }
+
+ 
+
+
 
 /*================================================
 Preloader Area CSS
