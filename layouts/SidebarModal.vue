@@ -119,7 +119,7 @@
                 <div class="side-bar gh-70">
                     <div class="menu">
                         <div class="item">
-                            <NuxtLink to="/" class="nav-link">
+                            <NuxtLink to="/">
                                 Home
                             </NuxtLink>
                         </div>
@@ -130,31 +130,31 @@
                             </a>
                             <div class="sub-menu" v-show="isSubMenuVisible('tablesMenu')">
                                 <li>
-                                <nuxt-link to="/irev" class="nav-link">
+                                <nuxt-link to="/irev">
                                     <span> <img src="../assets/img/header-icon/keyword.png" alt=""> </span>
                                     iRev
                                 </nuxt-link>
                             </li>
                             <li>
-                                <nuxt-link to="/iintel" class="nav-link">
+                                <nuxt-link to="/iintel">
                                     <span> <img src="../assets/img/header-icon/audit.png" alt=""> </span>
                                     iIntel
                                 </nuxt-link>
                             </li>
                             <li>
-                                <nuxt-link to="/imedia" class="nav-link">
+                                <nuxt-link to="/imedia">
                                     <span> <img src="../assets/img/header-icon/building.png" alt=""> </span>
                                     iMedia
                                 </nuxt-link>
                             </li>
                             <li>
-                                <nuxt-link to="/innovator" class="nav-link">
+                                <nuxt-link to="/innovator">
                                     <span> <img src="../assets/img/header-icon/media.png" alt=""> </span>
                                     Innovator
                                 </nuxt-link>
                             </li>
                             <li>
-                                <nuxt-link to="/techbase" class="nav-link">
+                                <nuxt-link to="/techbase">
                                     <span> <img src="../assets/img/header-icon/analysis.png" alt=""> </span>
                                     TechBase
                                 </nuxt-link>
@@ -162,7 +162,7 @@
                             </div>
                         </div>
                         <div class="item">
-                            <NuxtLink to="/about-us" class="nav-link">
+                            <NuxtLink to="/about-us">
                                 About Us
                             </NuxtLink>
                         </div>
@@ -173,18 +173,18 @@
                             </a>
                             <div class="sub-menu" v-show="isSubMenuVisible('settingsMenu')">
                                 <li class="nav-item">
-                                <NuxtLink to="/irev" class="nav-link">iRev</NuxtLink>
+                                <NuxtLink to="/irev">iRev</NuxtLink>
                             </li>
                             <li class="nav-item">
-                                <NuxtLink to="/idata" class="nav-link">iData</NuxtLink>
+                                <NuxtLink to="/idata">iData</NuxtLink>
                             </li>
                             <li class="nav-item">
-                                <NuxtLink to="/imedia" class="nav-link">iMedia</NuxtLink>
+                                <NuxtLink to="/imedia">iMedia</NuxtLink>
                             </li>
                             </div>
                         </div>
                         <div class="item">
-                            <NuxtLink to="/contact-us" class="nav-link">Contact</NuxtLink>
+                            <NuxtLink to="/contact-us">Contact</NuxtLink>
                         </div>
                     </div>
                 </div>
@@ -255,9 +255,9 @@
                 <div class="contact-info">
                     <div class="contact-info-content">
                         <h2>
-                            <a href="tel:+916362606905">+91-020-69029999</a>
+                            <a href="tel:+91-020-69029999">+91-020-69029999</a>
                             <span>OR</span>
-                            <a href="mailto:reachus@pinklemonade.in">corporate@evolvebpm.com</a>
+                            <a href="mailto:corporate@evolvebpm.com">corporate@evolvebpm.com</a>
                         </h2>
 
                         <ul class="social">

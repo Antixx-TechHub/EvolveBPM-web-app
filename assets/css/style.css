@@ -318,7 +318,7 @@ textarea.form-control {
  .side-bar .menu .item{
   position: relative;
   cursor: pointer;
-  border-bottom: 1px solid #e4c3c3;
+  border-bottom: 1px solid #e0dbdb;
   font-size: 15px;
   font-weight: 400;
  }
