@@ -5,186 +5,101 @@
                 <NuxtLink class="navbar-brand" to="/">
                     <img src="~/assets/images/logo.png" alt="logo">
                 </NuxtLink>
-                <!-- <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <NuxtLink to="/" class="nav-link">
-                            Home
-                        </NuxtLink>
-                    </li>
-
-                    <li class="nav-item">
-                        <NuxtLink to="/about-us" class="nav-link">
-                            About Us
-                        </NuxtLink>
-                    </li>
-
-                    <li class="nav-item">
-                        <NuxtLink to="/about-one" class="nav-link">
-                            Services <i class="fas fa-chevron-right"></i>
-                        </NuxtLink>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <nuxt-link to="/irev" class="nav-link">
-                                    <span> <img src="../assets/img/header-icon/keyword.png" alt=""> </span>
-                                    iRev
-                                </nuxt-link>
-                            </li>
-                            <li>
-                                <nuxt-link to="/iintel" class="nav-link">
-                                    <span> <img src="../assets/img/header-icon/audit.png" alt=""> </span>
-                                    iIntel
-                                </nuxt-link>
-                            </li>
-                            <li>
-                                <nuxt-link to="/imedia" class="nav-link">
-                                    <span> <img src="../assets/img/header-icon/building.png" alt=""> </span>
-                                    iMedia
-                                </nuxt-link>
-                            </li>
-                            <li>
-                                <nuxt-link to="/innovator" class="nav-link">
-                                    <span> <img src="../assets/img/header-icon/media.png" alt=""> </span>
-                                    Innovator
-                                </nuxt-link>
-                            </li>
-                            <li>
-                                <nuxt-link to="/techbase" class="nav-link">
-                                    <span> <img src="../assets/img/header-icon/analysis.png" alt=""> </span>
-                                    TechBase
-                                </nuxt-link>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item">
-                        <NuxtLink to="/#" class="nav-link">
-                            Our Products <i class="fas fa-chevron-right"></i>
-                        </NuxtLink>
-                        <ul class="dropdown-menu">
-                            <li class="nav-item">
-                                <NuxtLink to="/irev" class="nav-link">iRev</NuxtLink>
-                            </li>
-                            <li class="nav-item">
-                                <NuxtLink to="/idata" class="nav-link">iData</NuxtLink>
-                            </li>
-                            <li class="nav-item">
-                                <NuxtLink to="/imedia" class="nav-link">iMedia</NuxtLink>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item">
-                        <NuxtLink to="/#" class="nav-link">
-                            Company <i class="fas fa-chevron-right"></i>
-                        </NuxtLink>
-                        <ul class="dropdown-menu">
-                            <li class="nav-item">
-                                <NuxtLink to="/careers" class="nav-link">Careers</NuxtLink>
-                            </li>
-                            <li class="nav-item">
-                                <NuxtLink to="/our-team" class="nav-link">Our Team</NuxtLink>
-                            </li>
-                            <li class="nav-item">
-                                <NuxtLink to="/team-details" class="nav-link">Team Details</NuxtLink>
-                            </li>
-                            <li class="nav-item">
-                                <NuxtLink to="/faqs" class="nav-link">FAQ's</NuxtLink>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="/resources" class="nav-link">
-                            Resources<i class="fas fa-chevron-right"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="nav-item">
-                                <NuxtLink to="/blogs" class="nav-link">Blogs</NuxtLink>
-                            </li>
-                            <li class="nav-item">
-                                <NuxtLink to="/sucess-stories" class="nav-link">Sucess Stories</NuxtLink>
-                            </li>
-                            <li class="nav-item">
-                                <NuxtLink to="/case-studies" class="nav-link">Case Studies</NuxtLink>
-                            </li>
-
-                        </ul>
-                    </li>
-
-                    <li class="nav-item">
-                        <NuxtLink to="/contact-us" class="nav-link">Contact</NuxtLink>
-                    </li>
-                </ul> -->
 
                 <div class="side-bar gh-70">
                     <div class="menu">
-                        <div class="item">
-                            <NuxtLink to="/">
-                                Home
-                            </NuxtLink>
-                        </div>
-                        <div class="item">
-                            <a class="sub-btn" @click="toggleSubMenu('tablesMenu')">
-                                Services<i class="fas fa-angle-right dropdown"
-                                    :class="{ 'rotate': isSubMenuVisible('tablesMenu') }"></i>
-                            </a>
-                            <div class="sub-menu" v-show="isSubMenuVisible('tablesMenu')">
-                                <li>
-                                <nuxt-link to="/irev">
-                                    <span> <img src="../assets/img/header-icon/keyword.png" alt=""> </span>
-                                    iRev
-                                </nuxt-link>
-                            </li>
-                            <li>
-                                <nuxt-link to="/iintel">
-                                    <span> <img src="../assets/img/header-icon/audit.png" alt=""> </span>
-                                    iIntel
-                                </nuxt-link>
-                            </li>
-                            <li>
-                                <nuxt-link to="/imedia">
-                                    <span> <img src="../assets/img/header-icon/building.png" alt=""> </span>
-                                    iMedia
-                                </nuxt-link>
-                            </li>
-                            <li>
-                                <nuxt-link to="/innovator">
-                                    <span> <img src="../assets/img/header-icon/media.png" alt=""> </span>
-                                    Innovator
-                                </nuxt-link>
-                            </li>
-                            <li>
-                                <nuxt-link to="/techbase">
-                                    <span> <img src="../assets/img/header-icon/analysis.png" alt=""> </span>
-                                    TechBase
-                                </nuxt-link>
-                            </li>
+                        <div id="app">
+                            <div class="dropdown">
+                                <div class="item">
+                                    <NuxtLink to="/">
+                                        Home
+                                    </NuxtLink>
+                                </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <NuxtLink to="/about-us">
-                                About Us
-                            </NuxtLink>
-                        </div>
-                        <div class="item">
-                            <a class="sub-btn" @click="toggleSubMenu('settingsMenu')">
-                                Our Products<i class="fas fa-angle-right dropdown"
-                                    :class="{ 'rotate': isSubMenuVisible('settingsMenu') }"></i>
-                            </a>
-                            <div class="sub-menu" v-show="isSubMenuVisible('settingsMenu')">
-                                <li class="nav-item">
-                                <NuxtLink to="/irev">iRev</NuxtLink>
-                            </li>
-                            <li class="nav-item">
-                                <NuxtLink to="/idata">iData</NuxtLink>
-                            </li>
-                            <li class="nav-item">
-                                <NuxtLink to="/imedia">iMedia</NuxtLink>
-                            </li>
+
+                        <div id="app">
+                            <div class="dropdown">
+                                <div class="item">
+                                    <NuxtLink to="/about-us">
+                                        About Us
+                                    </NuxtLink>
+                                </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <NuxtLink to="/contact-us">Contact</NuxtLink>
+
+                        <div id="app">
+                            <div class="dropdown">
+                                <div class="item">
+                                    <NuxtLink to="/">
+                                        Services <i class="fas fa-chevron-right"></i>
+                                    </NuxtLink>
+                                </div>
+                                <div class="dropdown-content">
+                                    <!-- <a href="#">Option 1</a>
+                                    <a href="#">Option 2</a>
+                                    <a href="#">Option 3</a> -->
+                                    <li>
+                                        <nuxt-link to="/irev">
+                                            <span> <img src="../assets/img/header-icon/keyword.png" alt=""> </span>
+                                            iRev
+                                        </nuxt-link>
+                                    </li>
+                                    <li>
+                                        <nuxt-link to="/iintel">
+                                            <span> <img src="../assets/img/header-icon/audit.png" alt=""> </span>
+                                            iIntel
+                                        </nuxt-link>
+                                    </li>
+                                    <li>
+                                        <nuxt-link to="/imedia">
+                                            <span> <img src="../assets/img/header-icon/building.png" alt=""> </span>
+                                            iMedia
+                                        </nuxt-link>
+                                    </li>
+                                    <li>
+                                        <nuxt-link to="/innovator">
+                                            <span> <img src="../assets/img/header-icon/media.png" alt=""> </span>
+                                            Innovator
+                                        </nuxt-link>
+                                    </li>
+                                    <li>
+                                        <nuxt-link to="/techbase">
+                                            <span> <img src="../assets/img/header-icon/analysis.png" alt=""> </span>
+                                            TechBase
+                                        </nuxt-link>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="app">
+                            <div class="dropdown">
+                                <div class="item">
+                                    <NuxtLink to="/">
+                                        Our Products <i class="fas fa-chevron-right"></i>
+                                    </NuxtLink>
+                                </div>
+                                <div class="dropdown-content">
+                                    <li>
+                                        <NuxtLink to="/irev">iRev</NuxtLink>
+                                    </li>
+                                    <li>
+                                        <NuxtLink to="/idata">iData</NuxtLink>
+                                    </li>
+                                    <li>
+                                        <NuxtLink to="/imedia">iMedia</NuxtLink>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="app">
+                            <div class="dropdown">
+                                <div class="item">
+                                    <NuxtLink to="/contact-us">Contact US </NuxtLink>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -202,54 +117,6 @@
                         human intuition produces truly exceptional marketing campaigns.</p> -->
                 </div>
             </div>
-
-
-            <!-- <div class="sidebar-instagram-feed">
-            <h2>Instagram</h2>
-
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <img src="~/assets/images/instagram/instagram-1.jpg" alt="image">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <img src="~/assets/images/instagram/instagram-2.jpg" alt="image">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <img src="~/assets/images/instagram/instagram-3.jpg" alt="image">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <img src="~/assets/images/instagram/instagram-4.jpg" alt="image">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <img src="~/assets/images/instagram/instagram-5.jpg" alt="image">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <img src="~/assets/images/instagram/instagram-6.jpg" alt="image">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <img src="~/assets/images/instagram/instagram-7.jpg" alt="image">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <img src="~/assets/images/instagram/instagram-8.jpg" alt="image">
-                    </a>
-                </li>
-            </ul>
-        </div> -->
 
             <div class="sidebar-contact-area">
                 <div class="contact-info">
