@@ -165,21 +165,6 @@
 
 export default {
     name: 'SidebarModal',
-    data() {
-        return {
-            subMenuVisibility: {
-                tablesMenu: false,
-                settingsMenu: false,
-            },
-        };
-    },
-    methods: {
-        toggleSubMenu(menu) {
-            this.$set(this.subMenuVisibility, menu, !this.subMenuVisibility[menu]);
-        },
-        isSubMenuVisible(menu) {
-            return this.subMenuVisibility[menu];
-        },
-    },
+    
 };
 </script>
