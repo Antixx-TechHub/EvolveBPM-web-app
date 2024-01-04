@@ -97,6 +97,51 @@
                         <div id="app">
                             <div class="dropdown">
                                 <div class="item">
+                                    <NuxtLink to="/">
+                                        Company <i class="fas fa-chevron-right"></i>
+                                    </NuxtLink>
+                                </div>
+                                <div class="dropdown-content">
+                                    <li>
+                                        <NuxtLink to="/careers">Careers</NuxtLink>
+                                    </li>
+                                    <li>
+                                        <NuxtLink to="/our-team">Our Team</NuxtLink>
+                                    </li>
+                                    <li>
+                                        <NuxtLink to="/team-details">Team Details</NuxtLink>
+                                    </li>
+                                    <li>
+                                        <NuxtLink to="/faqs">FAQ's</NuxtLink>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="app">
+                            <div class="dropdown">
+                                <div class="item">
+                                    <NuxtLink to="/">
+                                        Resources <i class="fas fa-chevron-right"></i>
+                                    </NuxtLink>
+                                </div>
+                                <div class="dropdown-content">
+                                    <li>
+                                        <NuxtLink to="/blogs">Blogs</NuxtLink>
+                                    </li>
+                                    <li>
+                                        <NuxtLink to="/sucess-stories">Sucess Stories</NuxtLink>
+                                    </li>
+                                    <li>
+                                        <NuxtLink to="/case-studies">Case Studies</NuxtLink>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="app">
+                            <div class="dropdown">
+                                <div class="item">
                                     <NuxtLink to="/contact-us">Contact US </NuxtLink>
                                 </div>
                             </div>
