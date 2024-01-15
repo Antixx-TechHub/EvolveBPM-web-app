@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   text-transform: uppercase;
   /* background-color: #ffffff; */
-  background: linear-gradient(90deg, #FD5257 0%, #165EC9 100%);
+  background: #FD5257;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 5px;
@@ -398,9 +398,8 @@ textarea.form-control {
 
 /*  Dropdown CSS New Added 3-1-24 */
 
- .dropdown {
+ /* .dropdown {
   position: relative;
-  /* display: inline-block; */
 }
 
 .dropdown-content {
@@ -417,10 +416,10 @@ textarea.form-control {
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
+} */
 
 /* Style for the dropdown items */
-.dropdown-content li {
+/* .dropdown-content li {
   color: #333;
   padding: 8px 16px 0px 15px;
   text-decoration: none;
@@ -429,292 +428,11 @@ textarea.form-control {
 
 .dropdown-content li:hover {
   background-color: #ddd;
-}
+} */
 
 
 
-#menuToggle {
-  display: block;
-  position: relative;
-  top: 50px;
-  left: 957px;
 
-  z-index: 1;
-
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle input {
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-
-  cursor: pointer;
-
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-
-  -webkit-touch-callout: none;
-}
-
-/*
-         * Just a quick hamburger
-         */
-#menuToggle span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-
-  background: #cdcdcd;
-  border-radius: 3px;
-
-  z-index: 1;
-
-  transform-origin: 4px 0px;
-
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-}
-
-#menuToggle span:first-child {
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2) {
-  transform-origin: 0% 100%;
-}
-
-/*
-         * Transform all the slices of hamburger
-         * into a crossmark.
-         */
-#menuToggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-/*
-         * But let's hide the middle one.
-         */
-#menuToggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
-         * Ohyeah and the last one should go the other direction
-         */
-#menuToggle input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
-         * Make this absolute positioned
-         * at the top left of the screen
-         */
-#menu {
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -194px;
-  padding: 50px;
-  padding-top: 125px;
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-}
-
-#menu li {
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-/*
-         * And let's slide it in from the left
-         */
-#menuToggle input:checked ~ ul {
-  transform: none;
-}
-
-.onclick-menu:focus {
-  /* clicking on label should toggle the menu */
-  pointer-events: none;
-}
-
-.onclick-menu:focus .onclick-menu-content {
-  /*  opacity is 1 in opened state (see below) */
-  opacity: 1;
-  visibility: visible;
-  display: inherit;
-  /* don't let pointer-events affect descendant elements */
-  pointer-events: auto;
-}
-
-.onclick-menu-content {
-  /* use opacity to fake immediate toggle */
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-  transition: visibility 0.5s;
-}
-.onclick-menu-content li {
-  list-style: none;
-}
-
-
-.button {
-  position: relative;
-  background-color: white;
-  height: 5rem;
-  width: 5rem;
-  border-radius: 50%;
-  position: fixed;
-  top: 5vh; 
-  right: 5vw; 
-  z-index: 2000;
-  box-shadow: 0 1rem 3rem black;
-  text-align: center; 
-  cursor: pointer;
-}
-
-.background {
-  height: 4rem;
-  width: 4rem;
-  border-radius: 50%;
-  position: fixed;
-  top: 5.5vh; 
-  right: 5.5vw; 
-  background-image: radial-gradient(rgb(3, 10, 3), black);
-  z-index: 1000;
-
-  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-}
-
-.nav {
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  right: -60vw;
-  z-index: 1500;
-  opacity: 0;
-  width: 0;
-  transition: all 0.8s;
-}
-
-.list {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  list-style: none;
-  text-align: center;
-  width: 100%;
-}
-
-.item {
-  margin: 1rem;
-  font-size: 36px;
-}
-
-.link:link,
-.link:visited {
-  display: inline-block;
-  font-size: 3rem;
-  font-weight: 300;
-  padding: 1rem 2rem;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-image: linear-gradient(
-    120deg,
-    transparent 0%,
-    transparent 50%,
-    white 50%
-  );
-  background-size: 220%;
-  transition: all 0.4s;
-}
-
-.link:hover,
-.link:active {
-  color: rgb(231, 62, 15);
-  cursor: pointer;
-}
-
-/* functionality */
-.checkbox:checked ~ .background {
-  transform: scale(80);
-}
-.checkbox:checked ~ .nav {
-  opacity: 1;
-  width: 100%;
-  right: 0;
-}
-
-/*  */
-/* styling hamb ICON */
-.icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.icon,
-.icon::before,
-.icon::after {
-  width: 3rem;
-  height: 2px;
-  background-color: gray;
-  display: inline-block;
-}
-
-.icon::before,
-.icon::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  transition: all 0.2s;
-}
-
-.icon::before {
-  top: -0.8rem;
-}
-.icon::after {
-  top: 0.8rem;
-}
-
-.button:hover icon:before {
-  top: -1rem;
-}
-.button:hover icon::after {
-  top: 1rem;
-}
-
-.checkbox:checked + .button .icon {
-  background-color: transparent;
-}
-
-.checkbox:checked + .button .icon::before {
-  top: 0;
-  transform: rotate(135deg);
-}
-.checkbox:checked + .button .icon::after {
-  top: 0;
-  transform: rotate(-135deg);
-}
 
 
 
@@ -761,8 +479,8 @@ textarea.form-control {
   position: fixed;
   top: 0px;
   right: -300px;
-  /* background-color: #a6cbe0; */
-  background: rgb(193, 58, 115, 0.7);
+  background-color: #FFFFFF;
+  /* background: rgb(193, 58, 115, 0.7); */
   padding: 60px;
   width: 435px;
   height: 100%;
@@ -790,11 +508,66 @@ textarea.form-control {
       right: 60px;
 
       &:hover {
-          padding: 15px 50px;
+          padding: 15px 70px;
           background-color: #bbdbed;
       }
   }
 }
+
+
+
+
+
+
+details summary {
+  cursor: pointer;
+  transition: all 225ms ease-out;
+  position: relative;
+}
+
+details[open] summary {
+  margin-bottom: 100px;
+  overflow: hidden;
+  position: relative;
+  background: #ccc;
+}
+
+details[open] .accordion-content {
+  padding: 10px;
+  margin-top: -100px;
+}
+
+details[open] .accordion-header-content-label {
+  color: black;
+}
+
+/* remove marker */
+
+details > summary {
+    list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+/* custom marker */
+
+summary::after {
+  content: '+';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 26px;
+}
+
+details[open] summary::after {
+  content: '-';
+  font-size: 36px;
+}
+
+
+
 
 
 
