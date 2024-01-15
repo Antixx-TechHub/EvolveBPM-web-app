@@ -23,11 +23,9 @@
                                     About Us
                                 </NuxtLink>
                             </div>
-
                             <div class="itemss">
-                                <NuxtLink to="/contact-us">Contact</NuxtLink>
+                                <NuxtLink to="/contact-us">Contact Us</NuxtLink>
                             </div>
-
 
                             <details class="accordion">
                                 <summary class="accordion-header">
@@ -143,8 +141,6 @@
                                     </li>
                                 </div>
                             </details>
-
-                            <div class="itemss">Ipsum</div>
                         </div>
 
                         <div class="banner-btn solution-video pb-70">

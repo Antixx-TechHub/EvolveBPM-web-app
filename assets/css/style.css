@@ -431,17 +431,10 @@ textarea.form-control {
 } */
 
 
-
-
-
-
-
-
-
 .menu2 {
   position:fixed;
-  top: 15px;
-  right: 15px;
+  top: 40px;
+  right: 100;
   cursor:pointer;
   z-index: 9;
   transition: right .3s ease-in-out;
@@ -456,7 +449,7 @@ textarea.form-control {
   }
 
   &.active {
-      right: 250px;
+      right: 30px;
   }
 
   &.active div {
@@ -516,12 +509,11 @@ textarea.form-control {
 
 
 
-
-
+/*  Collapse Menu Css Humburger Menu */
 
 details summary {
   cursor: pointer;
-  transition: all 225ms ease-out;
+  /* transition: all 225ms ease-out; */
   position: relative;
 }
 
@@ -535,6 +527,7 @@ details[open] summary {
 details[open] .accordion-content {
   padding: 10px;
   margin-top: -100px;
+  list-style-type: none;
 }
 
 details[open] .accordion-header-content-label {
